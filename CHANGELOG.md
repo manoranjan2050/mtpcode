@@ -18,3 +18,6 @@ All notable changes to this project are documented here.
 - Phase 11: Performance — lucide icon tree-shaking (JS bundle 685KB → 110KB); moved
   runtime-fetched assets (components, data, downloads, images, icons, manifest) into
   Vite's `public/` dir after a production build revealed they were missing entirely
+- Phase 12: GitHub Pages deployment — GitHub Actions workflow, switched Pages source to
+  Actions-based build, custom domain configured (mtpcode.com), verified a full
+  build+deploy run end-to-end. DNS still needs to be pointed at GitHub by the domain owner.

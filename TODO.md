@@ -90,10 +90,28 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done
 - [x] Verified via `vite preview` (production build): all sections render, 78/78 icons
       resolve, no console errors, images/downloads/manifest all serve correctly
 
-## Phase 12 — GitHub Pages Deployment
-- [ ] GitHub Actions workflow to build + deploy to Pages
-- [ ] Custom domain (CNAME for mtpcode.com)
-- [ ] Final push + verify live site
+## Phase 12 — GitHub Pages Deployment ✅
+- [x] GitHub Actions workflow (`.github/workflows/deploy.yml`): Node 20, `npm ci`, `npm run build`,
+      `upload-pages-artifact` + `deploy-pages`, triggered on push to `master`
+- [x] Switched repo Pages source from legacy branch-based (pointing at a nonexistent `main`
+      branch) to Actions-based (`build_type: workflow`) via the GitHub API
+- [x] `public/CNAME` (→ mtpcode.com) + GitHub Pages custom domain set via API (`cname: mtpcode.com`)
+- [x] Pushed and watched the workflow run end-to-end: **build succeeded, deploy succeeded**
+- [x] Verified live at `https://manoranjan2050.github.io/mtpcode/` — page loads and title/data
+      render, but asset paths 404 there since the whole site uses **absolute root paths**
+      (`/assets/...`, `/data/...`) by design for the mtpcode.com custom-domain deployment.
+      This is expected, not a bug — see note below.
+- [ ] **User action required (outside what I can do from here):** point mtpcode.com's DNS at
+      GitHub Pages — four `A` records to `185.199.108.153`, `185.199.109.153`,
+      `185.199.110.153`, `185.199.111.153` (or a `CNAME` record to `manoranjan2050.github.io`
+      if using a `www`/subdomain). Once DNS resolves, GitHub auto-issues the HTTPS cert and
+      the site goes live at https://mtpcode.com — no further repo changes needed.
+
+**Note on absolute paths:** the whole site is built assuming it's served from a domain root
+(`mtpcode.com/...`), matching the custom-domain deployment plan. It will **not** render
+correctly at a GitHub Pages project subpath like `github.io/mtpcode/` (assets 404). Don't
+"fix" this by switching to relative paths without re-checking every page — it was a deliberate
+tradeoff for the real production target.
 
 ---
 Last updated: 2026-08-07

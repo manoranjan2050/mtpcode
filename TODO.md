@@ -43,10 +43,11 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done
 - [x] Per-app changelog data
 - [x] Verified in browser: listing filters and a detail page render with no console errors
 
-## Phase 6 — Projects
-- [ ] `data/projects/*.json` for real projects (MTPDeploy, CryptoAlphaScanner, MTPsuite, Kavach, IndiaResultsHub, Helishield, etc.)
-- [ ] `projects.html` listing/grid + filter by tech/status
-- [ ] Project detail sections (screenshots, tech badges, GitHub/demo links, status)
+## Phase 6 — Projects ✅
+- [x] `data/projects/*.json` for real projects (MTPDeploy, CryptoAlphaScanner, MTPsuite, Helishield, Ferroload)
+- [x] `projects.html` listing/grid + filter by status
+- [x] Project detail sections (screenshots, tech badges, GitHub/demo links, status)
+- [x] Verified in browser: listing filters and a detail page render with no console errors
 
 ## Phase 7 — Blog
 - [ ] Markdown-based post pipeline (author in `/data/blog/*.md` or `.json` + rendered HTML)

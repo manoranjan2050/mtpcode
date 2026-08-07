@@ -36,11 +36,12 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done
 - [x] Footer
 - [x] Verified in browser: dark mode toggle, all data-driven sections, no console/network errors
 
-## Phase 5 — Apps
-- [ ] `data/apps/*.json` for each real app (Calc2Pay, ThermalDesk, MTP Pharma ERP, smart_sip_calculator, etc.)
-- [ ] `apps.html` listing/grid page with filters
-- [ ] App detail template + per-app JS renderer (logo, banner, gallery, features, version, platform, download links, changelog)
-- [ ] Per-app changelog data
+## Phase 5 — Apps ✅
+- [x] `data/apps/*.json` for each real app (Calc2Pay, ThermalDesk, MTP Pharma ERP, Smart SIP Calculator)
+- [x] `apps.html` listing/grid page with category filters
+- [x] App detail template + per-app JS renderer (logo, banner, gallery, features, version, platform, download links, changelog)
+- [x] Per-app changelog data
+- [x] Verified in browser: listing filters and a detail page render with no console errors
 
 ## Phase 6 — Projects
 - [ ] `data/projects/*.json` for real projects (MTPDeploy, CryptoAlphaScanner, MTPsuite, Kavach, IndiaResultsHub, Helishield, etc.)

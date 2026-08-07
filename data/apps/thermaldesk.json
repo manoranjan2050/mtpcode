@@ -1,0 +1,39 @@
+{
+  "slug": "thermaldesk",
+  "name": "ThermalDesk",
+  "tagline": "ESC/POS thermal receipt printing, without the driver headaches",
+  "logo": "/assets/images/apps/thermaldesk/logo.svg",
+  "banner": "/assets/images/apps/thermaldesk/banner.svg",
+  "gallery": [
+    "/assets/images/apps/thermaldesk/screen-1.svg",
+    "/assets/images/apps/thermaldesk/screen-2.svg"
+  ],
+  "description": "ThermalDesk connects Android devices to ESC/POS thermal printers over Bluetooth, USB or network, letting shop owners print clean receipts, tokens and kitchen orders directly from their phone or tablet.",
+  "features": [
+    "Bluetooth, USB and network (Wi-Fi) printer support",
+    "Custom receipt templates with logo, QR and barcode",
+    "Print queue with retry on connection drop",
+    "Multiple saved printer profiles",
+    "Test print and printer diagnostics"
+  ],
+  "version": "1.1.0",
+  "platform": ["Android"],
+  "downloads": { "apk": "/downloads/thermaldesk/thermaldesk-1.1.0.apk" },
+  "links": {
+    "github": "https://github.com/manoranjan2050/ThermalDesk",
+    "playstore": "",
+    "website": "",
+    "docs": ""
+  },
+  "legal": {
+    "privacy": "/legal/thermaldesk/privacy.html",
+    "terms": "/legal/thermaldesk/terms.html",
+    "support": "/legal/thermaldesk/support.html"
+  },
+  "changelog": [
+    { "version": "1.1.0", "date": "2026-08-07", "notes": ["Real-device verification pass, fixed 2 printer-reconnect bugs", "Live AdMob integration"] },
+    { "version": "1.0.0", "date": "2026-06-18", "notes": ["Initial release with Bluetooth + USB ESC/POS support"] }
+  ],
+  "featured": true,
+  "category": "android"
+}

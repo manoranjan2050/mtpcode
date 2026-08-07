@@ -1,0 +1,41 @@
+{
+  "slug": "mtp-pharma-erp",
+  "name": "MTP Pharma ERP",
+  "tagline": "Complete pharmacy ERP — billing, inventory, batch expiry & supplier ledgers",
+  "logo": "/assets/images/apps/mtp-pharma-erp/logo.svg",
+  "banner": "/assets/images/apps/mtp-pharma-erp/banner.svg",
+  "gallery": [
+    "/assets/images/apps/mtp-pharma-erp/screen-1.svg",
+    "/assets/images/apps/mtp-pharma-erp/screen-2.svg",
+    "/assets/images/apps/mtp-pharma-erp/screen-3.svg"
+  ],
+  "description": "MTP Pharma ERP is a full pharmacy management system covering point-of-sale billing, batch-wise inventory with expiry tracking, GST-ready invoicing, supplier ledgers and a licensed desktop build for offline-first pharmacies.",
+  "features": [
+    "Batch and expiry-aware inventory management",
+    "GST-ready billing and invoicing",
+    "Supplier ledger and purchase order tracking",
+    "Desktop build (phpdesktop + MariaDB) for offline use",
+    "Licensing and auto-update via the Kavach license server",
+    "Role-based staff accounts"
+  ],
+  "version": "1.8.0",
+  "platform": ["Web", "Desktop (Windows)"],
+  "downloads": { "zip": "/downloads/mtp-pharma-erp/mtp-pharma-erp-1.8.0-desktop.zip" },
+  "links": {
+    "github": "",
+    "playstore": "",
+    "website": "https://mtpsuite.com",
+    "docs": "/docs/index.html"
+  },
+  "legal": {
+    "privacy": "/legal/mtp-pharma-erp/privacy.html",
+    "terms": "/legal/mtp-pharma-erp/terms.html",
+    "support": "/legal/mtp-pharma-erp/support.html"
+  },
+  "changelog": [
+    { "version": "1.8.0", "date": "2026-08-01", "notes": ["Added supplier ledger module"] },
+    { "version": "1.7.1", "date": "2026-06-15", "notes": ["Rebranded to MTP Pharma ERP across web and desktop builds"] }
+  ],
+  "featured": true,
+  "category": "erp"
+}

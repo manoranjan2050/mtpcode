@@ -9,31 +9,32 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done
 - [ ] .gitignore, LICENSE, CONTRIBUTING.md, CHANGELOG.md
 - [ ] Initial commit + push
 
-## Phase 2 — Design System
-- [ ] Tailwind theme: color palette, typography scale, spacing, glassmorphism utilities
-- [ ] Google Fonts integration
-- [ ] Dark mode toggle (class strategy + localStorage persistence)
-- [ ] Base component styles: buttons, cards, badges, inputs
-- [ ] Animation utilities (AOS init, GSAP helpers)
-- [ ] Loading animation + skeleton loaders
+## Phase 2 — Design System ✅
+- [x] Tailwind theme: color palette, typography scale, spacing, glassmorphism utilities
+- [x] Google Fonts integration
+- [x] Dark mode toggle (class strategy + localStorage persistence)
+- [x] Base component styles: buttons, cards, badges, inputs
+- [x] Animation utilities (AOS init, GSAP helpers)
+- [x] Loading animation + skeleton loaders
 
-## Phase 3 — Navigation
-- [ ] Header partial (logo, nav links, dark mode toggle, mobile menu)
-- [ ] Footer partial (links, social, newsletter signup, copyright)
-- [ ] Partial include system (`assets/js/partials.js`)
-- [ ] Active-link highlighting, smooth scroll, sticky/glass header on scroll
+## Phase 3 — Navigation ✅
+- [x] Header partial (logo, nav links, dark mode toggle, mobile menu)
+- [x] Footer partial (links, social, newsletter signup, copyright)
+- [x] Partial include system (`assets/js/partials.js`)
+- [x] Active-link highlighting, smooth scroll, sticky/glass header on scroll
 
-## Phase 4 — Home Page
-- [ ] Hero (animated gradient background, typing effect, CTA buttons)
-- [ ] Animated stats counters
-- [ ] Featured Apps section (from JSON)
-- [ ] Featured Projects section (from JSON)
-- [ ] Technology stack section
-- [ ] Latest blog posts section
-- [ ] Latest GitHub projects (static JSON snapshot)
-- [ ] Testimonials carousel
-- [ ] Newsletter signup (static form, no backend — mailto or 3rd-party form action)
-- [ ] Footer
+## Phase 4 — Home Page ✅
+- [x] Hero (animated gradient background, typing effect, CTA buttons)
+- [x] Animated stats counters
+- [x] Featured Apps section (from JSON)
+- [x] Featured Projects section (from JSON)
+- [x] Technology stack section
+- [x] Latest blog posts section
+- [x] Latest GitHub projects (static JSON snapshot)
+- [x] Testimonials carousel
+- [x] Newsletter signup (static form, no backend — mailto or 3rd-party form action)
+- [x] Footer
+- [x] Verified in browser: dark mode toggle, all data-driven sections, no console/network errors
 
 ## Phase 5 — Apps
 - [ ] `data/apps/*.json` for each real app (Calc2Pay, ThermalDesk, MTP Pharma ERP, smart_sip_calculator, etc.)

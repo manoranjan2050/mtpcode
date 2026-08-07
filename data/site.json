@@ -1,0 +1,44 @@
+{
+  "name": "MTPCode",
+  "tagline": "Building Powerful Software, Mobile Apps & Digital Solutions",
+  "owner": "Manoranjan Das",
+  "domain": "https://mtpcode.com",
+  "description": "MTPCode is the independent software house of Manoranjan Das, building Android apps, ERP systems, trading platforms, IoT firmware and open-source developer tools for real businesses across India.",
+  "email": "electroiot.in@gmail.com",
+  "social": {
+    "github": "https://github.com/manoranjan2050",
+    "linkedin": "https://www.linkedin.com/in/manoranjan2050",
+    "telegram": "https://t.me/manoranjan2050",
+    "twitter": "https://twitter.com/manoranjan2050"
+  },
+  "stats": [
+    { "label": "Apps Shipped", "value": 9, "suffix": "+" },
+    { "label": "Live Projects", "value": 14, "suffix": "+" },
+    { "label": "Lines Committed", "value": 250000, "suffix": "+" },
+    { "label": "Years Building", "value": 6, "suffix": "+" }
+  ],
+  "techStack": [
+    { "name": "Laravel", "category": "Backend", "icon": "server" },
+    { "name": "PHP", "category": "Backend", "icon": "code-2" },
+    { "name": "Flutter", "category": "Mobile", "icon": "smartphone" },
+    { "name": "Dart", "category": "Mobile", "icon": "gem" },
+    { "name": "Rust", "category": "Systems", "icon": "cog" },
+    { "name": "Python", "category": "Backend", "icon": "terminal" },
+    { "name": "FastAPI", "category": "Backend", "icon": "zap" },
+    { "name": "Vue 3", "category": "Frontend", "icon": "layout-grid" },
+    { "name": "Livewire", "category": "Frontend", "icon": "waves" },
+    { "name": "Tailwind CSS", "category": "Frontend", "icon": "paintbrush" },
+    { "name": "MySQL / MariaDB", "category": "Database", "icon": "database" },
+    { "name": "ESP32 / Arduino", "category": "IoT", "icon": "cpu" },
+    { "name": "Docker", "category": "DevOps", "icon": "container" },
+    { "name": "GitHub Actions", "category": "DevOps", "icon": "git-branch" }
+  ],
+  "githubProjects": [
+    { "name": "Ferroload", "description": "Rust BitTorrent client with an async engine and live speed controls.", "url": "https://github.com/manoranjan2050/Ferroload", "language": "Rust", "stars": 12 },
+    { "name": "FlinEdge", "description": "ESP32 edge platform for solar, battery and EV telemetry.", "url": "https://github.com/manoranjan2050/FlinEdge", "language": "C++", "stars": 8 },
+    { "name": "mtp-deploy", "description": "Forge/Ploi-style self-hosted server deployment panel.", "url": "https://github.com/manoranjan2050/mtp-deploy", "language": "PHP", "stars": 21 },
+    { "name": "CryptoAlphaScanner", "description": "Binance + KuCoin market scanner and live trading engine.", "url": "https://github.com/manoranjan2050/CryptoAlphaScanner", "language": "Python", "stars": 17 },
+    { "name": "Kavach", "description": "Central license and auto-update server for desktop software.", "url": "https://github.com/manoranjan2050/Kavach", "language": "PHP", "stars": 6 },
+    { "name": "AspNetSample", "description": "ASP.NET Core Razor Pages learning sample and reference app.", "url": "https://github.com/manoranjan2050/AspNetSample", "language": "C#", "stars": 3 }
+  ]
+}

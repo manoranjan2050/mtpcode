@@ -1,0 +1,17 @@
+{
+  "slug": "cryptoalphascanner",
+  "name": "Crypto Alpha Scanner",
+  "tagline": "Binance + KuCoin market scanner with live automated trading",
+  "description": "Crypto Alpha Scanner monitors Binance and KuCoin markets in real time, scores momentum and volatility signals, and can execute live trades through a Python trading engine behind a Laravel dashboard.",
+  "technology": ["Laravel 12", "Python", "Binance API", "KuCoin API", "WebSockets"],
+  "features": [
+    "Real-time multi-exchange market scanning",
+    "Configurable signal scoring and alerting",
+    "Live automated trade execution engine",
+    "Dashboard for positions, P&L and history"
+  ],
+  "images": ["/assets/images/projects/cryptoalphascanner/1.svg", "/assets/images/projects/cryptoalphascanner/2.svg"],
+  "links": { "github": "https://github.com/manoranjan2050/CryptoAlphaScanner", "demo": "" },
+  "status": "live",
+  "featured": true
+}

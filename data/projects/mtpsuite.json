@@ -1,0 +1,17 @@
+{
+  "slug": "mtpsuite",
+  "name": "MTP Suite Store",
+  "tagline": "Storefront, license management and download hub for the MTP app suite",
+  "description": "MTPsuite.com is the storefront for Manoranjan's desktop and web products — handling downloads, trial licensing through the Kavach license server, and an analytics dashboard, with Razorpay and PayPal payments ready behind feature flags.",
+  "technology": ["Laravel 12", "Filament v3", "Razorpay", "PayPal"],
+  "features": [
+    "Product catalog with trial + licensed downloads",
+    "Kavach-backed license issuing and validation",
+    "Analytics dashboard for downloads and activations",
+    "Payments wired for Razorpay and PayPal"
+  ],
+  "images": ["/assets/images/projects/mtpsuite/1.svg", "/assets/images/projects/mtpsuite/2.svg"],
+  "links": { "github": "", "demo": "https://mtpsuite.com" },
+  "status": "live",
+  "featured": true
+}

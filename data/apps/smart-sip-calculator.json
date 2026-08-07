@@ -1,0 +1,40 @@
+{
+  "slug": "smart-sip-calculator",
+  "name": "Smart SIP Calculator",
+  "tagline": "9 finance calculators for SIP, lumpsum, EMI, retirement and more",
+  "logo": "/assets/images/apps/smart-sip-calculator/logo.svg",
+  "banner": "/assets/images/apps/smart-sip-calculator/banner.svg",
+  "gallery": [
+    "/assets/images/apps/smart-sip-calculator/screen-1.svg",
+    "/assets/images/apps/smart-sip-calculator/screen-2.svg"
+  ],
+  "description": "Smart SIP Calculator bundles nine personal-finance calculators — SIP, lumpsum, step-up SIP, EMI, retirement corpus, inflation, CAGR, PPF and FD — into one clean, ad-supported Android app with shareable, chart-backed results.",
+  "features": [
+    "SIP, step-up SIP and lumpsum growth projections",
+    "EMI calculator with amortization breakdown",
+    "Retirement corpus and inflation-adjusted planning",
+    "PPF, FD and CAGR calculators",
+    "Interactive charts for every result",
+    "Share results as an image"
+  ],
+  "version": "1.0.3",
+  "platform": ["Android"],
+  "downloads": { "apk": "/downloads/smart-sip-calculator/smart-sip-calculator-1.0.3.apk" },
+  "links": {
+    "github": "",
+    "playstore": "",
+    "website": "",
+    "docs": ""
+  },
+  "legal": {
+    "privacy": "/legal/smart-sip-calculator/privacy.html",
+    "terms": "/legal/smart-sip-calculator/terms.html",
+    "support": "/legal/smart-sip-calculator/support.html"
+  },
+  "changelog": [
+    { "version": "1.0.3", "date": "2026-07-20", "notes": ["Fixed real-device crash on low-memory devices", "Added real keystore signing and app icon"] },
+    { "version": "1.0.0", "date": "2026-06-01", "notes": ["Initial release with 9 calculators"] }
+  ],
+  "featured": true,
+  "category": "android"
+}

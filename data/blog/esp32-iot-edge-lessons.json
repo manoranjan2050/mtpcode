@@ -1,0 +1,12 @@
+{
+  "slug": "esp32-iot-edge-lessons",
+  "title": "Lessons from Building an ESP32 Edge Platform for Solar and EV Telemetry",
+  "excerpt": "Moving from a single-purpose inverter monitor (Flin V1) to FlinEdge, a 7-phase architecture for solar, battery and EV hardware.",
+  "date": "2026-05-30",
+  "author": "Manoranjan Das",
+  "category": "IoT",
+  "tags": ["ESP32", "IoT", "Solar", "Firmware"],
+  "coverImage": "/assets/images/blog/esp32-iot-edge.svg",
+  "readMinutes": 8,
+  "bodyHtml": "<p>Flin V1 was a proof of concept: an ESP32 talking RS232 to a Voltronic PI30 inverter, pushing readings somewhere useful. It worked, but it was one device, one protocol, one job.</p><h2>Generalizing the edge platform</h2><p>FlinEdge starts from a different question: what does a reusable edge platform for solar, battery and EV hardware need to support, not just one inverter model. That means a pluggable protocol layer, a consistent telemetry schema regardless of the underlying hardware, and an architecture split into seven phases so each layer — transport, protocol adapters, storage, sync, and control — can be built and tested independently.</p><h2>What carries over from V1</h2><p>The RS232/PI30 experience from Flin V1 directly informed FlinEdge's protocol adapter design: timing quirks, checksum handling and reconnect behavior that only show up after running against real hardware for weeks, not minutes.</p><p>Proof-of-concept firmware earns its keep by surfacing exactly these problems before they're baked into a platform meant to outlast any single inverter model.</p>"
+}

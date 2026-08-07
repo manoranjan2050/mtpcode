@@ -1,0 +1,17 @@
+{
+  "slug": "mtpdeploy",
+  "name": "MTP Deploy",
+  "tagline": "Self-hosted Forge/Ploi-style server deployment panel",
+  "description": "MTP Deploy is a self-hosted server management panel for deploying and monitoring PHP applications — sites, databases, SSL, queues, cron jobs and deployment scripts — without depending on a third-party SaaS panel.",
+  "technology": ["Laravel 12", "Filament v5.7", "MySQL", "SSH"],
+  "features": [
+    "Site provisioning with one-click deploy scripts",
+    "SSL certificate management via Let's Encrypt",
+    "Database, queue worker and cron job management",
+    "20 modules covering the full server lifecycle"
+  ],
+  "images": ["/assets/images/projects/mtpdeploy/1.svg", "/assets/images/projects/mtpdeploy/2.svg"],
+  "links": { "github": "https://github.com/manoranjan2050/mtp-deploy", "demo": "" },
+  "status": "live",
+  "featured": true
+}

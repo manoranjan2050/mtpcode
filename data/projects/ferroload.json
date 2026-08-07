@@ -1,0 +1,16 @@
+{
+  "slug": "ferroload",
+  "name": "Ferroload",
+  "tagline": "Rust BitTorrent client with a full-featured speed engine",
+  "description": "Ferroload is an async BitTorrent client written in Rust, built around a persistent torrent engine with eight speed-optimization features and configuration that survives restarts.",
+  "technology": ["Rust", "Tokio", "Async I/O"],
+  "features": [
+    "Async torrent engine with 8 speed-optimization features",
+    "Torrents and engine config persist across restarts",
+    "CLI interface via ferroload-cli"
+  ],
+  "images": ["/assets/images/projects/ferroload/1.svg"],
+  "links": { "github": "https://github.com/manoranjan2050/Ferroload", "demo": "" },
+  "status": "in-development",
+  "featured": false
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "building-offline-first-android-apps",
+  "title": "Building Offline-First Android Apps for Indian Small Businesses",
+  "excerpt": "Why Calc2Pay and ThermalDesk work with zero backend, and the design decisions that make offline-first the right default for shop-counter software.",
+  "date": "2026-07-15",
+  "author": "Manoranjan Das",
+  "category": "Mobile",
+  "tags": ["Android", "Flutter", "Offline-first", "Small Business"],
+  "coverImage": "/assets/images/blog/offline-first-android.svg",
+  "readMinutes": 6,
+  "bodyHtml": "<p>Most billing and printing apps I build for shop owners share one hard constraint: the shop's internet connection cannot be trusted. A UPI QR code that fails to generate because a cloud API timed out is not an edge case at the counter — it's a Tuesday.</p><h2>Design for zero backend first</h2><p>Both Calc2Pay and ThermalDesk store everything on-device and never require an account to function. Bill history, printer profiles and calculator state all live in local storage. Nothing about the core flow depends on a server responding.</p><h2>What this buys you</h2><ul><li>Instant startup — no auth screen, no loading spinner blocking the first bill</li><li>Zero recurring hosting cost for a free or low-price app</li><li>One less thing to break during a power cut or dead zone</li></ul><p>The tradeoff is that sync and multi-device features need to be opt-in additions layered on top later, not baked into the critical path from day one.</p>"
+}

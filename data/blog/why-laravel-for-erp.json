@@ -1,0 +1,12 @@
+{
+  "slug": "why-laravel-for-erp",
+  "title": "Why I Keep Reaching for Laravel to Build ERP Systems",
+  "excerpt": "After shipping pharmacy, retail and deployment-panel ERPs on Laravel, here's what keeps it as the default choice over a JS-framework-first stack.",
+  "date": "2026-06-28",
+  "author": "Manoranjan Das",
+  "category": "Backend",
+  "tags": ["Laravel", "ERP", "PHP", "Architecture"],
+  "coverImage": "/assets/images/blog/laravel-erp.svg",
+  "readMinutes": 7,
+  "bodyHtml": "<p>MTP Pharma ERP, MTP Deploy and MTPsuite.com are all Laravel under the hood. That's not inertia — every one of these products lives or dies on boring things: migrations that don't corrupt data, background jobs that actually retry, and an admin UI (Filament, in most of these) that I don't have to hand-roll.</p><h2>The parts that matter for ERP</h2><p>Batch-wise inventory with expiry tracking needs transactional integrity across several tables at once. Eloquent plus database transactions makes that straightforward to reason about, and migrations give me a reviewable history of every schema change a client's data has been through.</p><h2>Filament as the escape hatch</h2><p>For admin-heavy tools like MTP Deploy's 20 modules, Filament turns weeks of CRUD-screen work into days, freeing time for the actually hard parts — SSH orchestration, SSL renewal, deploy script safety.</p><p>None of this rules out a JS frontend where it earns its complexity. But for backend-heavy line-of-business software, Laravel keeps winning on how fast I can ship something a shop owner will trust with their inventory.</p>"
+}

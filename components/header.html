@@ -1,0 +1,48 @@
+<header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+  <nav class="container-page" aria-label="Primary">
+    <div id="nav-inner" class="flex items-center justify-between rounded-2xl px-4 py-3 sm:px-6 mt-3 transition-all duration-300">
+      <a href="/index.html" class="flex items-center gap-2 shrink-0" aria-label="MTPCode home">
+        <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary-500 via-secondary-500 to-accent-500 font-display font-bold text-white shadow-glow">M</span>
+        <span class="font-display text-lg font-bold text-dark-900 dark:text-white">MTPCode</span>
+      </a>
+
+      <ul class="hidden lg:flex items-center gap-1 font-medium text-sm">
+        <li><a data-nav-link href="/index.html" class="nav-link">Home</a></li>
+        <li><a data-nav-link href="/apps.html" class="nav-link">Apps</a></li>
+        <li><a data-nav-link href="/projects.html" class="nav-link">Projects</a></li>
+        <li><a data-nav-link href="/blog.html" class="nav-link">Blog</a></li>
+        <li><a data-nav-link href="/downloads.html" class="nav-link">Downloads</a></li>
+        <li><a data-nav-link href="/docs/index.html" class="nav-link">Docs</a></li>
+        <li><a data-nav-link href="/about.html" class="nav-link">About</a></li>
+        <li><a data-nav-link href="/contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="flex items-center gap-2">
+        <button id="theme-toggle" type="button" aria-label="Toggle dark mode"
+          class="flex h-10 w-10 items-center justify-center rounded-full text-dark-700 hover:bg-dark-900/5 dark:text-slate-200 dark:hover:bg-white/10 transition-colors">
+          <i data-lucide="sun" class="h-5 w-5 hidden dark:block"></i>
+          <i data-lucide="moon" class="h-5 w-5 block dark:hidden"></i>
+        </button>
+        <a href="/contact.html" class="btn-primary hidden sm:inline-flex !px-5 !py-2.5 text-sm">Hire Me</a>
+        <button id="mobile-menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false"
+          class="flex h-10 w-10 items-center justify-center rounded-full text-dark-700 hover:bg-dark-900/5 dark:text-slate-200 dark:hover:bg-white/10 lg:hidden transition-colors">
+          <i data-lucide="menu" class="h-5 w-5"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="lg:hidden hidden mt-2 rounded-2xl border border-dark-900/10 bg-white/95 backdrop-blur-xl p-4 shadow-glass dark:border-white/10 dark:bg-dark-900/95">
+      <ul class="flex flex-col gap-1 font-medium text-sm">
+        <li><a data-nav-link href="/index.html" class="mobile-nav-link">Home</a></li>
+        <li><a data-nav-link href="/apps.html" class="mobile-nav-link">Apps</a></li>
+        <li><a data-nav-link href="/projects.html" class="mobile-nav-link">Projects</a></li>
+        <li><a data-nav-link href="/blog.html" class="mobile-nav-link">Blog</a></li>
+        <li><a data-nav-link href="/downloads.html" class="mobile-nav-link">Downloads</a></li>
+        <li><a data-nav-link href="/docs/index.html" class="mobile-nav-link">Docs</a></li>
+        <li><a data-nav-link href="/about.html" class="mobile-nav-link">About</a></li>
+        <li><a data-nav-link href="/contact.html" class="mobile-nav-link">Contact</a></li>
+        <li class="pt-2"><a href="/contact.html" class="btn-primary w-full">Hire Me</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>

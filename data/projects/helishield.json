@@ -1,0 +1,16 @@
+{
+  "slug": "helishield",
+  "name": "Helishield",
+  "tagline": "Industrial heat-protection PPE brand site",
+  "description": "Helishield.com is the marketing and catalog site for an industrial heat-protection PPE brand — product pages, specifications, enquiry forms and content, built for search visibility and fast load times.",
+  "technology": ["Laravel 12", "Tailwind CSS"],
+  "features": [
+    "Full product catalog with specification sheets",
+    "Enquiry and quote request flow",
+    "SEO-optimized content pages"
+  ],
+  "images": ["/assets/images/projects/helishield/1.svg", "/assets/images/projects/helishield/2.svg"],
+  "links": { "github": "", "demo": "https://helishield.com" },
+  "status": "live",
+  "featured": true
+}

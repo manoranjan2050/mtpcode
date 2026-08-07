@@ -1,0 +1,41 @@
+{
+  "slug": "calc2pay",
+  "name": "Calc2Pay",
+  "tagline": "Billing calculator with instant UPI payment QR generation",
+  "logo": "/assets/images/apps/calc2pay/logo.svg",
+  "banner": "/assets/images/apps/calc2pay/banner.svg",
+  "gallery": [
+    "/assets/images/apps/calc2pay/screen-1.svg",
+    "/assets/images/apps/calc2pay/screen-2.svg",
+    "/assets/images/apps/calc2pay/screen-3.svg"
+  ],
+  "description": "Calc2Pay is a fast, offline-first billing calculator for small shop counters. Ring up an itemized bill, apply discounts, then generate a UPI payment QR code instantly — no card machine, no backend, no monthly fee.",
+  "features": [
+    "Itemized bill builder with quantity, discount and tax",
+    "Instant UPI QR code generation for any payable amount",
+    "Bill history stored locally on-device",
+    "Share bill as image or text in one tap",
+    "Works fully offline, no account required",
+    "Light and dark themes"
+  ],
+  "version": "1.2.0",
+  "platform": ["Android"],
+  "downloads": { "apk": "/downloads/calc2pay/calc2pay-1.2.0.apk" },
+  "links": {
+    "github": "https://github.com/manoranjan2050/Calc2Pay",
+    "playstore": "",
+    "website": "",
+    "docs": ""
+  },
+  "legal": {
+    "privacy": "/legal/calc2pay/privacy.html",
+    "terms": "/legal/calc2pay/terms.html",
+    "support": "/legal/calc2pay/support.html"
+  },
+  "changelog": [
+    { "version": "1.2.0", "date": "2026-08-06", "notes": ["Fixed two real-device bugs found in on-device testing", "Improved QR generation speed"] },
+    { "version": "1.0.0", "date": "2026-07-10", "notes": ["Initial release: billing calculator + UPI QR payments"] }
+  ],
+  "featured": true,
+  "category": "android"
+}

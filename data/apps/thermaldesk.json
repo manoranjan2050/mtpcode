@@ -17,8 +17,12 @@
     "Test print and printer diagnostics"
   ],
   "version": "1.1.0",
-  "platform": ["Android"],
-  "downloads": { "apk": "/downloads/thermaldesk/thermaldesk-1.1.0.apk" },
+  "platform": [
+    "Android"
+  ],
+  "downloads": {
+    "apk": "/downloads/thermaldesk/thermaldesk-1.1.0.apk"
+  },
   "links": {
     "github": "https://github.com/manoranjan2050/ThermalDesk",
     "playstore": "",
@@ -28,11 +32,27 @@
   "legal": {
     "privacy": "/legal/thermaldesk/privacy.html",
     "terms": "/legal/thermaldesk/terms.html",
+    "disclaimer": "/legal/thermaldesk/disclaimer.html",
+    "cookiePolicy": "/legal/thermaldesk/cookie-policy.html",
+    "dataDeletion": "/legal/thermaldesk/data-deletion.html",
     "support": "/legal/thermaldesk/support.html"
   },
   "changelog": [
-    { "version": "1.1.0", "date": "2026-08-07", "notes": ["Real-device verification pass, fixed 2 printer-reconnect bugs", "Live AdMob integration"] },
-    { "version": "1.0.0", "date": "2026-06-18", "notes": ["Initial release with Bluetooth + USB ESC/POS support"] }
+    {
+      "version": "1.1.0",
+      "date": "2026-08-07",
+      "notes": [
+        "Real-device verification pass, fixed 2 printer-reconnect bugs",
+        "Live AdMob integration"
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "date": "2026-06-18",
+      "notes": [
+        "Initial release with Bluetooth + USB ESC/POS support"
+      ]
+    }
   ],
   "featured": true,
   "category": "android"

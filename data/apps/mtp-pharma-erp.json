@@ -19,8 +19,13 @@
     "Role-based staff accounts"
   ],
   "version": "1.8.0",
-  "platform": ["Web", "Desktop (Windows)"],
-  "downloads": { "zip": "/downloads/mtp-pharma-erp/mtp-pharma-erp-1.8.0-desktop.zip" },
+  "platform": [
+    "Web",
+    "Desktop (Windows)"
+  ],
+  "downloads": {
+    "zip": "/downloads/mtp-pharma-erp/mtp-pharma-erp-1.8.0-desktop.zip"
+  },
   "links": {
     "github": "",
     "playstore": "",
@@ -30,11 +35,26 @@
   "legal": {
     "privacy": "/legal/mtp-pharma-erp/privacy.html",
     "terms": "/legal/mtp-pharma-erp/terms.html",
+    "disclaimer": "/legal/mtp-pharma-erp/disclaimer.html",
+    "cookiePolicy": "/legal/mtp-pharma-erp/cookie-policy.html",
+    "dataDeletion": "/legal/mtp-pharma-erp/data-deletion.html",
     "support": "/legal/mtp-pharma-erp/support.html"
   },
   "changelog": [
-    { "version": "1.8.0", "date": "2026-08-01", "notes": ["Added supplier ledger module"] },
-    { "version": "1.7.1", "date": "2026-06-15", "notes": ["Rebranded to MTP Pharma ERP across web and desktop builds"] }
+    {
+      "version": "1.8.0",
+      "date": "2026-08-01",
+      "notes": [
+        "Added supplier ledger module"
+      ]
+    },
+    {
+      "version": "1.7.1",
+      "date": "2026-06-15",
+      "notes": [
+        "Rebranded to MTP Pharma ERP across web and desktop builds"
+      ]
+    }
   ],
   "featured": true,
   "category": "erp"

@@ -19,8 +19,12 @@
     "Light and dark themes"
   ],
   "version": "1.2.0",
-  "platform": ["Android"],
-  "downloads": { "apk": "/downloads/calc2pay/calc2pay-1.2.0.apk" },
+  "platform": [
+    "Android"
+  ],
+  "downloads": {
+    "apk": "/downloads/calc2pay/calc2pay-1.2.0.apk"
+  },
   "links": {
     "github": "https://github.com/manoranjan2050/Calc2Pay",
     "playstore": "",
@@ -30,11 +34,27 @@
   "legal": {
     "privacy": "/legal/calc2pay/privacy.html",
     "terms": "/legal/calc2pay/terms.html",
+    "disclaimer": "/legal/calc2pay/disclaimer.html",
+    "cookiePolicy": "/legal/calc2pay/cookie-policy.html",
+    "dataDeletion": "/legal/calc2pay/data-deletion.html",
     "support": "/legal/calc2pay/support.html"
   },
   "changelog": [
-    { "version": "1.2.0", "date": "2026-08-06", "notes": ["Fixed two real-device bugs found in on-device testing", "Improved QR generation speed"] },
-    { "version": "1.0.0", "date": "2026-07-10", "notes": ["Initial release: billing calculator + UPI QR payments"] }
+    {
+      "version": "1.2.0",
+      "date": "2026-08-06",
+      "notes": [
+        "Fixed two real-device bugs found in on-device testing",
+        "Improved QR generation speed"
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "date": "2026-07-10",
+      "notes": [
+        "Initial release: billing calculator + UPI QR payments"
+      ]
+    }
   ],
   "featured": true,
   "category": "android"

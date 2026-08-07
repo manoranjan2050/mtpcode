@@ -28,9 +28,16 @@ function linkButtons(links = {}) {
 }
 
 function legalLinks(legal = {}) {
-  const labels = { privacy: 'Privacy Policy', terms: 'Terms of Service', support: 'Support' };
+  const labels = {
+    privacy: 'Privacy Policy',
+    terms: 'Terms of Service',
+    disclaimer: 'Disclaimer',
+    cookiePolicy: 'Cookie Policy',
+    dataDeletion: 'Data Deletion',
+    support: 'Support',
+  };
   return Object.entries(legal)
-    .map(([key, url]) => `<a href="${esc(url)}" class="footer-link block">${labels[key] ?? key}</a>`)
+    .map(([key, url]) => `<a href="${esc(url)}" class="block text-sm text-dark-700/70 transition-colors hover:text-primary-600 dark:text-slate-400 dark:hover:text-primary-400">${labels[key] ?? key}</a>`)
     .join('');
 }
 

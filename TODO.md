@@ -62,9 +62,11 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done
 - [x] Placeholder release assets under `/downloads/**` (clearly marked dev-only; swap for real signed builds before launch)
 - [x] Verified in browser: filters and release-notes disclosure render with no console errors
 
-## Phase 9 — Legal Pages
-- [ ] Site-wide privacy.html / terms.html / 404.html
-- [ ] Per-app legal pages under `/legal/<slug>/` (privacy, terms, disclaimer, cookie-policy, data-deletion, support)
+## Phase 9 — Legal Pages ✅
+- [x] Site-wide privacy.html / terms.html / 404.html
+- [x] Per-app legal pages under `/legal/<slug>/` (privacy, terms, disclaimer, cookie-policy, data-deletion, support) for all 4 apps — real, app-specific content (permissions, AdMob disclosure, finance disclaimer for Smart SIP Calculator, Kavach licensing note for MTP Pharma ERP)
+- [x] App JSON `legal` field updated to link all 6 docs; app-detail.js renders them
+- [x] Verified in browser: site 404 page and a per-app privacy page render with no console errors
 
 ## Phase 10 — SEO
 - [ ] Meta tags, Open Graph, Twitter Cards per page

@@ -56,9 +56,11 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done
 - [x] Related articles logic (same-category, falls back to latest others)
 - [x] Verified in browser: search filtering and a detail page with related articles render with no console errors
 
-## Phase 8 — Downloads
-- [ ] `downloads.html` central download center (APK/ZIP/PDF/firmware)
-- [ ] Release notes per item
+## Phase 8 — Downloads ✅
+- [x] `downloads.html` central download center (APK/ZIP/PDF/firmware) with type filters
+- [x] Release notes per item (expandable), `data/downloads.json`
+- [x] Placeholder release assets under `/downloads/**` (clearly marked dev-only; swap for real signed builds before launch)
+- [x] Verified in browser: filters and release-notes disclosure render with no console errors
 
 ## Phase 9 — Legal Pages
 - [ ] Site-wide privacy.html / terms.html / 404.html

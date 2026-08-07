@@ -1,0 +1,74 @@
+[
+  {
+    "id": "calc2pay-apk",
+    "name": "Calc2Pay",
+    "type": "apk",
+    "version": "1.2.0",
+    "platform": "Android 8.0+",
+    "size": "9.4 MB",
+    "date": "2026-08-06",
+    "url": "/downloads/calc2pay/calc2pay-1.2.0.apk",
+    "appLink": "/apps/calc2pay.html",
+    "notes": ["Fixed two real-device bugs found in on-device testing", "Improved QR generation speed"]
+  },
+  {
+    "id": "thermaldesk-apk",
+    "name": "ThermalDesk",
+    "type": "apk",
+    "version": "1.1.0",
+    "platform": "Android 7.0+",
+    "size": "11.2 MB",
+    "date": "2026-08-07",
+    "url": "/downloads/thermaldesk/thermaldesk-1.1.0.apk",
+    "appLink": "/apps/thermaldesk.html",
+    "notes": ["Real-device verification pass, fixed 2 printer-reconnect bugs", "Live AdMob integration"]
+  },
+  {
+    "id": "smart-sip-calculator-apk",
+    "name": "Smart SIP Calculator",
+    "type": "apk",
+    "version": "1.0.3",
+    "platform": "Android 7.0+",
+    "size": "7.8 MB",
+    "date": "2026-07-20",
+    "url": "/downloads/smart-sip-calculator/smart-sip-calculator-1.0.3.apk",
+    "appLink": "/apps/smart-sip-calculator.html",
+    "notes": ["Fixed real-device crash on low-memory devices", "Added real keystore signing and app icon"]
+  },
+  {
+    "id": "mtp-pharma-erp-zip",
+    "name": "MTP Pharma ERP — Desktop Build",
+    "type": "zip",
+    "version": "1.8.0",
+    "platform": "Windows 10/11",
+    "size": "84 MB",
+    "date": "2026-08-01",
+    "url": "/downloads/mtp-pharma-erp/mtp-pharma-erp-1.8.0-desktop.zip",
+    "appLink": "/apps/mtp-pharma-erp.html",
+    "notes": ["Added supplier ledger module", "phpdesktop + MariaDB offline build"]
+  },
+  {
+    "id": "flinedge-firmware",
+    "name": "FlinEdge Base Firmware",
+    "type": "firmware",
+    "version": "0.3.0-alpha",
+    "platform": "ESP32",
+    "size": "1.6 MB",
+    "date": "2026-07-05",
+    "url": "/downloads/flinedge/flinedge-firmware-0.3.0-alpha.bin",
+    "appLink": "https://github.com/manoranjan2050/FlinEdge",
+    "notes": ["Early alpha build covering transport + telemetry layers", "Protocol adapters still in development"]
+  },
+  {
+    "id": "mtp-pharma-erp-guide",
+    "name": "MTP Pharma ERP — User Guide",
+    "type": "pdf",
+    "version": "1.8",
+    "platform": "All",
+    "size": "2.1 MB",
+    "date": "2026-08-01",
+    "url": "/downloads/mtp-pharma-erp/mtp-pharma-erp-user-guide.pdf",
+    "appLink": "/apps/mtp-pharma-erp.html",
+    "notes": ["Setup, billing, inventory and supplier ledger walkthrough"]
+  }
+]

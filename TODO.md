@@ -49,11 +49,12 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done
 - [x] Project detail sections (screenshots, tech badges, GitHub/demo links, status)
 - [x] Verified in browser: listing filters and a detail page render with no console errors
 
-## Phase 7 — Blog
-- [ ] Markdown-based post pipeline (author in `/data/blog/*.md` or `.json` + rendered HTML)
-- [ ] `blog.html` listing with categories/tags/search
-- [ ] Post detail page template
-- [ ] Related articles logic
+## Phase 7 — Blog ✅
+- [x] Post content pipeline (`/data/blog/*.json` with pre-rendered `bodyHtml`)
+- [x] `blog.html` listing with category filter + live search
+- [x] Post detail page template (`assets/js/blog-detail.js`) with tags
+- [x] Related articles logic (same-category, falls back to latest others)
+- [x] Verified in browser: search filtering and a detail page with related articles render with no console errors
 
 ## Phase 8 — Downloads
 - [ ] `downloads.html` central download center (APK/ZIP/PDF/firmware)

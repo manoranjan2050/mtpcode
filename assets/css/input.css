@@ -168,6 +168,26 @@
     }
   }
 
+  /* ---------- Article body ---------- */
+  .prose-article {
+    @apply text-dark-800 dark:text-slate-300;
+  }
+  .prose-article p {
+    @apply mb-5 leading-relaxed;
+  }
+  .prose-article h2 {
+    @apply mb-4 mt-10 font-display text-2xl font-bold text-dark-900 dark:text-white;
+  }
+  .prose-article h3 {
+    @apply mb-3 mt-8 font-display text-xl font-bold text-dark-900 dark:text-white;
+  }
+  .prose-article ul {
+    @apply mb-5 list-inside list-disc space-y-2;
+  }
+  .prose-article a {
+    @apply text-primary-600 underline decoration-primary-500/40 underline-offset-2 hover:decoration-primary-500 dark:text-primary-400;
+  }
+
   /* ---------- Filter chips ---------- */
   .filter-chip {
     @apply rounded-full border border-dark-900/10 px-4 py-2 text-sm font-medium text-dark-700

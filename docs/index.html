@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documentation — MTPCode</title>
+  <meta name="description" content="Documentation hub for MTPCode products — setup guides, API references and troubleshooting for every app and project." />
+  <link rel="canonical" href="https://mtpcode.com/docs/index.html" />
+  <meta name="theme-color" content="#0F172A" />
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Documentation — MTPCode" />
+  <meta property="og:description" content="Setup guides and references for every MTPCode product." />
+  <meta property="og:url" content="https://mtpcode.com/docs/index.html" />
+  <meta property="og:image" content="https://mtpcode.com/assets/images/og/home.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body class="overflow-x-hidden bg-white dark:bg-dark-950">
+  <div id="page-loader"><div class="loader-ring"></div></div>
+  <div data-include="/components/header.html"></div>
+
+  <main>
+    <section class="relative overflow-hidden bg-gradient-hero pb-16 pt-40 sm:pt-48">
+      <div class="pointer-events-none absolute inset-0 -z-10">
+        <div class="bg-blob left-[-10%] top-0 h-96 w-96 bg-accent-500"></div>
+        <div class="bg-blob right-[-5%] top-20 h-96 w-96 bg-primary-600"></div>
+      </div>
+      <div class="container-page text-center">
+        <span class="eyebrow bg-white/10 text-white ring-1 ring-inset ring-white/20">Documentation</span>
+        <h1 class="mt-4 text-balance font-display text-4xl font-extrabold text-white sm:text-5xl">Docs &amp; Guides</h1>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-300">Setup guides, feature walkthroughs and troubleshooting for every MTPCode product.</p>
+      </div>
+    </section>
+
+    <section class="section !pt-14">
+      <div class="container-page">
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <a href="/apps/calc2pay.html" data-aos="fade-up" class="card p-6">
+            <i data-lucide="calculator" class="h-6 w-6 text-primary-600 dark:text-primary-400"></i>
+            <p class="mt-3 font-display font-bold text-dark-900 dark:text-white">Calc2Pay</p>
+            <p class="mt-1 text-sm text-dark-700/70 dark:text-slate-400">Setup, billing flow and UPI QR generation.</p>
+          </a>
+          <a href="/apps/thermaldesk.html" data-aos="fade-up" class="card p-6">
+            <i data-lucide="printer" class="h-6 w-6 text-primary-600 dark:text-primary-400"></i>
+            <p class="mt-3 font-display font-bold text-dark-900 dark:text-white">ThermalDesk</p>
+            <p class="mt-1 text-sm text-dark-700/70 dark:text-slate-400">Printer pairing, templates and troubleshooting.</p>
+          </a>
+          <a href="/apps/smart-sip-calculator.html" data-aos="fade-up" class="card p-6">
+            <i data-lucide="line-chart" class="h-6 w-6 text-primary-600 dark:text-primary-400"></i>
+            <p class="mt-3 font-display font-bold text-dark-900 dark:text-white">Smart SIP Calculator</p>
+            <p class="mt-1 text-sm text-dark-700/70 dark:text-slate-400">How each of the 9 calculators works.</p>
+          </a>
+          <a href="/apps/mtp-pharma-erp.html" data-aos="fade-up" class="card p-6">
+            <i data-lucide="pill" class="h-6 w-6 text-primary-600 dark:text-primary-400"></i>
+            <p class="mt-3 font-display font-bold text-dark-900 dark:text-white">MTP Pharma ERP</p>
+            <p class="mt-1 text-sm text-dark-700/70 dark:text-slate-400">Installation, billing, inventory and licensing.</p>
+          </a>
+          <a href="/projects/mtpdeploy.html" data-aos="fade-up" class="card p-6">
+            <i data-lucide="server" class="h-6 w-6 text-primary-600 dark:text-primary-400"></i>
+            <p class="mt-3 font-display font-bold text-dark-900 dark:text-white">MTP Deploy</p>
+            <p class="mt-1 text-sm text-dark-700/70 dark:text-slate-400">Server provisioning and deployment modules.</p>
+          </a>
+          <a href="/projects/cryptoalphascanner.html" data-aos="fade-up" class="card p-6">
+            <i data-lucide="activity" class="h-6 w-6 text-primary-600 dark:text-primary-400"></i>
+            <p class="mt-3 font-display font-bold text-dark-900 dark:text-white">Crypto Alpha Scanner</p>
+            <p class="mt-1 text-sm text-dark-700/70 dark:text-slate-400">Scanner configuration and trading engine setup.</p>
+          </a>
+        </div>
+
+        <div data-aos="fade-up" class="mt-14 card-glass p-8 text-center">
+          <h2 class="font-display text-xl font-bold text-dark-900 dark:text-white">Can't find what you need?</h2>
+          <p class="mx-auto mt-2 max-w-md text-sm text-dark-700/70 dark:text-slate-400">Each app page links to its own detailed docs, changelog and support page. Or reach out directly.</p>
+          <a href="/contact.html" class="btn-primary mt-5 inline-flex">Contact Support</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="/components/footer.html"></div>
+  <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>

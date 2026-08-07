@@ -68,11 +68,13 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done
 - [x] App JSON `legal` field updated to link all 6 docs; app-detail.js renders them
 - [x] Verified in browser: site 404 page and a per-app privacy page render with no console errors
 
-## Phase 10 — SEO
-- [ ] Meta tags, Open Graph, Twitter Cards per page
-- [ ] JSON-LD structured data (Organization, Person, SoftwareApplication, BlogPosting)
-- [ ] robots.txt, sitemap.xml
-- [ ] Web manifest + favicons
+## Phase 10 — SEO ✅
+- [x] Added missing core pages first: about.html, contact.html, docs/index.html (were linked from nav but didn't exist)
+- [x] Meta tags, Open Graph, Twitter Cards on all 22 top-level pages (canonical, description, og:*, twitter:card)
+- [x] JSON-LD structured data: Person (home), AboutPage (about), SoftwareApplication (4 app pages), BlogPosting (3 posts)
+- [x] robots.txt (disallows `/legal/`) + sitemap.xml (22 URLs)
+- [x] Web manifest (site.webmanifest) + full favicon set generated from source SVG (16x16, 32x32, apple-touch-icon, 192/512 PWA icons, maskable icon)
+- [x] Verified in browser: manifest, robots.txt served correctly; JSON-LD pages load with no console errors
 
 ## Phase 11 — Performance
 - [ ] Image lazy-loading, asset optimization

@@ -10,27 +10,50 @@ Static multi-page site built with Vite. No server, no database. Content lives in
 /                     Page entry points (index.html, apps.html, projects.html, blog.html,
                        downloads.html, about.html, contact.html, privacy.html, terms.html, 404.html)
 /assets
-  /css                Tailwind entry (input.css) + compiled output
-  /js                 ES modules: partials.js, theme.js, apps-renderer.js, projects-renderer.js,
-                       blog-renderer.js, stats.js, animations.js, main.js (per-page entry glue)
-  /images             Site imagery, app screenshots, project screenshots
-  /icons              Favicons, app icons, manifest icons
-  /fonts              Self-hosted font fallbacks (if any; primary via Google Fonts CDN)
-/data
-  site.json           Global site metadata, stats, tech stack, social links
-  testimonials.json   Testimonials list
-  /apps/<slug>.json   One file per app (see schema below)
-  /projects/<slug>.json  One file per project
-  /blog/<slug>.json   One file per blog post (frontmatter-style JSON + HTML body or markdown body)
-/components           HTML partials: header.html, footer.html, seo-meta.html (reference), etc.
-/apps/<slug>.html     App detail pages (or single template + query param — TBD in Phase 5)
-/projects/<slug>.html Project detail pages
-/blog/<slug>.html     Blog post pages
+  /css                Tailwind entry (input.css) — bundled by Vite, not in public/
+  /js                 ES modules: partials.js, theme.js, icons.js, renderers.js, main.js,
+                       + per-page entries (home.js, apps-listing.js, app-detail.js, etc.)
+                       — bundled by Vite, not in public/
+/public               Vite's publicDir — copied byte-for-byte to the site root on build.
+                       Anything referenced only by a runtime fetch() or a plain absolute
+                       <a href>/<img src> string (never a static <script>/<link> Vite can
+                       trace, and never a JS `import`) MUST live here or it silently won't
+                       exist in `dist/`. See "Why /public" below.
+  /components          HTML partials: header.html, footer.html — fetched at runtime by
+                       assets/js/partials.js via fetch('/components/header.html')
+  /data                site.json, testimonials.json, downloads.json,
+                       /apps/<slug>.json, /projects/<slug>.json, /blog/<slug>.json
+                       — all fetched at runtime, never statically imported
+  /downloads           Release assets (APK/ZIP/firmware/PDF), linked via <a href> strings
+  /assets/images       App/project/blog/testimonial imagery, referenced via JSON fields
+                       and JS-generated <img src> strings
+  /assets/icons        Favicons + PWA icons, referenced via absolute <link href> and from
+                       inside site.webmanifest's own JSON (which Vite can't parse for assets)
+  site.webmanifest, robots.txt, sitemap.xml
+/apps/<slug>.html     App detail pages — explicit Vite HTML entries (see vite.config.js)
+/projects/<slug>.html Project detail pages — explicit Vite HTML entries
+/blog/<slug>.html     Blog post pages — explicit Vite HTML entries
 /legal/<app-slug>/    Per-app privacy.html, terms.html, disclaimer.html, cookie-policy.html,
-                       data-deletion.html, support.html
-/downloads            Download center assets/index
-/docs                 Public documentation pages
+                       data-deletion.html, support.html — explicit Vite HTML entries
+/docs                 Public documentation pages — explicit Vite HTML entry
 ```
+
+### Why `/public`
+
+Vite's production build only includes files that are either (a) a Rollup HTML input
+(the root-level and `apps/projects/blog/legal/docs` `*.html` files, wired up in
+`vite.config.js`), (b) reachable via a static `<script type="module" src>` / `import`
+Vite can trace, or (c) sitting in the `public/` directory, which is copied to `dist/`
+verbatim and untouched (no hashing, no rewriting).
+
+Everything in this site that's read via `fetch()` at runtime (partials, JSON data) or
+referenced only as a literal string (JSON `logo`/`banner` fields, download `<a href>`,
+the icon paths *inside* `site.webmanifest`) is invisible to Vite's static analysis. A
+build that leaves those files outside `public/` will look correct in `npm run dev`
+(which just serves the whole project root) and then 404 everything — including the
+header/footer partials — the moment you run `npm run build` + `vite preview` or deploy.
+**Always verify with a production build, not just the dev server** (see Phase 11 in
+TODO.md for how this was caught).
 
 ## Data schemas
 

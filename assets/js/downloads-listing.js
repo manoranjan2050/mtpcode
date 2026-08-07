@@ -1,5 +1,5 @@
 import './main.js';
-import { createIcons, icons } from 'lucide';
+import { renderIcons } from './icons.js';
 import { fetchJson } from './renderers.js';
 import { refreshAOS } from './animations.js';
 
@@ -71,7 +71,7 @@ function renderFilters(items, root) {
 
 function renderGrid(items, root) {
   root.innerHTML = items.length ? items.map(downloadCard).join('') : `<p class="col-span-full text-center text-dark-700/60 dark:text-slate-400">Nothing here yet.</p>`;
-  createIcons({ icons });
+  renderIcons();
   refreshAOS();
 }
 

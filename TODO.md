@@ -76,10 +76,19 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done
 - [x] Web manifest (site.webmanifest) + full favicon set generated from source SVG (16x16, 32x32, apple-touch-icon, 192/512 PWA icons, maskable icon)
 - [x] Verified in browser: manifest, robots.txt served correctly; JSON-LD pages load with no console errors
 
-## Phase 11 — Performance
-- [ ] Image lazy-loading, asset optimization
-- [ ] Lighthouse pass (target 90+ across categories)
-- [ ] Bundle/code-split check via Vite build output
+## Phase 11 — Performance ✅
+- [x] Image lazy-loading (`loading="lazy"` on all non-hero `<img>`)
+- [x] lucide icon tree-shaking: switched from `import { icons } from 'lucide'` to a curated
+      `assets/js/icons.js` with named PascalCase imports — shared JS bundle dropped from
+      **685.83 kB → 109.80 kB** (gzip 113.55 kB → 39.25 kB), Vite's chunk-size warning gone
+- [x] **Found and fixed a real production-build bug via `npm run build && vite preview`**:
+      `/components`, `/data`, `/downloads`, `/assets/images`, `/assets/icons`,
+      `site.webmanifest`, `robots.txt`, `sitemap.xml` were outside Vite's `public/`
+      convention, so the production build silently shipped without header/footer/data —
+      worked fine in `npm run dev` (which serves the whole root) but broken in prod. Moved
+      them all under `/public/**`, preserving URL paths. See ARCHITECTURE.md "Why /public".
+- [x] Verified via `vite preview` (production build): all sections render, 78/78 icons
+      resolve, no console errors, images/downloads/manifest all serve correctly
 
 ## Phase 12 — GitHub Pages Deployment
 - [ ] GitHub Actions workflow to build + deploy to Pages

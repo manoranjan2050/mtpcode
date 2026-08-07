@@ -1,14 +1,10 @@
 import '../css/input.css';
-import { createIcons, icons } from 'lucide';
+import { renderIcons } from './icons.js';
 import { loadPartials, markActiveNavLinks } from './partials.js';
 import { initTheme, toggleTheme } from './theme.js';
 import { initAOS, animateCounters, initPageLoader } from './animations.js';
 
 initTheme();
-
-function renderIcons() {
-  createIcons({ icons });
-}
 
 function wireHeader() {
   const header = document.getElementById('site-header');

@@ -1,5 +1,5 @@
 import './main.js';
-import { createIcons, icons } from 'lucide';
+import { renderIcons } from './icons.js';
 import { fetchCollection, appCard } from './renderers.js';
 import { refreshAOS } from './animations.js';
 
@@ -18,7 +18,7 @@ function renderFilters(apps, root) {
 
 function renderGrid(apps, root) {
   root.innerHTML = apps.length ? apps.map(appCard).join('') : `<p class="col-span-full text-center text-dark-700/60 dark:text-slate-400">No apps in this category yet.</p>`;
-  createIcons({ icons });
+  renderIcons();
   refreshAOS();
 }
 

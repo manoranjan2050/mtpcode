@@ -1,5 +1,5 @@
 import './main.js';
-import { createIcons, icons } from 'lucide';
+import { renderIcons } from './icons.js';
 import { fetchCollection, projectCard } from './renderers.js';
 import { refreshAOS } from './animations.js';
 
@@ -14,7 +14,7 @@ function renderFilters(projects, root) {
 
 function renderGrid(projects, root) {
   root.innerHTML = projects.length ? projects.map(projectCard).join('') : `<p class="col-span-full text-center text-dark-700/60 dark:text-slate-400">No projects in this status yet.</p>`;
-  createIcons({ icons });
+  renderIcons();
   refreshAOS();
 }
 

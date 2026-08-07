@@ -1,5 +1,5 @@
 import './main.js';
-import { createIcons, icons } from 'lucide';
+import { renderIcons } from './icons.js';
 import { fetchCollection, blogCard } from './renderers.js';
 import { refreshAOS } from './animations.js';
 
@@ -28,7 +28,7 @@ function applyFilters() {
 function renderGrid(root) {
   const posts = applyFilters();
   root.innerHTML = posts.length ? posts.map(blogCard).join('') : `<p class="col-span-full text-center text-dark-700/60 dark:text-slate-400">No articles match your search.</p>`;
-  createIcons({ icons });
+  renderIcons();
   refreshAOS();
 }
 

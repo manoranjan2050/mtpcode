@@ -8,7 +8,7 @@ export default {
     './blog/**/*.html',
     './legal/**/*.html',
     './docs/**/*.html',
-    './components/**/*.html',
+    './public/components/**/*.html',
     './assets/js/**/*.js',
   ],
   theme: {

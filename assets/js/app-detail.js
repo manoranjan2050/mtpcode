@@ -1,5 +1,5 @@
 import './main.js';
-import { createIcons, icons } from 'lucide';
+import { renderIcons } from './icons.js';
 import { fetchJson } from './renderers.js';
 import { refreshAOS } from './animations.js';
 
@@ -113,7 +113,7 @@ function renderDetail(app) {
     </section>
   `;
 
-  createIcons({ icons });
+  renderIcons();
   refreshAOS();
 }
 

@@ -1,5 +1,5 @@
 import './main.js';
-import { createIcons, icons } from 'lucide';
+import { renderIcons } from './icons.js';
 import { typeEffect, heroEntrance, animateCounters, refreshAOS } from './animations.js';
 import {
   fetchJson,
@@ -11,10 +11,6 @@ import {
   testimonialCard,
   techBadge,
 } from './renderers.js';
-
-function renderIcons() {
-  createIcons({ icons });
-}
 
 async function renderStats(site) {
   const root = document.getElementById('stats-root');

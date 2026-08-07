@@ -1,0 +1,112 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode: 'class',
+  content: [
+    './*.html',
+    './apps/**/*.html',
+    './projects/**/*.html',
+    './blog/**/*.html',
+    './legal/**/*.html',
+    './docs/**/*.html',
+    './components/**/*.html',
+    './assets/js/**/*.js',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: '#2563EB',
+          50: '#EFF4FE',
+          100: '#DCE6FD',
+          200: '#BAD0FB',
+          300: '#8FB2F7',
+          400: '#5D8CF1',
+          500: '#2563EB',
+          600: '#1D4FC4',
+          700: '#183F9C',
+          800: '#15347F',
+          900: '#142C68',
+        },
+        secondary: {
+          DEFAULT: '#7C3AED',
+          50: '#F4EEFE',
+          100: '#E6D8FC',
+          200: '#CDB2FA',
+          300: '#AF83F5',
+          400: '#9660F0',
+          500: '#7C3AED',
+          600: '#6425D1',
+          700: '#4E1DA6',
+          800: '#3E1885',
+          900: '#33146D',
+        },
+        accent: {
+          DEFAULT: '#06B6D4',
+          50: '#E9FCFE',
+          100: '#CDF7FC',
+          200: '#9CEEF8',
+          300: '#63DFF0',
+          400: '#2DCBE3',
+          500: '#06B6D4',
+          600: '#0591AB',
+          700: '#087489',
+          800: '#0D5D6F',
+          900: '#104D5D',
+        },
+        dark: {
+          DEFAULT: '#0F172A',
+          50: '#F5F7FA',
+          100: '#E9EDF3',
+          800: '#1E293B',
+          900: '#0F172A',
+          950: '#080D18',
+        },
+      },
+      fontFamily: {
+        sans: ['"Plus Jakarta Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['"Clash Display"', '"Plus Jakarta Sans"', 'ui-sans-serif', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-mesh': 'linear-gradient(135deg, #2563EB 0%, #7C3AED 50%, #06B6D4 100%)',
+        'gradient-hero': 'linear-gradient(180deg, #0F172A 0%, #142C68 50%, #0F172A 100%)',
+      },
+      boxShadow: {
+        glass: '0 8px 32px 0 rgba(15, 23, 42, 0.15)',
+        glow: '0 0 40px rgba(37, 99, 235, 0.35)',
+        'glow-accent': '0 0 40px rgba(6, 182, 212, 0.35)',
+      },
+      backdropBlur: {
+        xs: '2px',
+      },
+      animation: {
+        float: 'float 6s ease-in-out infinite',
+        'float-delayed': 'float 6s ease-in-out 2s infinite',
+        'gradient-x': 'gradient-x 8s ease infinite',
+        blob: 'blob 10s infinite',
+        marquee: 'marquee 30s linear infinite',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+        'gradient-x': {
+          '0%, 100%': { 'background-position': '0% 50%' },
+          '50%': { 'background-position': '100% 50%' },
+        },
+        blob: {
+          '0%, 100%': { transform: 'translate(0px, 0px) scale(1)' },
+          '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+          '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+        },
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};

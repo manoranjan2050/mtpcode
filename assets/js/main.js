@@ -16,7 +16,6 @@ function wireHeader() {
   const onScroll = () => {
     if (!navInner) return;
     const scrolled = window.scrollY > 12;
-    navInner.classList.toggle('nav-glass', scrolled);
     navInner.classList.toggle('shadow-glass', scrolled);
   };
   onScroll();

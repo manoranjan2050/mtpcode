@@ -97,22 +97,6 @@ export function blogCard(post) {
   </a>`;
 }
 
-export function testimonialCard(t) {
-  const stars = Array.from({ length: 5 }, (_, i) => `<i data-lucide="star" class="h-4 w-4 ${i < t.rating ? 'fill-amber-400 text-amber-400' : 'text-dark-900/15 dark:text-white/15'}"></i>`).join('');
-  return `
-  <figure data-aos="fade-up" class="card-glass flex h-full flex-col p-7">
-    <div class="flex gap-0.5">${stars}</div>
-    <blockquote class="mt-4 flex-1 text-sm leading-relaxed text-dark-800 dark:text-slate-300">&ldquo;${esc(t.quote)}&rdquo;</blockquote>
-    <figcaption class="mt-6 flex items-center gap-3">
-      <img src="${esc(t.avatar)}" alt="" loading="lazy" class="h-11 w-11 rounded-full" width="44" height="44" />
-      <div>
-        <p class="text-sm font-semibold text-dark-900 dark:text-white">${esc(t.name)}</p>
-        <p class="text-xs text-dark-700/60 dark:text-slate-400">${esc(t.role)}</p>
-      </div>
-    </figcaption>
-  </figure>`;
-}
-
 export function techBadge(tech) {
   return `
   <div data-aos="zoom-in" class="card-glass flex flex-col items-center gap-2 px-5 py-6 text-center">

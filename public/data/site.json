@@ -4,7 +4,7 @@
   "owner": "Manoranjan Das",
   "domain": "https://mtpcode.com",
   "description": "MTPCode is the independent software house of Manoranjan Das, building Android apps, ERP systems, trading platforms, IoT firmware and open-source developer tools for real businesses across India.",
-  "email": "electroiot.in@gmail.com",
+  "email": "iam@manoranjan.dev",
   "social": {
     "github": "https://github.com/manoranjan2050",
     "linkedin": "https://www.linkedin.com/in/manoranjan2050",
@@ -12,10 +12,10 @@
     "twitter": "https://twitter.com/manoranjan2050"
   },
   "stats": [
-    { "label": "Apps Shipped", "value": 9, "suffix": "+" },
-    { "label": "Live Projects", "value": 14, "suffix": "+" },
-    { "label": "Lines Committed", "value": 250000, "suffix": "+" },
-    { "label": "Years Building", "value": 6, "suffix": "+" }
+    { "label": "Apps Shipped", "value": 4, "suffix": "" },
+    { "label": "Live Projects", "value": 5, "suffix": "" },
+    { "label": "Repositories", "value": 134, "suffix": "+" },
+    { "label": "Years Building", "value": 10, "suffix": "+" }
   ],
   "techStack": [
     { "name": "Laravel", "category": "Backend", "icon": "server" },

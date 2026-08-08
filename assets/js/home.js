@@ -8,7 +8,6 @@ import {
   projectCard,
   githubProjectItem,
   blogCard,
-  testimonialCard,
   techBadge,
 } from './renderers.js';
 
@@ -60,13 +59,6 @@ async function renderLatestBlogs() {
   root.innerHTML = posts.map(blogCard).join('');
 }
 
-async function renderTestimonials() {
-  const root = document.getElementById('testimonials-root');
-  if (!root) return;
-  const testimonials = await fetchJson('/data/testimonials.json');
-  root.innerHTML = testimonials.map(testimonialCard).join('');
-}
-
 function initHero() {
   const typedEl = document.getElementById('hero-typed');
   if (typedEl) {
@@ -90,7 +82,6 @@ async function bootstrapHome() {
     renderTechStack(site),
     renderGithubProjects(site),
     renderLatestBlogs(),
-    renderTestimonials(),
   ]);
   renderIcons();
   refreshAOS();

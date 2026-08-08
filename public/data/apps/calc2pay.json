@@ -1,30 +1,33 @@
 {
   "slug": "calc2pay",
   "name": "Calc2Pay",
-  "tagline": "Billing calculator with instant UPI payment QR generation",
-  "logo": "/assets/images/apps/calc2pay/logo.svg",
-  "banner": "/assets/images/apps/calc2pay/banner.svg",
+  "tagline": "Calculate. Generate QR. Get Paid.",
+  "logo": "/assets/images/apps/calc2pay/logo.png",
+  "banner": "/assets/images/apps/calc2pay/banner.png",
   "gallery": [
-    "/assets/images/apps/calc2pay/screen-1.svg",
-    "/assets/images/apps/calc2pay/screen-2.svg",
-    "/assets/images/apps/calc2pay/screen-3.svg"
+    "/assets/images/apps/calc2pay/screen-1.png",
+    "/assets/images/apps/calc2pay/screen-2.png",
+    "/assets/images/apps/calc2pay/screen-3.png"
   ],
-  "description": "Calc2Pay is a fast, offline-first billing calculator for small shop counters. Ring up an itemized bill, apply discounts, then generate a UPI payment QR code instantly — no card machine, no backend, no monthly fee.",
+  "description": "Calc2Pay is a professional billing calculator for small businesses — grocery shops, medical shops, tea stalls, restaurants, and more. Calculate the bill with built-in GST/discount/tax, then generate a payment QR encoded with the shopkeeper's own UPI ID. The customer scans and pays directly through their own UPI app — Calc2Pay never processes or touches the payment itself.",
   "features": [
-    "Itemized bill builder with quantity, discount and tax",
-    "Instant UPI QR code generation for any payable amount",
-    "Bill history stored locally on-device",
-    "Share bill as image or text in one tap",
-    "Works fully offline, no account required",
-    "Light and dark themes"
+    "Smart calculator with GST, discount, tax and round-off built in",
+    "Bill Builder: itemized line items with quantity, unit and price",
+    "Instant UPI payment QR generation from your own Payment ID",
+    "Shop Profile, Products catalogue with barcode scan/generate",
+    "Bill history: search, duplicate, favourite, share, print",
+    "Reports: daily/weekly/monthly/yearly sales trends with charts",
+    "Branded PDF receipts and Bluetooth thermal printer support (58/80mm)",
+    "Voice Calculator and voice product entry",
+    "Optional Cloud Backup to your own Google Drive (Pro)",
+    "Works fully offline — all data stays on your device",
+    "Light and dark themes, Material 3 design"
   ],
-  "version": "1.2.0",
+  "version": "1.0.0",
   "platform": [
     "Android"
   ],
-  "downloads": {
-    "apk": "/downloads/calc2pay/calc2pay-1.2.0.apk"
-  },
+  "downloads": {},
   "links": {
     "github": "https://github.com/manoranjan2050/Calc2Pay",
     "playstore": "",
@@ -41,18 +44,29 @@
   },
   "changelog": [
     {
-      "version": "1.2.0",
-      "date": "2026-08-06",
+      "version": "1.0.0",
+      "date": "2026-08-08",
       "notes": [
-        "Fixed two real-device bugs found in on-device testing",
-        "Improved QR generation speed"
+        "Redesigned app icon, feature graphic, and Play Store screenshots",
+        "Fixed dashboard/reports layout overflow on real phone widths",
+        "Receipt Message (Pro) now supports a full custom message, not just a short line"
       ]
     },
     {
       "version": "1.0.0",
-      "date": "2026-07-10",
+      "date": "2026-08-06",
       "notes": [
-        "Initial release: billing calculator + UPI QR payments"
+        "Added Calc2Pay Pro (one-time Google Play Billing unlock)",
+        "Added optional Cloud Backup to your own Google Drive (Pro)",
+        "Added free-tier payment QR quota (15/month)",
+        "Fixed six real-device bugs found in on-device testing"
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "date": "2026-08-05",
+      "notes": [
+        "Initial 13-phase build: billing calculator, Bill Builder, Payment QR, Products/Barcode, History, Reports, Receipt PDF, Bluetooth thermal printing, Voice input, Settings, AdMob banner ads"
       ]
     }
   ],

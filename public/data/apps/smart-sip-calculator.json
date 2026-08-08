@@ -17,12 +17,12 @@
     "Interactive charts for every result",
     "Share results as an image"
   ],
-  "version": "1.0.3",
+  "version": "1.0.0",
   "platform": [
     "Android"
   ],
   "downloads": {
-    "apk": "/downloads/smart-sip-calculator/smart-sip-calculator-1.0.3.apk"
+    "apk": "/downloads/smart-sip-calculator/smart-sip-calculator-1.0.0.apk"
   },
   "links": {
     "github": "",
@@ -40,18 +40,11 @@
   },
   "changelog": [
     {
-      "version": "1.0.3",
-      "date": "2026-07-20",
-      "notes": [
-        "Fixed real-device crash on low-memory devices",
-        "Added real keystore signing and app icon"
-      ]
-    },
-    {
       "version": "1.0.0",
-      "date": "2026-06-01",
+      "date": "2026-08-05",
       "notes": [
-        "Initial release with 9 calculators"
+        "Initial release with 9 calculators",
+        "Real app icon, AdMob banner ads, and signed release build"
       ]
     }
   ],

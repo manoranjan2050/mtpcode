@@ -27,13 +27,13 @@
     "id": "smart-sip-calculator-apk",
     "name": "Smart SIP Calculator",
     "type": "apk",
-    "version": "1.0.3",
+    "version": "1.0.0",
     "platform": "Android 7.0+",
-    "size": "7.8 MB",
-    "date": "2026-07-20",
-    "url": "/downloads/smart-sip-calculator/smart-sip-calculator-1.0.3.apk",
+    "size": "62 MB",
+    "date": "2026-08-05",
+    "url": "/downloads/smart-sip-calculator/smart-sip-calculator-1.0.0.apk",
     "appLink": "/apps/smart-sip-calculator.html",
-    "notes": ["Fixed real-device crash on low-memory devices", "Added real keystore signing and app icon"]
+    "notes": ["Initial release with 9 calculators", "Real app icon, AdMob banner ads, and signed release build"]
   },
   {
     "id": "mtp-pharma-erp-zip",

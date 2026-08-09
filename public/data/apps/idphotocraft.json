@@ -8,7 +8,7 @@
     "/assets/images/apps/idphotocraft/screen-1.svg",
     "/assets/images/apps/idphotocraft/screen-2.svg"
   ],
-  "description": "IDPhotoCraft is a professional Android ID / passport / visa photo maker. Capture or pick a photo, detect the face, replace the background, apply country format presets, export high-quality results, and generate print sheets — all processed locally on your device. Package ID: com.idphotocraft.idphotocraft.",
+  "description": "IDPhotoCraft is a professional Android ID / passport / visa photo maker. Capture or pick a photo, detect the face, replace the background, apply country format presets, export high-quality results, and generate print sheets — all processed locally on your device. Package ID: com.mtpcode.idphotocraft.",
   "features": [
     "On-device face detection and framing guidance",
     "Automatic background removal and solid-color replacement",
@@ -26,7 +26,7 @@
   "downloads": {},
   "links": {
     "github": "",
-    "playstore": "https://play.google.com/store/apps/details?id=com.idphotocraft.idphotocraft",
+    "playstore": "https://play.google.com/store/apps/details?id=com.mtpcode.idphotocraft",
     "website": "",
     "docs": ""
   },

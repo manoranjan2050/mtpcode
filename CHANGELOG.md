@@ -5,6 +5,7 @@ All notable changes to this project are documented here.
 ## [Unreleased]
 
 ### Added
+- IDPhotoCraft app page (`/apps/idphotocraft.html`), data JSON, SVG assets, and legal suite (`/legal/idphotocraft/`) for Play Store privacy/terms URLs
 - DocZest legal page suite (`/legal/doczest/`: privacy, terms, disclaimer, cookie-policy, data-deletion, support) — 5th app to get the standard 6-doc set from Phase 9, generated for the app's Play Store submission
 - Phase 1: Project structure, planning docs (CLAUDE.md, TODO.md, ARCHITECTURE.md, README.md)
 - Phase 2: Design system — Tailwind theme, Google Fonts, dark mode, base components, page loader, skeletons

@@ -1,0 +1,52 @@
+{
+  "slug": "idphotocraft",
+  "name": "IDPhotoCraft",
+  "tagline": "Professional ID photos — entirely on your device",
+  "logo": "/assets/images/apps/idphotocraft/logo.svg",
+  "banner": "/assets/images/apps/idphotocraft/banner.svg",
+  "gallery": [
+    "/assets/images/apps/idphotocraft/screen-1.svg",
+    "/assets/images/apps/idphotocraft/screen-2.svg"
+  ],
+  "description": "IDPhotoCraft is a professional Android ID / passport / visa photo maker. Capture or pick a photo, detect the face, replace the background, apply country format presets, export high-quality results, and generate print sheets — all processed locally on your device. Package ID: com.idphotocraft.idphotocraft.",
+  "features": [
+    "On-device face detection and framing guidance",
+    "Automatic background removal and solid-color replacement",
+    "Passport, visa, and ID format presets with DPI control",
+    "Editor tools for crop, alignment, and polish",
+    "Print sheet layout for home or shop printing",
+    "Photos never uploaded by the app — processing stays on device",
+    "Free tier with Google AdMob banners",
+    "Pro unlock: yearly subscription or lifetime purchase (Google Play Billing)"
+  ],
+  "version": "1.0.0",
+  "platform": [
+    "Android"
+  ],
+  "downloads": {},
+  "links": {
+    "github": "",
+    "playstore": "https://play.google.com/store/apps/details?id=com.idphotocraft.idphotocraft",
+    "website": "",
+    "docs": ""
+  },
+  "legal": {
+    "privacy": "/legal/idphotocraft/privacy.html",
+    "terms": "/legal/idphotocraft/terms.html",
+    "disclaimer": "/legal/idphotocraft/disclaimer.html",
+    "cookiePolicy": "/legal/idphotocraft/cookie-policy.html",
+    "dataDeletion": "/legal/idphotocraft/data-deletion.html",
+    "support": "/legal/idphotocraft/support.html"
+  },
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-08-09",
+      "notes": [
+        "Initial release: capture/gallery, face detection, background tools, format presets, editor, print sheets, AdMob, and Pro IAP"
+      ]
+    }
+  ],
+  "featured": true,
+  "category": "android"
+}

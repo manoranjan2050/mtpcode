@@ -1,0 +1,57 @@
+{
+  "slug": "doczest",
+  "name": "DocZest",
+  "tagline": "Create. Compress. Convert. Share.",
+  "logo": "/assets/images/apps/doczest/logo.png",
+  "banner": "/assets/images/apps/doczest/banner.png",
+  "cardImage": "/assets/images/apps/doczest/card.png",
+  "gallery": [],
+  "description": "DocZest is a fast, privacy-first, offline-first PDF and document toolkit for Android — scan, compress, merge, split, convert and share entirely on your device. No account, no document upload. Built for students, office workers, shopkeepers and anyone who needs everyday PDF tools without a heavyweight editor. Currently under construction — coming soon to Google Play.",
+  "features": [
+    "Images → PDF",
+    "Document scanner with crop and enhancement",
+    "PDF compressor (Low / Medium / High / Custom)",
+    "Compress PDF to a target size",
+    "Merge and split PDFs",
+    "PDF → Image (JPG/PNG)",
+    "Image compress, resize and convert",
+    "Document Ready presets (WhatsApp, Email, Print, Government Upload)",
+    "Local history, share sheet and system printing",
+    "Dark mode with selectable color themes",
+    "100% offline document processing"
+  ],
+  "version": "1.0.0",
+  "platform": [
+    "Android"
+  ],
+  "status": "under-construction",
+  "downloads": {
+    "apk": "coming-soon"
+  },
+  "links": {
+    "github": "",
+    "playstore": "coming-soon",
+    "website": "",
+    "docs": ""
+  },
+  "legal": {
+    "privacy": "/legal/doczest/privacy.html",
+    "terms": "/legal/doczest/terms.html",
+    "disclaimer": "/legal/doczest/disclaimer.html",
+    "cookiePolicy": "/legal/doczest/cookie-policy.html",
+    "dataDeletion": "/legal/doczest/data-deletion.html",
+    "support": "/legal/doczest/support.html"
+  },
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-08-10",
+      "notes": [
+        "App page preview published — under construction",
+        "Play Store and APK downloads coming soon"
+      ]
+    }
+  ],
+  "featured": true,
+  "category": "android"
+}

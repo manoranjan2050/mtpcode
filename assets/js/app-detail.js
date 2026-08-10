@@ -118,6 +118,7 @@ function renderDetail(app) {
   const root = document.getElementById('app-detail-root');
   const linksHtml = linkButtons(app.links || {}, app.name);
   const downloadsHtml = downloadButtons(app.downloads || {});
+  const underConstruction = app.status === 'under-construction';
   root.innerHTML = `
     <section class="relative overflow-hidden bg-gradient-hero pb-20 pt-40 sm:pt-48">
       <div class="pointer-events-none absolute inset-0 -z-10">
@@ -133,12 +134,22 @@ function renderDetail(app) {
             <p class="mt-2 max-w-2xl text-lg text-slate-300">${esc(app.tagline)}</p>
             <div class="mt-4 flex flex-wrap gap-2">
               ${app.platform.map((p) => `<span class="badge bg-white/10 text-white ring-1 ring-inset ring-white/20">${esc(p)}</span>`).join('')}
-              <span class="badge bg-white/10 text-white ring-1 ring-inset ring-white/20">v${esc(app.version)}</span>
+              ${underConstruction
+                ? `<span class="badge bg-amber-500 text-white ring-1 ring-inset ring-white/20">Under construction</span>`
+                : `<span class="badge bg-white/10 text-white ring-1 ring-inset ring-white/20">v${esc(app.version)}</span>`}
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    ${underConstruction ? `
+    <section class="border-b border-amber-500/20 bg-amber-500/10">
+      <div class="container-page flex flex-wrap items-center gap-3 py-4 text-sm text-amber-900 dark:text-amber-200">
+        <i data-lucide="construction" class="h-4 w-4 shrink-0"></i>
+        <p><strong>${esc(app.name)}</strong> is under construction. Download and Google Play will unlock at launch.</p>
+      </div>
+    </section>` : ''}
 
     <section class="section !pt-16">
       <div class="container-page grid grid-cols-1 gap-12 lg:grid-cols-3">

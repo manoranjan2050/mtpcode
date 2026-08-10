@@ -17,11 +17,13 @@ export async function fetchCollection(baseDir) {
 
 export function appCard(app) {
   const cover = app.cardImage || app.banner || app.gallery?.[0] || app.logo;
+  const underConstruction = app.status === 'under-construction';
   return `
   <a href="/apps/${esc(app.slug)}.html" data-aos="fade-up" class="card group flex flex-col overflow-hidden">
-    <div class="aspect-[16/10] w-full overflow-hidden bg-dark-50 dark:bg-white/[0.03]">
+    <div class="relative aspect-[16/10] w-full overflow-hidden bg-dark-50 dark:bg-white/[0.03]">
       <img src="${esc(cover)}" alt="${esc(app.name)} preview" loading="lazy" width="1600" height="1000"
         class="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
+      ${underConstruction ? `<span class="absolute left-3 top-3 rounded-full bg-amber-500 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-white shadow">Coming soon</span>` : ''}
     </div>
     <div class="flex flex-1 flex-col p-6">
       <div class="flex items-center gap-4">
@@ -34,10 +36,10 @@ export function appCard(app) {
       </div>
       <div class="mt-4 flex flex-wrap gap-2">
         ${app.platform.map((p) => `<span class="badge-primary">${esc(p)}</span>`).join('')}
-        <span class="badge-neutral">v${esc(app.version)}</span>
+        ${underConstruction ? `<span class="badge bg-amber-500/15 text-amber-700 ring-1 ring-inset ring-amber-500/30 dark:text-amber-300">Under construction</span>` : `<span class="badge-neutral">v${esc(app.version)}</span>`}
       </div>
       <span class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary-600 group-hover:gap-2 transition-all dark:text-primary-400">
-        View app <i data-lucide="arrow-right" class="h-4 w-4"></i>
+        ${underConstruction ? 'Preview' : 'View app'} <i data-lucide="arrow-right" class="h-4 w-4"></i>
       </span>
     </div>
   </a>`;

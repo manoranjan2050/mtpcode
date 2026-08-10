@@ -1,4 +1,5 @@
 import '../css/input.css';
+import './analytics.js';
 import { renderIcons } from './icons.js';
 import { loadPartials, markActiveNavLinks } from './partials.js';
 import { initTheme, toggleTheme } from './theme.js';

@@ -12,7 +12,7 @@
     "twitter": "https://twitter.com/manoranjan2050"
   },
   "stats": [
-    { "label": "Apps Shipped", "value": 4, "suffix": "" },
+    { "label": "Apps Shipped", "value": 6, "suffix": "" },
     { "label": "Live Projects", "value": 5, "suffix": "" },
     { "label": "Repositories", "value": 134, "suffix": "+" },
     { "label": "Years Building", "value": 10, "suffix": "+" }

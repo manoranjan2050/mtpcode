@@ -16,22 +16,30 @@ export async function fetchCollection(baseDir) {
 }
 
 export function appCard(app) {
+  const cover = app.cardImage || app.banner || app.gallery?.[0] || app.logo;
   return `
-  <a href="/apps/${esc(app.slug)}.html" data-aos="fade-up" class="card group flex flex-col overflow-hidden p-6">
-    <div class="flex items-center gap-4">
-      <img src="${esc(app.logo)}" alt="${esc(app.name)} logo" loading="lazy" class="h-14 w-14 rounded-2xl shadow-sm" width="56" height="56" />
-      <div class="min-w-0">
-        <h3 class="truncate font-display text-lg font-bold text-dark-900 dark:text-white">${esc(app.name)}</h3>
-        <p class="truncate text-sm text-dark-700/70 dark:text-slate-400">${esc(app.tagline)}</p>
+  <a href="/apps/${esc(app.slug)}.html" data-aos="fade-up" class="card group flex flex-col overflow-hidden">
+    <div class="aspect-[16/10] w-full overflow-hidden bg-dark-50 dark:bg-white/[0.03]">
+      <img src="${esc(cover)}" alt="${esc(app.name)} preview" loading="lazy"
+        class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+    </div>
+    <div class="flex flex-1 flex-col p-6">
+      <div class="flex items-center gap-4">
+        <img src="${esc(app.logo)}" alt="${esc(app.name)} logo" loading="lazy"
+          class="h-14 w-14 shrink-0 rounded-2xl object-cover shadow-sm ring-1 ring-dark-900/5 dark:ring-white/10" width="56" height="56" />
+        <div class="min-w-0">
+          <h3 class="truncate font-display text-lg font-bold text-dark-900 dark:text-white">${esc(app.name)}</h3>
+          <p class="truncate text-sm text-dark-700/70 dark:text-slate-400">${esc(app.tagline)}</p>
+        </div>
       </div>
+      <div class="mt-4 flex flex-wrap gap-2">
+        ${app.platform.map((p) => `<span class="badge-primary">${esc(p)}</span>`).join('')}
+        <span class="badge-neutral">v${esc(app.version)}</span>
+      </div>
+      <span class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary-600 group-hover:gap-2 transition-all dark:text-primary-400">
+        View app <i data-lucide="arrow-right" class="h-4 w-4"></i>
+      </span>
     </div>
-    <div class="mt-4 flex flex-wrap gap-2">
-      ${app.platform.map((p) => `<span class="badge-primary">${esc(p)}</span>`).join('')}
-      <span class="badge-neutral">v${esc(app.version)}</span>
-    </div>
-    <span class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary-600 group-hover:gap-2 transition-all dark:text-primary-400">
-      View app <i data-lucide="arrow-right" class="h-4 w-4"></i>
-    </span>
   </a>`;
 }
 

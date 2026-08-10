@@ -1,22 +1,31 @@
 {
   "slug": "smart-sip-calculator",
   "name": "Smart SIP Calculator",
-  "tagline": "9 finance calculators for SIP, lumpsum, EMI, retirement and more",
-  "logo": "/assets/images/apps/smart-sip-calculator/logo.svg",
-  "banner": "/assets/images/apps/smart-sip-calculator/banner.svg",
+  "tagline": "Plan smarter, grow faster — SIP, EMI, FD, PPF & goals",
+  "logo": "/assets/images/apps/smart-sip-calculator/logo.png",
+  "banner": "/assets/images/apps/smart-sip-calculator/banner.png",
   "cardImage": "/assets/images/apps/smart-sip-calculator/card.png",
   "gallery": [
-    "/assets/images/apps/smart-sip-calculator/screen-1.svg",
-    "/assets/images/apps/smart-sip-calculator/screen-2.svg"
+    "/assets/images/apps/smart-sip-calculator/screen-1.jpg",
+    "/assets/images/apps/smart-sip-calculator/screen-2.jpg",
+    "/assets/images/apps/smart-sip-calculator/screen-3.jpg",
+    "/assets/images/apps/smart-sip-calculator/screen-4.jpg",
+    "/assets/images/apps/smart-sip-calculator/screen-5.jpg",
+    "/assets/images/apps/smart-sip-calculator/screen-6.jpg",
+    "/assets/images/apps/smart-sip-calculator/screen-7.jpg",
+    "/assets/images/apps/smart-sip-calculator/screen-8.jpg"
   ],
-  "description": "Smart SIP Calculator bundles nine personal-finance calculators — SIP, lumpsum, step-up SIP, EMI, retirement corpus, inflation, CAGR, PPF and FD — into one clean, ad-supported Android app with shareable, chart-backed results.",
+  "description": "Smart SIP Calculator is a fast, offline financial planning toolkit for everyday investors. Estimate returns, compare strategies, and plan toward your goals — SIP, Step-Up SIP, Lumpsum, SWP, EMI, FD, RD, PPF and Goal Planner. All calculations run on your device; no account required.",
   "features": [
-    "SIP, step-up SIP and lumpsum growth projections",
-    "EMI calculator with amortization breakdown",
-    "Retirement corpus and inflation-adjusted planning",
-    "PPF, FD and CAGR calculators",
-    "Interactive charts for every result",
-    "Share results as an image"
+    "SIP, Step-Up SIP, Lumpsum and SWP projections",
+    "EMI calculator with interest breakdown",
+    "FD, RD and PPF maturity calculators",
+    "Goal Planner — monthly SIP needed to hit a target",
+    "Investment growth, profit and yearly breakdown charts",
+    "Save results to History — search and favourite",
+    "Multi-currency display (INR, USD, EUR, GBP)",
+    "Material 3 light and dark themes",
+    "100% offline — numbers never leave your device"
   ],
   "version": "1.0.0",
   "platform": [
@@ -27,7 +36,7 @@
   },
   "links": {
     "github": "",
-    "playstore": "",
+    "playstore": "coming-soon",
     "website": "",
     "docs": ""
   },

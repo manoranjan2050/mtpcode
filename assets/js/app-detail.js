@@ -13,7 +13,7 @@ function isComingSoon(value) {
   return typeof value === 'string' && value.trim().toLowerCase() === COMING_SOON;
 }
 
-function playStoreBadge({ href, comingSoon = false } = {}) {
+function playStoreBadge({ href, comingSoon = false, appName = 'This app' } = {}) {
   const icon = `
     <svg class="h-7 w-7 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
       <path fill="#EA4335" d="M3.6 2.2 13.3 12 3.6 21.8c-.5-.3-.8-.9-.8-1.5V3.7c0-.6.3-1.2.8-1.5z"/>
@@ -33,7 +33,7 @@ function playStoreBadge({ href, comingSoon = false } = {}) {
           </div>
           <span class="shrink-0 rounded-full bg-white/20 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide">Coming soon</span>
         </div>
-        <p class="mt-3 text-xs text-white/85">Denomiq is preparing for Play Store launch. Check back shortly.</p>
+        <p class="mt-3 text-xs text-white/85">${esc(appName)} is preparing for Play Store launch. Check back shortly.</p>
       </div>`;
   }
   return `
@@ -72,9 +72,8 @@ function downloadButtons(downloads = {}) {
     .join('');
 }
 
-function linkButtons(links = {}) {
+function linkButtons(links = {}, appName = 'This app') {
   const meta = {
-    github: { label: 'GitHub', icon: 'github' },
     website: { label: 'Website', icon: 'globe' },
     docs: { label: 'Documentation', icon: 'book-open' },
   };
@@ -85,12 +84,13 @@ function linkButtons(links = {}) {
       playStoreBadge({
         href: isComingSoon(links.playstore) ? '' : links.playstore,
         comingSoon: isComingSoon(links.playstore),
+        appName,
       })
     );
   }
 
   Object.entries(links)
-    .filter(([key, url]) => url && key !== 'playstore' && !isComingSoon(url))
+    .filter(([key, url]) => url && key !== 'playstore' && key !== 'github' && !isComingSoon(url))
     .forEach(([key, url]) => {
       parts.push(
         `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer" class="btn-outline w-full !justify-start"><i data-lucide="${meta[key]?.icon ?? 'link'}" class="h-4 w-4"></i> ${meta[key]?.label ?? key}</a>`
@@ -116,7 +116,7 @@ function legalLinks(legal = {}) {
 
 function renderDetail(app) {
   const root = document.getElementById('app-detail-root');
-  const linksHtml = linkButtons(app.links || {});
+  const linksHtml = linkButtons(app.links || {}, app.name);
   const downloadsHtml = downloadButtons(app.downloads || {});
   root.innerHTML = `
     <section class="relative overflow-hidden bg-gradient-hero pb-20 pt-40 sm:pt-48">

@@ -5,11 +5,15 @@
     "type": "apk",
     "version": "1.0.0",
     "platform": "Android 7.0+",
-    "size": "57.6 MB",
+    "size": "57.7 MB",
     "date": "2026-08-10",
     "url": "/downloads/denomiq/denomiq-1.0.0.apk",
     "appLink": "/apps/denomiq.html",
-    "notes": ["Initial release: cash count, history, reports, exports, Pro unlock"]
+    "notes": [
+      "Initial public release (signed APK)",
+      "Multi-currency: INR, USD, EUR, GBP, AED, NPR, BDT",
+      "Cash count, history, reports, PDF/CSV/TXT/JSON/Excel export"
+    ]
   },
   {
     "id": "calc2pay-apk",

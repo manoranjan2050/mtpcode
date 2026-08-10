@@ -10,9 +10,10 @@
     "/assets/images/apps/denomiq/screen-2.png",
     "/assets/images/apps/denomiq/screen-3.png"
   ],
-  "description": "Denomiq is an offline-first Indian Rupee cash denomination counter for shops, counters, and cashiers. Enter note and coin quantities, compare against expected cash, see Exact / Short / Excess, save sessions, and export PDF, CSV, TXT, JSON, or Excel reports — all without a login or cloud account.",
+  "description": "Denomiq is an offline-first cash denomination counter for shops, counters, and cashiers. Count notes and coins in INR, USD, EUR, GBP, AED, NPR, or BDT, compare against expected cash, see Exact / Short / Excess, save sessions, and export PDF, CSV, TXT, JSON, or Excel reports — all without a login or cloud account.",
   "features": [
-    "INR notes and coins denomination counter",
+    "Multi-currency catalogs: INR, USD, EUR, GBP, AED, NPR, BDT",
+    "Notes and coins denomination counter with live totals",
     "Expected cash with Exact / Short / Excess status",
     "Opening and closing cash with float",
     "Session history with search, filters, edit, duplicate, delete",
@@ -50,7 +51,11 @@
       "version": "1.0.0",
       "date": "2026-08-10",
       "notes": [
-        "Initial release: cash count, history, reports, exports, Pro unlock, Thermal Desk bridge, home widget"
+        "Initial public release (signed APK)",
+        "Multi-currency: INR, USD, EUR, GBP, AED, NPR, BDT",
+        "Cash count with Exact / Short / Excess and opening/closing float",
+        "History, reports, PDF/CSV/TXT/JSON/Excel export",
+        "AdMob banners, Pro unlock hooks, Thermal Desk bridge, home widget"
       ]
     }
   ],

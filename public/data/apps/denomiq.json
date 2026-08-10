@@ -1,0 +1,56 @@
+{
+  "slug": "denomiq",
+  "name": "Denomiq",
+  "tagline": "Fast, Simple Cash Counting",
+  "logo": "/assets/images/apps/denomiq/logo.png",
+  "banner": "/assets/images/apps/denomiq/banner.png",
+  "gallery": [
+    "/assets/images/apps/denomiq/screen-1.png",
+    "/assets/images/apps/denomiq/screen-2.png",
+    "/assets/images/apps/denomiq/screen-3.png"
+  ],
+  "description": "Denomiq is an offline-first Indian Rupee cash denomination counter for shops, counters, and cashiers. Enter note and coin quantities, compare against expected cash, see Exact / Short / Excess, save sessions, and export PDF, CSV, TXT, JSON, or Excel reports — all without a login or cloud account.",
+  "features": [
+    "INR notes and coins denomination counter",
+    "Expected cash with Exact / Short / Excess status",
+    "Opening and closing cash with float",
+    "Session history with search, filters, edit, duplicate, delete",
+    "Reports and multi-format export (PDF, CSV, TXT, JSON, Excel)",
+    "Share, copy, save, print, and Thermal Desk hand-off",
+    "Stores/counters presets and hide unused denominations",
+    "JSON backup import/restore",
+    "Home widget and quick Count Cash actions",
+    "Keypad mode, long-press +10/+50, pin favorites",
+    "Light / dark / system theme — works fully offline",
+    "Optional Denomiq Pro (ads-free + Excel via Play Billing)"
+  ],
+  "version": "1.0.0",
+  "platform": [
+    "Android"
+  ],
+  "downloads": {},
+  "links": {
+    "github": "https://github.com/manoranjan2050/Denomiq",
+    "playstore": "",
+    "website": "https://mtpcode.com/apps/denomiq.html",
+    "docs": ""
+  },
+  "legal": {
+    "privacy": "/legal/denomiq/privacy.html",
+    "terms": "/legal/denomiq/terms.html",
+    "disclaimer": "/legal/denomiq/disclaimer.html",
+    "dataDeletion": "/legal/denomiq/data-deletion.html",
+    "support": "/legal/denomiq/support.html"
+  },
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-08-10",
+      "notes": [
+        "Initial release: cash count, history, reports, exports, Pro unlock, Thermal Desk bridge, home widget"
+      ]
+    }
+  ],
+  "featured": true,
+  "category": "android"
+}

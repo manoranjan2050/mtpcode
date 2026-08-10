@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="Denomiq card">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF7ED"/>
+      <stop offset="55%" stop-color="#FFEDD5"/>
+      <stop offset="100%" stop-color="#F97316"/>
+    </linearGradient>
+    <linearGradient id="icon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FB923C"/>
+      <stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#9A3412" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1380" cy="120" r="260" fill="#FB923C" opacity="0.28"/>
+  <circle cx="180" cy="880" r="220" fill="#EA580C" opacity="0.18"/>
+  <circle cx="1180" cy="820" r="160" fill="#FFFFFF" opacity="0.22"/>
+  <g filter="url(#soft)">
+    <rect x="180" y="250" width="420" height="420" rx="96" fill="#FFFFFF"/>
+    <rect x="250" y="320" width="280" height="280" rx="64" fill="url(#icon)"/>
+    <rect x="300" y="390" width="180" height="110" rx="14" fill="#FFFFFF"/>
+    <rect x="320" y="410" width="140" height="70" rx="10" fill="none" stroke="#F97316" stroke-width="8"/>
+    <circle cx="390" cy="445" r="18" fill="none" stroke="#F97316" stroke-width="7"/>
+    <circle cx="345" cy="445" r="6" fill="#F97316"/>
+    <circle cx="435" cy="445" r="6" fill="#F97316"/>
+    <circle cx="430" cy="545" r="36" fill="#FFFFFF"/>
+    <path d="M416 545 l10 10 18-20" fill="none" stroke="#EA580C" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="700" y="420" font-family="Segoe UI, Arial, sans-serif" font-size="92" font-weight="800" fill="#9A3412">Denomiq</text>
+  <text x="700" y="510" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="600" fill="#C2410C">Fast, Simple Cash Counting</text>
+  <text x="700" y="590" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#9A3412" opacity="0.75">INR denomination counter  ·  Offline-first</text>
+  <rect x="700" y="660" width="220" height="52" rx="26" fill="#FFFFFF" opacity="0.85"/>
+  <text x="810" y="695" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#EA580C" text-anchor="middle">Android</text>
+</svg>

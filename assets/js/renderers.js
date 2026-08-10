@@ -20,8 +20,8 @@ export function appCard(app) {
   return `
   <a href="/apps/${esc(app.slug)}.html" data-aos="fade-up" class="card group flex flex-col overflow-hidden">
     <div class="aspect-[16/10] w-full overflow-hidden bg-dark-50 dark:bg-white/[0.03]">
-      <img src="${esc(cover)}" alt="${esc(app.name)} preview" loading="lazy"
-        class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+      <img src="${esc(cover)}" alt="${esc(app.name)} preview" loading="lazy" width="1600" height="1000"
+        class="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
     </div>
     <div class="flex flex-1 flex-col p-6">
       <div class="flex items-center gap-4">

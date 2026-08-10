@@ -4,6 +4,7 @@
   "tagline": "Calculate. Generate QR. Get Paid.",
   "logo": "/assets/images/apps/calc2pay/logo.png",
   "banner": "/assets/images/apps/calc2pay/banner.png",
+  "cardImage": "/assets/images/apps/calc2pay/card.svg",
   "gallery": [
     "/assets/images/apps/calc2pay/screen-1.png",
     "/assets/images/apps/calc2pay/screen-2.png",

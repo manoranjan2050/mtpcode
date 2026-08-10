@@ -4,6 +4,7 @@
   "tagline": "ESC/POS thermal receipt printing, without the driver headaches",
   "logo": "/assets/images/apps/thermaldesk/logo.svg",
   "banner": "/assets/images/apps/thermaldesk/banner.svg",
+  "cardImage": "/assets/images/apps/thermaldesk/card.svg",
   "gallery": [
     "/assets/images/apps/thermaldesk/screen-1.svg",
     "/assets/images/apps/thermaldesk/screen-2.svg"

@@ -4,6 +4,7 @@
   "tagline": "9 finance calculators for SIP, lumpsum, EMI, retirement and more",
   "logo": "/assets/images/apps/smart-sip-calculator/logo.svg",
   "banner": "/assets/images/apps/smart-sip-calculator/banner.svg",
+  "cardImage": "/assets/images/apps/smart-sip-calculator/card.svg",
   "gallery": [
     "/assets/images/apps/smart-sip-calculator/screen-1.svg",
     "/assets/images/apps/smart-sip-calculator/screen-2.svg"

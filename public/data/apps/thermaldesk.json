@@ -2,20 +2,30 @@
   "slug": "thermaldesk",
   "name": "ThermalDesk",
   "tagline": "ESC/POS thermal receipt printing, without the driver headaches",
-  "logo": "/assets/images/apps/thermaldesk/logo.svg",
-  "banner": "/assets/images/apps/thermaldesk/banner.svg",
+  "logo": "/assets/images/apps/thermaldesk/logo.png",
+  "banner": "/assets/images/apps/thermaldesk/banner.png",
   "cardImage": "/assets/images/apps/thermaldesk/card.png",
   "gallery": [
-    "/assets/images/apps/thermaldesk/screen-1.svg",
-    "/assets/images/apps/thermaldesk/screen-2.svg"
+    "/assets/images/apps/thermaldesk/screen-1.png",
+    "/assets/images/apps/thermaldesk/screen-2.png",
+    "/assets/images/apps/thermaldesk/screen-3.png",
+    "/assets/images/apps/thermaldesk/screen-4.png",
+    "/assets/images/apps/thermaldesk/screen-5.png",
+    "/assets/images/apps/thermaldesk/screen-6.png",
+    "/assets/images/apps/thermaldesk/screen-7.png",
+    "/assets/images/apps/thermaldesk/screen-8.png"
   ],
-  "description": "ThermalDesk connects Android devices to ESC/POS thermal printers over Bluetooth, USB or network, letting shop owners print clean receipts, tokens and kitchen orders directly from their phone or tablet.",
+  "description": "ThermalDesk turns your phone into a complete thermal printing station for shops, restaurants, medical stores and warehouses. Connect over Bluetooth to any ESC/POS 58mm/80mm printer and print text, receipts, QR codes, barcodes and images — fully offline, no login, no cloud.",
   "features": [
-    "Bluetooth, USB and network (Wi-Fi) printer support",
-    "Custom receipt templates with logo, QR and barcode",
-    "Print queue with retry on connection drop",
-    "Multiple saved printer profiles",
-    "Test print and printer diagnostics"
+    "Connect to ESC/POS Bluetooth thermal printers (58mm or 80mm)",
+    "Print free-form text with alignment, bold, underline and double size",
+    "Print professional receipts — items, quantities, prices, totals",
+    "Print QR codes — website, phone, email, UPI, WiFi, custom",
+    "Print barcodes — Code128, Code39, EAN13, UPC-A",
+    "Print images — crop, resize, black & white, Floyd–Steinberg dithering",
+    "Save favourite printers and auto-connect to the last one used",
+    "Material You design with light and dark mode",
+    "Fully offline — your data never leaves the device"
   ],
   "version": "1.1.0",
   "platform": [
@@ -43,15 +53,16 @@
       "version": "1.1.0",
       "date": "2026-08-07",
       "notes": [
-        "Real-device verification pass, fixed 2 printer-reconnect bugs",
-        "Live AdMob integration"
+        "Real-device verification pass, fixed Print Image crashes",
+        "Live AdMob integration",
+        "Play Store graphics and listing assets refreshed"
       ]
     },
     {
       "version": "1.0.0",
       "date": "2026-06-18",
       "notes": [
-        "Initial release with Bluetooth + USB ESC/POS support"
+        "Initial release with Bluetooth ESC/POS support"
       ]
     }
   ],

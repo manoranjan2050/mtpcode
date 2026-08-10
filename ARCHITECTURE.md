@@ -65,7 +65,7 @@ TODO.md for how this was caught).
   "tagline": "Billing calculator + payment QR generator",
   "logo": "/assets/images/apps/calc2pay/logo.png",
   "banner": "/assets/images/apps/calc2pay/banner.png",
-  "cardImage": "/assets/images/apps/calc2pay/card.svg",
+  "cardImage": "/assets/images/apps/calc2pay/card.png",
   "gallery": ["/assets/images/apps/calc2pay/1.png"],
   "description": "...",
   "features": ["..."],
@@ -79,7 +79,7 @@ TODO.md for how this was caught).
   "category": "android"
 }
 ```
-`cardImage` is the 16:10 cover used on listing/home cards. Keep `banner` / `gallery` for detail pages.
+`cardImage` is the 16:9 cover used on listing/home cards. Keep `banner` / `gallery` for detail pages.
 ### `data/projects/<slug>.json`
 ```json
 {

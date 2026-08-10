@@ -1,21 +1,21 @@
 {
   "slug": "idphotocraft",
   "name": "IDPhotoCraft",
-  "developer": "MTP CODE (MANORANJAN)",
-  "supportEmail": "mtpcode.in@gmail.com",
   "tagline": "Professional ID photos — entirely on your device",
-  "logo": "/assets/images/apps/idphotocraft/logo.svg",
-  "banner": "/assets/images/apps/idphotocraft/banner.svg",
+  "logo": "/assets/images/apps/idphotocraft/logo.png",
+  "banner": "/assets/images/apps/idphotocraft/banner.png",
+  "cardImage": "/assets/images/apps/idphotocraft/card.png",
   "gallery": [
-    "/assets/images/apps/idphotocraft/screen-1.svg",
-    "/assets/images/apps/idphotocraft/screen-2.svg"
+    "/assets/images/apps/idphotocraft/screen-1.png",
+    "/assets/images/apps/idphotocraft/screen-2.png",
+    "/assets/images/apps/idphotocraft/screen-3.png"
   ],
-  "description": "IDPhotoCraft is a professional Android ID / passport / visa photo maker. Capture or pick a photo, detect the face, replace the background, apply country format presets, export high-quality results, and generate print sheets — all processed locally on your device. Package ID: com.mtpcode.idphotocraft.",
+  "description": "IDPhotoCraft is an on-device ID, passport, and visa photo maker by MTP CODE. Capture or pick a photo, align with face detection, replace the background, apply country format presets, export high-quality results, and build print sheets — all processed locally on your Android device. Package ID: com.mtpcode.idphotocraft.",
   "features": [
     "On-device face detection and framing guidance",
     "Automatic background removal and solid-color replacement",
-    "Passport, visa, and ID format presets with DPI control",
-    "Editor tools for crop, alignment, and polish",
+    "Passport, visa, Aadhaar, and ID format presets with DPI control",
+    "Editor tools for crop, alignment, brightness, and polish",
     "Print sheet layout for home or shop printing",
     "Photos never uploaded by the app — processing stays on device",
     "Free tier with Google AdMob banners",
@@ -25,7 +25,9 @@
   "platform": [
     "Android"
   ],
-  "downloads": {},
+  "downloads": {
+    "apk": "coming-soon"
+  },
   "links": {
     "github": "",
     "playstore": "https://play.google.com/store/apps/details?id=com.mtpcode.idphotocraft",
@@ -43,7 +45,7 @@
   "changelog": [
     {
       "version": "1.0.0",
-      "date": "2026-08-09",
+      "date": "2026-08-10",
       "notes": [
         "Initial release: capture/gallery, face detection, background tools, format presets, editor, print sheets, AdMob, and Pro IAP"
       ]

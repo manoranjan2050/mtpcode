@@ -28,10 +28,12 @@
   "platform": [
     "Android"
   ],
-  "downloads": {},
+  "downloads": {
+    "apk": "/downloads/calc2pay/calc2pay-1.0.0.apk"
+  },
   "links": {
-    "github": "https://github.com/manoranjan2050/Calc2Pay",
-    "playstore": "",
+    "github": "",
+    "playstore": "coming-soon",
     "website": "",
     "docs": ""
   },

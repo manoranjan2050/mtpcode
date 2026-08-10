@@ -1,15 +1,27 @@
 [
   {
+    "id": "denomiq-apk",
+    "name": "Denomiq",
+    "type": "apk",
+    "version": "1.0.0",
+    "platform": "Android 7.0+",
+    "size": "57.6 MB",
+    "date": "2026-08-10",
+    "url": "/downloads/denomiq/denomiq-1.0.0.apk",
+    "appLink": "/apps/denomiq.html",
+    "notes": ["Initial release: cash count, history, reports, exports, Pro unlock"]
+  },
+  {
     "id": "calc2pay-apk",
     "name": "Calc2Pay",
     "type": "apk",
-    "version": "1.2.0",
+    "version": "1.0.0",
     "platform": "Android 8.0+",
-    "size": "9.4 MB",
-    "date": "2026-08-06",
-    "url": "/downloads/calc2pay/calc2pay-1.2.0.apk",
+    "size": "79.3 MB",
+    "date": "2026-08-08",
+    "url": "/downloads/calc2pay/calc2pay-1.0.0.apk",
     "appLink": "/apps/calc2pay.html",
-    "notes": ["Fixed two real-device bugs found in on-device testing", "Improved QR generation speed"]
+    "notes": ["Billing calculator with UPI QR, Pro unlock, and offline-first shop tools"]
   },
   {
     "id": "thermaldesk-apk",
@@ -17,11 +29,11 @@
     "type": "apk",
     "version": "1.1.0",
     "platform": "Android 7.0+",
-    "size": "11.2 MB",
+    "size": "63.1 MB",
     "date": "2026-08-07",
     "url": "/downloads/thermaldesk/thermaldesk-1.1.0.apk",
     "appLink": "/apps/thermaldesk.html",
-    "notes": ["Real-device verification pass, fixed 2 printer-reconnect bugs", "Live AdMob integration"]
+    "notes": ["Real-device verification pass", "Live AdMob integration"]
   },
   {
     "id": "smart-sip-calculator-apk",
@@ -29,11 +41,23 @@
     "type": "apk",
     "version": "1.0.0",
     "platform": "Android 7.0+",
-    "size": "62 MB",
+    "size": "61 MB",
     "date": "2026-08-05",
     "url": "/downloads/smart-sip-calculator/smart-sip-calculator-1.0.0.apk",
     "appLink": "/apps/smart-sip-calculator.html",
     "notes": ["Initial release with 9 calculators", "Real app icon, AdMob banner ads, and signed release build"]
+  },
+  {
+    "id": "idphotocraft-apk",
+    "name": "IDPhotoCraft",
+    "type": "apk",
+    "version": "1.0.0",
+    "platform": "Android 7.0+",
+    "size": "Play Store",
+    "date": "2026-08-10",
+    "url": "https://play.google.com/store/apps/details?id=com.mtpcode.idphotocraft",
+    "appLink": "/apps/idphotocraft.html",
+    "notes": ["Install from Google Play — direct APK is over GitHub's 100 MB file limit"]
   },
   {
     "id": "mtp-pharma-erp-zip",

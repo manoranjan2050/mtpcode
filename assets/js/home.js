@@ -78,9 +78,10 @@ async function bootstrapHome() {
   await Promise.all([
     renderStats(site),
     renderFeaturedApps(),
-    renderFeaturedProjects(),
+    // Featured Projects + Latest GitHub Projects disabled for now (re-enable with sections in index.html)
+    // renderFeaturedProjects(),
     renderTechStack(site),
-    renderGithubProjects(site),
+    // renderGithubProjects(site),
     renderLatestBlogs(),
   ]);
   renderIcons();

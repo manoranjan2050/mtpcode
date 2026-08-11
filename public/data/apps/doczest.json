@@ -6,7 +6,7 @@
   "banner": "/assets/images/apps/doczest/banner.png",
   "cardImage": "/assets/images/apps/doczest/card.png",
   "gallery": [],
-  "description": "DocZest is a fast, privacy-first, offline-first PDF and document toolkit for Android — scan, compress, merge, split, convert and share entirely on your device. No account, no document upload. Built for students, office workers, shopkeepers and anyone who needs everyday PDF tools without a heavyweight editor. Currently under construction — coming soon to Google Play.",
+  "description": "DocZest is a fast, privacy-first, offline-first PDF and document toolkit for Android — scan, compress, merge, split, convert and share entirely on your device. No account, no document upload. Built for students, office workers, shopkeepers and anyone who needs everyday PDF tools without a heavyweight editor.",
   "features": [
     "Images → PDF",
     "Document scanner with crop and enhancement",
@@ -24,9 +24,8 @@
   "platform": [
     "Android"
   ],
-  "status": "under-construction",
   "downloads": {
-    "apk": "coming-soon"
+    "apk": "/downloads/doczest/doczest-1.0.0.apk"
   },
   "links": {
     "github": "",
@@ -45,10 +44,15 @@
   "changelog": [
     {
       "version": "1.0.0",
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "notes": [
-        "App page preview published — under construction",
-        "Play Store and APK downloads coming soon"
+        "Initial signed release (v1.0.0)",
+        "Image to PDF, document scanner, compress / merge / split PDF",
+        "PDF to image; image compress, resize and convert (JPG/PNG/WEBP)",
+        "Document Ready presets (WhatsApp, Email, Government Upload, Print, Application)",
+        "Local history, Android share & print, dark mode with 6 color themes",
+        "AdMob banner on Home — all document processing stays on-device",
+        "Direct APK available from the MTP CODE download center; Play Store internal testing in progress"
       ]
     }
   ],

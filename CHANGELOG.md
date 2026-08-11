@@ -4,10 +4,17 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+## [2026-08-11] — DocZest 1.0.0 APK
+
+### Added
+- DocZest signed release APK (`/downloads/doczest/doczest-1.0.0.apk`, v1.0.0, 60.1 MB) on the download center
+- DocZest app page changelog dated **2026-08-11** for the initial release (scan / compress / merge / split / convert, Document Ready, history, share & print, on-device privacy)
+- DocZest entry in `public/data/downloads.json`; app JSON download link + status updated (no longer “under construction”)
+
 ### Changed
 - IDPhotoCraft marketing page now uses real store PNG assets (logo, banner, card, gallery) matching the Denomiq app-page pattern, with docs hub link and updated OG/JSON-LD
 
-### Added
+### Added (earlier)
 - IDPhotoCraft app page (`/apps/idphotocraft.html`), data JSON, SVG assets, and legal suite (`/legal/idphotocraft/`) for Play Store privacy/terms URLs
 - DocZest legal page suite (`/legal/doczest/`: privacy, terms, disclaimer, cookie-policy, data-deletion, support) — 5th app to get the standard 6-doc set from Phase 9, generated for the app's Play Store submission
 - Phase 1: Project structure, planning docs (CLAUDE.md, TODO.md, ARCHITECTURE.md, README.md)

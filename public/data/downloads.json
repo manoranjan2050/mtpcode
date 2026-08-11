@@ -1,5 +1,21 @@
 [
   {
+    "id": "doczest-apk",
+    "name": "DocZest",
+    "type": "apk",
+    "version": "1.0.0",
+    "platform": "Android 7.0+",
+    "size": "60.1 MB",
+    "date": "2026-08-11",
+    "url": "/downloads/doczest/doczest-1.0.0.apk",
+    "appLink": "/apps/doczest.html",
+    "notes": [
+      "Initial signed release (v1.0.0)",
+      "Scan, compress, merge, split & convert PDFs and photos — all on-device",
+      "Document Ready presets, history, share & print, dark mode + color themes"
+    ]
+  },
+  {
     "id": "denomiq-apk",
     "name": "Denomiq",
     "type": "apk",

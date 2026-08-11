@@ -2,7 +2,9 @@
   {
     "id": "doczest-apk",
     "name": "DocZest",
+    "kind": "app",
     "type": "apk",
+    "logo": "/assets/images/apps/doczest/logo.png",
     "version": "1.0.0",
     "platform": "Android 7.0+",
     "size": "60.1 MB",
@@ -11,14 +13,41 @@
     "appLink": "/apps/doczest.html",
     "notes": [
       "Initial signed release (v1.0.0)",
-      "Scan, compress, merge, split & convert PDFs and photos — all on-device",
-      "Document Ready presets, history, share & print, dark mode + color themes"
+      "Image to PDF, document scanner, compress / merge / split PDF",
+      "PDF to image; image compress, resize and convert (JPG/PNG/WEBP)",
+      "Document Ready presets (WhatsApp, Email, Government Upload, Print, Application)",
+      "Local history, Android share & print, dark mode with 6 color themes",
+      "AdMob banner on Home — all document processing stays on-device",
+      "Direct APK from MTP CODE download center; Google Play internal testing live"
+    ]
+  },
+  {
+    "id": "stockvexa-apk",
+    "name": "STOCKVEXA",
+    "kind": "app",
+    "type": "apk",
+    "logo": "/assets/images/apps/stockvexa/logo.png",
+    "version": "0.9.0",
+    "platform": "Android",
+    "size": "Coming soon",
+    "date": "2026-08-11",
+    "url": "coming-soon",
+    "appLink": "/apps/stockvexa.html",
+    "status": "under-construction",
+    "notes": [
+      "Preview listing — app under development / coming soon",
+      "Core POS, inventory, GST billing, PDF & thermal print",
+      "CRM contacts, purchases, expenses, party ledger",
+      "Credit notes, split pay, HSN / GSTR reports",
+      "Local + Pro Drive backup, staff roles, AdMob / IAP hooks"
     ]
   },
   {
     "id": "denomiq-apk",
     "name": "Denomiq",
+    "kind": "app",
     "type": "apk",
+    "logo": "/assets/images/apps/denomiq/logo.png",
     "version": "1.0.0",
     "platform": "Android 7.0+",
     "size": "57.7 MB",
@@ -28,91 +57,236 @@
     "notes": [
       "Initial public release (signed APK)",
       "Multi-currency: INR, USD, EUR, GBP, AED, NPR, BDT",
-      "Cash count, history, reports, PDF/CSV/TXT/JSON/Excel export"
+      "Cash count with Exact / Short / Excess and opening/closing float",
+      "History, reports, PDF/CSV/TXT/JSON/Excel export",
+      "AdMob banners, Pro unlock hooks, Thermal Desk bridge, home widget"
     ]
-  },
-  {
-    "id": "calc2pay-apk",
-    "name": "Calc2Pay",
-    "type": "apk",
-    "version": "1.0.0",
-    "platform": "Android 8.0+",
-    "size": "79.3 MB",
-    "date": "2026-08-08",
-    "url": "/downloads/calc2pay/calc2pay-1.0.0.apk",
-    "appLink": "/apps/calc2pay.html",
-    "notes": ["Billing calculator with UPI QR, Pro unlock, and offline-first shop tools"]
-  },
-  {
-    "id": "thermaldesk-apk",
-    "name": "ThermalDesk",
-    "type": "apk",
-    "version": "1.1.0",
-    "platform": "Android 7.0+",
-    "size": "63.1 MB",
-    "date": "2026-08-07",
-    "url": "/downloads/thermaldesk/thermaldesk-1.1.0.apk",
-    "appLink": "/apps/thermaldesk.html",
-    "notes": ["Real-device verification pass", "Live AdMob integration"]
-  },
-  {
-    "id": "smart-sip-calculator-apk",
-    "name": "Smart SIP Calculator",
-    "type": "apk",
-    "version": "1.0.0",
-    "platform": "Android 7.0+",
-    "size": "61 MB",
-    "date": "2026-08-05",
-    "url": "/downloads/smart-sip-calculator/smart-sip-calculator-1.0.0.apk",
-    "appLink": "/apps/smart-sip-calculator.html",
-    "notes": ["Initial release with 9 calculators", "Real app icon, AdMob banner ads, and signed release build"]
   },
   {
     "id": "idphotocraft-apk",
     "name": "IDPhotoCraft",
+    "kind": "app",
     "type": "apk",
+    "logo": "/assets/images/apps/idphotocraft/logo.png",
     "version": "1.0.0",
     "platform": "Android 7.0+",
     "size": "Play Store",
     "date": "2026-08-10",
     "url": "https://play.google.com/store/apps/details?id=com.mtpcode.idphotocraft",
     "appLink": "/apps/idphotocraft.html",
-    "notes": ["Install from Google Play — direct APK is over GitHub's 100 MB file limit"]
+    "cta": "play",
+    "notes": [
+      "Initial release: capture/gallery, face detection, background tools",
+      "Country format presets, editor, print sheets, AdMob, and Pro IAP",
+      "Install from Google Play — direct APK exceeds GitHub's 100 MB limit"
+    ]
+  },
+  {
+    "id": "calc2pay-apk",
+    "name": "Calc2Pay",
+    "kind": "app",
+    "type": "apk",
+    "logo": "/assets/images/apps/calc2pay/logo.png",
+    "version": "1.0.0",
+    "platform": "Android 8.0+",
+    "size": "79.3 MB",
+    "date": "2026-08-08",
+    "url": "/downloads/calc2pay/calc2pay-1.0.0.apk",
+    "appLink": "/apps/calc2pay.html",
+    "notes": [
+      "Redesigned app icon, feature graphic, and Play Store screenshots",
+      "Fixed dashboard/reports layout overflow on real phone widths",
+      "Receipt Message (Pro) supports a full custom message",
+      "Calc2Pay Pro (one-time Play Billing) + optional Google Drive backup",
+      "Billing calculator, Bill Builder, UPI QR, products, history, reports, thermal print"
+    ]
+  },
+  {
+    "id": "thermaldesk-apk",
+    "name": "ThermalDesk",
+    "kind": "app",
+    "type": "apk",
+    "logo": "/assets/images/apps/thermaldesk/logo.png",
+    "version": "1.1.0",
+    "platform": "Android 7.0+",
+    "size": "63.1 MB",
+    "date": "2026-08-07",
+    "url": "/downloads/thermaldesk/thermaldesk-1.1.0.apk",
+    "appLink": "/apps/thermaldesk.html",
+    "notes": [
+      "Real-device verification pass, fixed Print Image crashes",
+      "Live AdMob integration",
+      "Play Store graphics and listing assets refreshed",
+      "Bluetooth ESC/POS 58mm/80mm text, receipts, QR, barcodes and images"
+    ]
+  },
+  {
+    "id": "smart-sip-calculator-apk",
+    "name": "Smart SIP Calculator",
+    "kind": "app",
+    "type": "apk",
+    "logo": "/assets/images/apps/smart-sip-calculator/logo.png",
+    "version": "1.0.0",
+    "platform": "Android 7.0+",
+    "size": "61 MB",
+    "date": "2026-08-05",
+    "url": "/downloads/smart-sip-calculator/smart-sip-calculator-1.0.0.apk",
+    "appLink": "/apps/smart-sip-calculator.html",
+    "notes": [
+      "Initial release with 9 calculators (SIP, Step-Up, Lumpsum, SWP, EMI, FD, RD, PPF, Goal)",
+      "Real app icon, AdMob banner ads, and signed release build",
+      "Fully offline — all calculations stay on your device"
+    ]
   },
   {
     "id": "mtp-pharma-erp-zip",
     "name": "MTP Pharma ERP — Desktop Build",
+    "kind": "app",
     "type": "zip",
+    "logo": "/assets/images/apps/mtp-pharma-erp/logo.svg",
     "version": "1.8.0",
     "platform": "Windows 10/11",
     "size": "84 MB",
     "date": "2026-08-01",
     "url": "/downloads/mtp-pharma-erp/mtp-pharma-erp-1.8.0-desktop.zip",
     "appLink": "/apps/mtp-pharma-erp.html",
-    "notes": ["Added supplier ledger module", "phpdesktop + MariaDB offline build"]
-  },
-  {
-    "id": "flinedge-firmware",
-    "name": "FlinEdge Base Firmware",
-    "type": "firmware",
-    "version": "0.3.0-alpha",
-    "platform": "ESP32",
-    "size": "1.6 MB",
-    "date": "2026-07-05",
-    "url": "/downloads/flinedge/flinedge-firmware-0.3.0-alpha.bin",
-    "appLink": "https://github.com/manoranjan2050/FlinEdge",
-    "notes": ["Early alpha build covering transport + telemetry layers", "Protocol adapters still in development"]
+    "notes": [
+      "Added supplier ledger module",
+      "phpdesktop + MariaDB offline build",
+      "POS billing, batch inventory with expiry, GST-ready invoicing"
+    ]
   },
   {
     "id": "mtp-pharma-erp-guide",
     "name": "MTP Pharma ERP — User Guide",
+    "kind": "app",
     "type": "pdf",
+    "logo": "/assets/images/apps/mtp-pharma-erp/logo.svg",
     "version": "1.8",
     "platform": "All",
     "size": "2.1 MB",
     "date": "2026-08-01",
     "url": "/downloads/mtp-pharma-erp/mtp-pharma-erp-user-guide.pdf",
     "appLink": "/apps/mtp-pharma-erp.html",
-    "notes": ["Setup, billing, inventory and supplier ledger walkthrough"]
+    "notes": [
+      "Setup, billing, inventory and supplier ledger walkthrough",
+      "Matches desktop build v1.8.0"
+    ]
+  },
+  {
+    "id": "mtpdeploy-source",
+    "name": "MTP Deploy",
+    "kind": "project",
+    "type": "source",
+    "logo": "/assets/images/projects/mtpdeploy/1.svg",
+    "version": "live",
+    "platform": "Laravel 12 · Filament",
+    "size": "GitHub",
+    "date": "2026-08-01",
+    "url": "https://github.com/manoranjan2050/mtp-deploy",
+    "appLink": "/projects/mtpdeploy.html",
+    "cta": "github",
+    "notes": [
+      "Self-hosted Forge/Ploi-style server deployment panel",
+      "Site provisioning with one-click deploy scripts",
+      "SSL via Let's Encrypt; database, queue and cron management",
+      "20 modules covering the full server lifecycle"
+    ]
+  },
+  {
+    "id": "cryptoalphascanner-source",
+    "name": "Crypto Alpha Scanner",
+    "kind": "project",
+    "type": "source",
+    "logo": "/assets/images/projects/cryptoalphascanner/1.svg",
+    "version": "live",
+    "platform": "Python · Laravel",
+    "size": "GitHub",
+    "date": "2026-07-20",
+    "url": "https://github.com/manoranjan2050/CryptoAlphaScanner",
+    "appLink": "/projects/cryptoalphascanner.html",
+    "cta": "github",
+    "notes": [
+      "Real-time Binance + KuCoin market scanner",
+      "Momentum and volatility signal scoring",
+      "Live trading engine behind a Laravel dashboard"
+    ]
+  },
+  {
+    "id": "mtpsuite-web",
+    "name": "MTPsuite",
+    "kind": "project",
+    "type": "web",
+    "logo": "/assets/images/projects/mtpsuite/1.svg",
+    "version": "live",
+    "platform": "Web",
+    "size": "Online",
+    "date": "2026-07-15",
+    "url": "https://mtpsuite.com",
+    "appLink": "/projects/mtpsuite.html",
+    "cta": "web",
+    "notes": [
+      "Storefront for desktop and web products",
+      "Downloads, trial licensing via Kavach license server",
+      "Analytics dashboard; Razorpay and PayPal ready behind feature flags"
+    ]
+  },
+  {
+    "id": "helishield-web",
+    "name": "Helishield",
+    "kind": "project",
+    "type": "web",
+    "logo": "/assets/images/projects/helishield/1.svg",
+    "version": "live",
+    "platform": "Web",
+    "size": "Online",
+    "date": "2026-07-10",
+    "url": "https://helishield.com",
+    "appLink": "/projects/helishield.html",
+    "cta": "web",
+    "notes": [
+      "Marketing and catalog site for industrial heat-protection PPE",
+      "Product pages, specifications and enquiry forms",
+      "Built for search visibility and fast load times"
+    ]
+  },
+  {
+    "id": "flinedge-firmware",
+    "name": "FlinEdge Base Firmware",
+    "kind": "project",
+    "type": "firmware",
+    "logo": "/assets/icons/favicon.svg",
+    "version": "0.3.0-alpha",
+    "platform": "ESP32",
+    "size": "1.6 MB",
+    "date": "2026-07-05",
+    "url": "/downloads/flinedge/flinedge-firmware-0.3.0-alpha.bin",
+    "appLink": "https://github.com/manoranjan2050/FlinEdge",
+    "notes": [
+      "Early alpha build covering transport + telemetry layers",
+      "ESP32 edge platform for solar, battery and EV telemetry",
+      "Protocol adapters still in development"
+    ]
+  },
+  {
+    "id": "ferroload-source",
+    "name": "Ferroload",
+    "kind": "project",
+    "type": "source",
+    "logo": "/assets/images/projects/ferroload/1.svg",
+    "version": "dev",
+    "platform": "Rust · Tokio",
+    "size": "GitHub",
+    "date": "2026-06-20",
+    "url": "https://github.com/manoranjan2050/Ferroload",
+    "appLink": "/projects/ferroload.html",
+    "cta": "github",
+    "status": "in-development",
+    "notes": [
+      "Async BitTorrent client written in Rust",
+      "Torrent engine with 8 speed-optimization features",
+      "Torrents and engine config persist across restarts",
+      "CLI interface via ferroload-cli — in active development"
+    ]
   }
 ]

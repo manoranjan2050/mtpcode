@@ -29,7 +29,7 @@
   },
   "links": {
     "github": "",
-    "playstore": "coming-soon",
+    "playstore": "",
     "website": "",
     "docs": ""
   },
@@ -52,7 +52,7 @@
         "Document Ready presets (WhatsApp, Email, Government Upload, Print, Application)",
         "Local history, Android share & print, dark mode with 6 color themes",
         "AdMob banner on Home — all document processing stays on-device",
-        "Direct APK available from the MTP CODE download center; Play Store internal testing in progress"
+        "Direct APK available from the MTP CODE download center; Google Play internal testing live"
       ]
     }
   ],

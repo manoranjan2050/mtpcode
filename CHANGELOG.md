@@ -12,6 +12,9 @@ All notable changes to this project are documented here.
 - DocZest entry in `public/data/downloads.json`; app JSON download link + status updated (no longer “under construction”)
 
 ### Changed
+- DocZest: removed “Coming soon” / “Under construction” badges and Play Store coming-soon CTA (APK download is the live release path; Play Store link can be added when the public listing is available)
+
+### Changed
 - IDPhotoCraft marketing page now uses real store PNG assets (logo, banner, card, gallery) matching the Denomiq app-page pattern, with docs hub link and updated OG/JSON-LD
 
 ### Added (earlier)

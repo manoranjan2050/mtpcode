@@ -36,7 +36,7 @@ export function appCard(app) {
       </div>
       <div class="mt-4 flex flex-wrap gap-2">
         ${app.platform.map((p) => `<span class="badge-primary">${esc(p)}</span>`).join('')}
-        ${underConstruction ? `<span class="badge bg-amber-500/15 text-amber-700 ring-1 ring-inset ring-amber-500/30 dark:text-amber-300">Under construction</span>` : `<span class="badge-neutral">v${esc(app.version)}</span>`}
+        ${underConstruction ? `<span class="badge bg-amber-500/15 text-amber-700 ring-1 ring-inset ring-amber-500/30 dark:text-amber-300">Under development</span>` : `<span class="badge-neutral">v${esc(app.version)}</span>`}
       </div>
       <span class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary-600 group-hover:gap-2 transition-all dark:text-primary-400">
         ${underConstruction ? 'Preview' : 'View app'} <i data-lucide="arrow-right" class="h-4 w-4"></i>

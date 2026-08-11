@@ -1,0 +1,66 @@
+{
+  "slug": "stockvexa",
+  "name": "STOCKVEXA",
+  "tagline": "Offline shop inventory, POS & GST billing",
+  "status": "under-construction",
+  "logo": "/assets/images/apps/stockvexa/logo.png",
+  "banner": "/assets/images/apps/stockvexa/banner.png",
+  "cardImage": "/assets/images/apps/stockvexa/card.png",
+  "gallery": [],
+  "description": "STOCKVEXA is an offline-first Android inventory and billing app for Indian shops — POS sell, products & categories, customers and suppliers, purchases, expenses, GST invoices with PDF and thermal print, UPI QR, WhatsApp bill share, party ledger, and Pro Google Drive backup. Built for shop-counter reality with PIN/partner/biometric lock and staff roles. Currently under development — coming soon on Google Play.",
+  "features": [
+    "Offline-first POS / sell counter with live cart totals in ₹",
+    "Products, categories, stock levels and low-stock alerts",
+    "Customers & suppliers with photos, phone contacts and GSTIN",
+    "Purchases / stock-in and purchase returns",
+    "Expenses tracking for day-to-day shop costs",
+    "GST modes: Simple tax, CGST+SGST, and IGST",
+    "HSN/SAC per product with GSTR-ready summary reports",
+    "Invoices: edit, void (partner-lock), duplicate / credit notes",
+    "Cash + UPI split payment on checkout",
+    "PDF invoices and 58mm / 80mm thermal receipts (₹ font embed)",
+    "UPI QR on business profile + WhatsApp bill share",
+    "Party ledger (customer / supplier statements)",
+    "Notification bell: low stock, dues and backup tips",
+    "Local JSON backup & restore; Pro Google Drive sync + auto schedule",
+    "App PIN, partner lock, biometric unlock",
+    "Staff roles: Owner / Cashier / Viewer + audit CSV export",
+    "12 multicolor themes (Jade, Ocean, Orange, Slate and more)",
+    "Free tier with ads; STOCKVEXA Pro removes ads and unlocks Drive backup"
+  ],
+  "version": "0.9.0",
+  "platform": [
+    "Android"
+  ],
+  "downloads": {
+    "apk": "coming-soon"
+  },
+  "links": {
+    "github": "https://github.com/manoranjan2050/Stockvexa",
+    "playstore": "coming-soon",
+    "website": "",
+    "docs": ""
+  },
+  "legal": {
+    "privacy": "/legal/stockvexa/privacy.html",
+    "terms": "/legal/stockvexa/terms.html",
+    "disclaimer": "/legal/stockvexa/disclaimer.html",
+    "dataDeletion": "/legal/stockvexa/data-deletion.html",
+    "support": "/legal/stockvexa/support.html"
+  },
+  "changelog": [
+    {
+      "version": "0.9.0",
+      "date": "2026-08-11",
+      "notes": [
+        "Preview listing — app under development / coming soon",
+        "Core POS, inventory, GST billing, PDF & thermal print",
+        "CRM contacts, purchases, expenses, party ledger",
+        "Credit notes, split pay, HSN / GSTR reports",
+        "Local + Pro Drive backup, staff roles, AdMob / IAP hooks"
+      ]
+    }
+  ],
+  "featured": true,
+  "category": "android"
+}

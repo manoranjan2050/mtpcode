@@ -76,6 +76,7 @@ function linkButtons(links = {}, appName = 'This app') {
   const meta = {
     website: { label: 'Website', icon: 'globe' },
     docs: { label: 'Documentation', icon: 'book-open' },
+    github: { label: 'GitHub', icon: 'github' },
   };
   const parts = [];
 
@@ -90,7 +91,7 @@ function linkButtons(links = {}, appName = 'This app') {
   }
 
   Object.entries(links)
-    .filter(([key, url]) => url && key !== 'playstore' && key !== 'github' && !isComingSoon(url))
+    .filter(([key, url]) => url && key !== 'playstore' && !isComingSoon(url))
     .forEach(([key, url]) => {
       parts.push(
         `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer" class="btn-outline w-full !justify-start"><i data-lucide="${meta[key]?.icon ?? 'link'}" class="h-4 w-4"></i> ${meta[key]?.label ?? key}</a>`
@@ -135,7 +136,7 @@ function renderDetail(app) {
             <div class="mt-4 flex flex-wrap gap-2">
               ${app.platform.map((p) => `<span class="badge bg-white/10 text-white ring-1 ring-inset ring-white/20">${esc(p)}</span>`).join('')}
               ${underConstruction
-                ? `<span class="badge bg-amber-500 text-white ring-1 ring-inset ring-white/20">Under construction</span>`
+                ? `<span class="badge bg-amber-500 text-white ring-1 ring-inset ring-white/20">Under development</span>`
                 : `<span class="badge bg-white/10 text-white ring-1 ring-inset ring-white/20">v${esc(app.version)}</span>`}
             </div>
           </div>
@@ -147,7 +148,7 @@ function renderDetail(app) {
     <section class="border-b border-amber-500/20 bg-amber-500/10">
       <div class="container-page flex flex-wrap items-center gap-3 py-4 text-sm text-amber-900 dark:text-amber-200">
         <i data-lucide="construction" class="h-4 w-4 shrink-0"></i>
-        <p><strong>${esc(app.name)}</strong> is under construction. Download and Google Play will unlock at launch.</p>
+        <p><strong>${esc(app.name)}</strong> is coming soon and under development. Download and Google Play will unlock at launch.</p>
       </div>
     </section>` : ''}
 

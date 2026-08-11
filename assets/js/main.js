@@ -4,6 +4,7 @@ import { renderIcons } from './icons.js';
 import { loadPartials, markActiveNavLinks } from './partials.js';
 import { initTheme, toggleTheme } from './theme.js';
 import { initAOS, animateCounters, initPageLoader } from './animations.js';
+import { initPageviewsCounter } from './pageviews.js';
 
 initTheme();
 
@@ -58,6 +59,7 @@ async function bootstrap() {
   wireFooter();
   initAOS();
   animateCounters();
+  await initPageviewsCounter();
   initPageLoader();
   document.dispatchEvent(new CustomEvent('mtpcode:ready'));
 }

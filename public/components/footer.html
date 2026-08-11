@@ -56,9 +56,22 @@
       </div>
     </div>
 
-    <div class="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-slate-500 sm:flex-row">
-      <p>&copy; <span id="footer-year"></span> MTPCode. All rights reserved. Built by Manoranjan Das.</p>
-      <p class="flex items-center gap-1.5">Made with <i data-lucide="heart" class="h-3.5 w-3.5 text-secondary-400"></i> in India</p>
+    <div class="mt-14 flex flex-col items-center justify-between gap-5 border-t border-white/10 pt-8 sm:flex-row">
+      <p class="text-xs text-slate-500">&copy; <span id="footer-year"></span> MTPCode. All rights reserved. Built by Manoranjan Das.</p>
+
+      <div id="footer-pageviews" class="pageviews-chip" aria-live="polite">
+        <span class="pageviews-chip__glow" aria-hidden="true"></span>
+        <span class="pageviews-chip__icon" aria-hidden="true">
+          <i data-lucide="eye" class="h-4 w-4"></i>
+        </span>
+        <span class="pageviews-chip__body">
+          <span class="pageviews-chip__label">Total page views</span>
+          <span id="footer-pageviews-count" class="pageviews-chip__count" data-pageviews-count>0</span>
+        </span>
+        <span class="pageviews-chip__pulse" aria-hidden="true"></span>
+      </div>
+
+      <p class="flex items-center gap-1.5 text-xs text-slate-500">Made with <i data-lucide="heart" class="h-3.5 w-3.5 text-secondary-400"></i> in India</p>
     </div>
   </div>
 </footer>

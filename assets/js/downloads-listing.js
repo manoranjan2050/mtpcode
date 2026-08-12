@@ -4,7 +4,7 @@ import { fetchJson } from './renderers.js';
 import { refreshAOS } from './animations.js';
 
 const TYPE_META = {
-  apk: { label: 'APK', icon: 'smartphone', badge: 'badge-primary' },
+  apk: { label: 'Android', icon: 'smartphone', badge: 'badge-primary' },
   zip: { label: 'ZIP', icon: 'folder-archive', badge: 'badge-secondary' },
   pdf: { label: 'PDF', icon: 'file-text', badge: 'badge-accent' },
   firmware: { label: 'Firmware', icon: 'cpu', badge: 'badge-neutral' },
@@ -25,6 +25,14 @@ function isExternal(url) {
 }
 
 function primaryCta(item) {
+  // Android / APK cards: Play Store only — never direct APK file links.
+  if (item.type === 'apk') {
+    const playUrl = item.playstore || (item.cta === 'play' ? item.url : '');
+    if (!playUrl || playUrl === 'coming-soon' || item.status === 'under-construction') {
+      return `<span class="btn-outline flex-1 !py-2.5 text-sm cursor-not-allowed opacity-60"><i data-lucide="play" class="h-4 w-4"></i> Play Store soon</span>`;
+    }
+    return `<a href="${esc(playUrl)}" target="_blank" rel="noopener noreferrer" class="btn-primary flex-1 !py-2.5 text-sm"><i data-lucide="play" class="h-4 w-4"></i> Get on Play</a>`;
+  }
   if (isComingSoon(item)) {
     return `<span class="btn-outline flex-1 !py-2.5 text-sm cursor-not-allowed opacity-60"><i data-lucide="construction" class="h-4 w-4"></i> Coming soon</span>`;
   }

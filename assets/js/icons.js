@@ -52,6 +52,7 @@ import {
   Twitter,
   Waves,
   X,
+  Youtube,
   Zap,
   createIcons,
 } from 'lucide';
@@ -108,6 +109,7 @@ const iconMap = {
   Twitter,
   Waves,
   X,
+  Youtube,
   Zap,
 };
 

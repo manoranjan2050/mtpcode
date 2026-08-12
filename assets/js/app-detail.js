@@ -48,43 +48,35 @@ function playStoreBadge({ href, comingSoon = false, appName = 'This app' } = {})
 }
 
 function downloadButtons(downloads = {}) {
+  // Never expose APK / "Download App". Only desktop ZIP, PDF, firmware.
   const labels = {
-    apk: 'Download App',
     zip: 'Download ZIP',
     pdf: 'Download PDF',
     firmware: 'Download Firmware',
   };
   return Object.entries(downloads)
-    .filter(([, url]) => url)
+    .filter(([key, url]) => url && key !== 'apk' && !isComingSoon(url))
     .map(([key, url]) => {
-      if (isComingSoon(url)) {
-        return `
-          <button type="button" disabled
-            class="btn-primary w-full cursor-not-allowed opacity-80 !shadow-none hover:!scale-100">
-            <i data-lucide="download" class="h-4 w-4"></i>
-            ${labels[key] ?? 'Download App'}
-            <span class="rounded-full bg-white/20 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide">Coming soon</span>
-          </button>
-          <p class="text-center text-xs text-dark-700/60 dark:text-slate-400">APK download will be available with the Play Store release.</p>`;
-      }
-      return `<a href="${esc(url)}" class="btn-primary w-full" download><i data-lucide="download" class="h-4 w-4"></i> ${labels[key] ?? 'Download'}</a>`;
+      return `<a href="${esc(url)}" class="btn-outline w-full" download><i data-lucide="download" class="h-4 w-4"></i> ${labels[key] ?? 'Download'}</a>`;
     })
     .join('');
 }
 
-function linkButtons(links = {}, appName = 'This app') {
+function linkButtons(links = {}, appName = 'This app', { isAndroid = false } = {}) {
   const meta = {
     website: { label: 'Website', icon: 'globe' },
     docs: { label: 'Documentation', icon: 'book-open' },
     github: { label: 'GitHub', icon: 'github' },
   };
   const parts = [];
+  const play = links.playstore;
 
-  if (links.playstore) {
+  // Every Android app always shows Google Play (live or coming soon).
+  if (isAndroid || play) {
     parts.push(
       playStoreBadge({
-        href: isComingSoon(links.playstore) ? '' : links.playstore,
-        comingSoon: isComingSoon(links.playstore),
+        href: play && !isComingSoon(play) ? play : '',
+        comingSoon: !play || isComingSoon(play),
         appName,
       })
     );
@@ -117,7 +109,8 @@ function legalLinks(legal = {}) {
 
 function renderDetail(app) {
   const root = document.getElementById('app-detail-root');
-  const linksHtml = linkButtons(app.links || {}, app.name);
+  const isAndroid = (app.platform || []).some((p) => /android/i.test(p));
+  const linksHtml = linkButtons(app.links || {}, app.name, { isAndroid });
   const downloadsHtml = downloadButtons(app.downloads || {});
   const underConstruction = app.status === 'under-construction';
   root.innerHTML = `
@@ -148,7 +141,7 @@ function renderDetail(app) {
     <section class="border-b border-amber-500/20 bg-amber-500/10">
       <div class="container-page flex flex-wrap items-center gap-3 py-4 text-sm text-amber-900 dark:text-amber-200">
         <i data-lucide="construction" class="h-4 w-4 shrink-0"></i>
-        <p><strong>${esc(app.name)}</strong> is coming soon and under development. Download and Google Play will unlock at launch.</p>
+        <p><strong>${esc(app.name)}</strong> is coming soon and under development. Google Play will unlock at launch.</p>
       </div>
     </section>` : ''}
 
@@ -184,13 +177,14 @@ function renderDetail(app) {
 
         <aside class="space-y-6">
           <div class="card-glass space-y-3 p-6">
-            <h3 class="font-display text-sm font-bold uppercase tracking-wide text-dark-900 dark:text-white">Download</h3>
-            ${downloadsHtml || '<p class="text-sm text-dark-700/60 dark:text-slate-400">Coming soon.</p>'}
+            <h3 class="font-display text-sm font-bold uppercase tracking-wide text-dark-900 dark:text-white">${isAndroid ? 'Get on Google Play' : 'Get the app'}</h3>
+            ${linksHtml || '<p class="text-sm text-dark-700/60 dark:text-slate-400">Links coming soon.</p>'}
+            ${isAndroid ? `<p class="text-xs text-dark-700/60 dark:text-slate-400">Install from Google Play only. Direct APK / Download App buttons are disabled.</p>` : ''}
           </div>
-          ${linksHtml ? `
+          ${!isAndroid && downloadsHtml ? `
           <div class="card-glass space-y-3 p-6">
-            <h3 class="font-display text-sm font-bold uppercase tracking-wide text-dark-900 dark:text-white">Get the app</h3>
-            ${linksHtml}
+            <h3 class="font-display text-sm font-bold uppercase tracking-wide text-dark-900 dark:text-white">Other downloads</h3>
+            ${downloadsHtml}
           </div>` : ''}
           <div class="card-glass space-y-2 p-6">
             <h3 class="font-display text-sm font-bold uppercase tracking-wide text-dark-900 dark:text-white">Legal</h3>

@@ -18,31 +18,41 @@ export async function fetchCollection(baseDir) {
 export function appCard(app) {
   const cover = app.cardImage || app.banner || app.gallery?.[0] || app.logo;
   const underConstruction = app.status === 'under-construction';
+  const isAndroid = (app.platform || []).some((p) => /android/i.test(p));
+  const play = app.links?.playstore;
+  const playLive = play && play !== 'coming-soon' && !/^coming-soon$/i.test(play);
   return `
-  <a href="/apps/${esc(app.slug)}.html" data-aos="fade-up" class="card group flex flex-col overflow-hidden">
-    <div class="relative aspect-[16/10] w-full overflow-hidden bg-dark-50 dark:bg-white/[0.03]">
+  <article data-aos="fade-up" class="card group flex flex-col overflow-hidden">
+    <a href="/apps/${esc(app.slug)}.html" class="relative aspect-[16/10] w-full overflow-hidden bg-dark-50 dark:bg-white/[0.03]">
       <img src="${esc(cover)}" alt="${esc(app.name)} preview" loading="lazy" width="1600" height="1000"
         class="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
       ${underConstruction ? `<span class="absolute left-3 top-3 rounded-full bg-amber-500 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-white shadow">Coming soon</span>` : ''}
-    </div>
+    </a>
     <div class="flex flex-1 flex-col p-6">
-      <div class="flex items-center gap-4">
+      <a href="/apps/${esc(app.slug)}.html" class="flex items-center gap-4">
         <img src="${esc(app.logo)}" alt="${esc(app.name)} logo" loading="lazy"
           class="h-14 w-14 shrink-0 rounded-2xl object-cover shadow-sm ring-1 ring-dark-900/5 dark:ring-white/10" width="56" height="56" />
         <div class="min-w-0">
           <h3 class="truncate font-display text-lg font-bold text-dark-900 dark:text-white">${esc(app.name)}</h3>
           <p class="truncate text-sm text-dark-700/70 dark:text-slate-400">${esc(app.tagline)}</p>
         </div>
-      </div>
+      </a>
       <div class="mt-4 flex flex-wrap gap-2">
         ${app.platform.map((p) => `<span class="badge-primary">${esc(p)}</span>`).join('')}
         ${underConstruction ? `<span class="badge bg-amber-500/15 text-amber-700 ring-1 ring-inset ring-amber-500/30 dark:text-amber-300">Under development</span>` : `<span class="badge-neutral">v${esc(app.version)}</span>`}
       </div>
-      <span class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-primary-600 group-hover:gap-2 transition-all dark:text-primary-400">
-        ${underConstruction ? 'Preview' : 'View app'} <i data-lucide="arrow-right" class="h-4 w-4"></i>
-      </span>
+      <div class="mt-5 flex flex-wrap items-center gap-2">
+        ${isAndroid
+          ? (playLive
+              ? `<a href="${esc(play)}" target="_blank" rel="noopener noreferrer" class="btn-primary !px-4 !py-2 text-xs"><i data-lucide="play" class="h-3.5 w-3.5"></i> Get on Play</a>`
+              : `<span class="btn-outline !px-4 !py-2 text-xs cursor-not-allowed opacity-70"><i data-lucide="play" class="h-3.5 w-3.5"></i> Play Store soon</span>`)
+          : ''}
+        <a href="/apps/${esc(app.slug)}.html" class="inline-flex items-center gap-1 text-sm font-semibold text-primary-600 group-hover:gap-2 transition-all dark:text-primary-400">
+          ${underConstruction ? 'Preview' : 'View app'} <i data-lucide="arrow-right" class="h-4 w-4"></i>
+        </a>
+      </div>
     </div>
-  </a>`;
+  </article>`;
 }
 
 export function projectCard(project) {

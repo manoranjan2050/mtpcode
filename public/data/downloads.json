@@ -7,9 +7,9 @@
     "logo": "/assets/images/apps/doczest/logo.png",
     "version": "1.0.0",
     "platform": "Android 7.0+",
-    "size": "60.1 MB",
+    "size": "Play Store",
     "date": "2026-08-11",
-    "url": "/downloads/doczest/doczest-1.0.0.apk",
+    "url": "coming-soon",
     "appLink": "/apps/doczest.html",
     "notes": [
       "Initial signed release (v1.0.0)",
@@ -18,8 +18,10 @@
       "Document Ready presets (WhatsApp, Email, Government Upload, Print, Application)",
       "Local history, Android share & print, dark mode with 6 color themes",
       "AdMob banner on Home — all document processing stays on-device",
-      "Direct APK from MTP CODE download center; Google Play internal testing live"
-    ]
+      "Install from Google Play when the listing is live — direct APK downloads are not offered."
+    ],
+    "cta": "play",
+    "playstore": "coming-soon"
   },
   {
     "id": "stockvexa-apk",
@@ -29,7 +31,7 @@
     "logo": "/assets/images/apps/stockvexa/logo.png",
     "version": "0.9.0",
     "platform": "Android",
-    "size": "Coming soon",
+    "size": "Play Store",
     "date": "2026-08-11",
     "url": "coming-soon",
     "appLink": "/apps/stockvexa.html",
@@ -40,7 +42,9 @@
       "CRM contacts, purchases, expenses, party ledger",
       "Credit notes, split pay, HSN / GSTR reports",
       "Local + Pro Drive backup, staff roles, AdMob / IAP hooks"
-    ]
+    ],
+    "cta": "play",
+    "playstore": "coming-soon"
   },
   {
     "id": "denomiq-apk",
@@ -50,9 +54,9 @@
     "logo": "/assets/images/apps/denomiq/logo.png",
     "version": "1.0.0",
     "platform": "Android 7.0+",
-    "size": "57.7 MB",
+    "size": "Play Store",
     "date": "2026-08-10",
-    "url": "/downloads/denomiq/denomiq-1.0.0.apk",
+    "url": "coming-soon",
     "appLink": "/apps/denomiq.html",
     "notes": [
       "Initial public release (signed APK)",
@@ -60,7 +64,9 @@
       "Cash count with Exact / Short / Excess and opening/closing float",
       "History, reports, PDF/CSV/TXT/JSON/Excel export",
       "AdMob banners, Pro unlock hooks, Thermal Desk bridge, home widget"
-    ]
+    ],
+    "cta": "play",
+    "playstore": "coming-soon"
   },
   {
     "id": "idphotocraft-apk",
@@ -78,8 +84,9 @@
     "notes": [
       "Initial release: capture/gallery, face detection, background tools",
       "Country format presets, editor, print sheets, AdMob, and Pro IAP",
-      "Install from Google Play — direct APK exceeds GitHub's 100 MB limit"
-    ]
+      "Install from Google Play only."
+    ],
+    "playstore": "https://play.google.com/store/apps/details?id=com.mtpcode.idphotocraft"
   },
   {
     "id": "calc2pay-apk",
@@ -89,9 +96,9 @@
     "logo": "/assets/images/apps/calc2pay/logo.png",
     "version": "1.0.0",
     "platform": "Android 8.0+",
-    "size": "79.3 MB",
+    "size": "Play Store",
     "date": "2026-08-08",
-    "url": "/downloads/calc2pay/calc2pay-1.0.0.apk",
+    "url": "coming-soon",
     "appLink": "/apps/calc2pay.html",
     "notes": [
       "Redesigned app icon, feature graphic, and Play Store screenshots",
@@ -99,7 +106,9 @@
       "Receipt Message (Pro) supports a full custom message",
       "Calc2Pay Pro (one-time Play Billing) + optional Google Drive backup",
       "Billing calculator, Bill Builder, UPI QR, products, history, reports, thermal print"
-    ]
+    ],
+    "cta": "play",
+    "playstore": "coming-soon"
   },
   {
     "id": "thermaldesk-apk",
@@ -109,16 +118,18 @@
     "logo": "/assets/images/apps/thermaldesk/logo.png",
     "version": "1.1.0",
     "platform": "Android 7.0+",
-    "size": "63.1 MB",
+    "size": "Play Store",
     "date": "2026-08-07",
-    "url": "/downloads/thermaldesk/thermaldesk-1.1.0.apk",
+    "url": "coming-soon",
     "appLink": "/apps/thermaldesk.html",
     "notes": [
       "Real-device verification pass, fixed Print Image crashes",
       "Live AdMob integration",
       "Play Store graphics and listing assets refreshed",
       "Bluetooth ESC/POS 58mm/80mm text, receipts, QR, barcodes and images"
-    ]
+    ],
+    "cta": "play",
+    "playstore": "coming-soon"
   },
   {
     "id": "smart-sip-calculator-apk",
@@ -128,15 +139,17 @@
     "logo": "/assets/images/apps/smart-sip-calculator/logo.png",
     "version": "1.0.0",
     "platform": "Android 7.0+",
-    "size": "61 MB",
+    "size": "Play Store",
     "date": "2026-08-05",
-    "url": "/downloads/smart-sip-calculator/smart-sip-calculator-1.0.0.apk",
+    "url": "coming-soon",
     "appLink": "/apps/smart-sip-calculator.html",
     "notes": [
       "Initial release with 9 calculators (SIP, Step-Up, Lumpsum, SWP, EMI, FD, RD, PPF, Goal)",
       "Real app icon, AdMob banner ads, and signed release build",
       "Fully offline — all calculations stay on your device"
-    ]
+    ],
+    "cta": "play",
+    "playstore": "coming-soon"
   },
   {
     "id": "mtp-pharma-erp-zip",

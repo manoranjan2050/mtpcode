@@ -4,6 +4,13 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+## [2026-08-13] — Geo Camera & GPS Stamp product page
+
+### Added
+- Geo Camera & GPS Stamp app page (`/apps/geo-camera.html`), data JSON, store imagery, and legal suite (`/legal/geo-camera/`) for Play Store privacy/terms URLs
+- Package `dev.mtpcode.geocamera` · support `mtpcode.in@gmail.com` · developer MTC Code / Manoranjan
+- Listing in `public/data/apps/index.json` and the download center (Play coming soon)
+
 ## [2026-08-11] — DocZest 1.0.0 APK
 
 ### Added

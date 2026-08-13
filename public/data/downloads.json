@@ -1,5 +1,26 @@
 [
   {
+    "id": "geo-camera-apk",
+    "name": "Geo Camera & GPS Stamp",
+    "kind": "app",
+    "type": "apk",
+    "logo": "/assets/images/apps/geo-camera/logo.png",
+    "version": "1.0.0",
+    "platform": "Android 7.0+",
+    "size": "Play Store",
+    "date": "2026-08-13",
+    "url": "coming-soon",
+    "appLink": "/apps/geo-camera.html",
+    "notes": [
+      "Field documentation camera — original JPEG plus a separate GPS stamp",
+      "Live overlay, compass, projects, gallery, share / PDF / CSV",
+      "On-device processing; missing GPS is labelled unavailable",
+      "Install from Google Play when the listing is live — direct APK downloads are not offered."
+    ],
+    "cta": "play",
+    "playstore": "coming-soon"
+  },
+  {
     "id": "doczest-apk",
     "name": "DocZest",
     "kind": "app",

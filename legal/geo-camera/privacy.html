@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geo Camera &amp; GPS Stamp Privacy Policy — MTPCode</title>
+  <meta name="description" content="Privacy Policy for Geo Camera &amp; GPS Stamp (dev.mtpcode.geocamera) — on-device photos and GPS stamps, optional maps/geocode, and banner ads." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mtpcode.com/legal/geo-camera/privacy.html" />
+  <meta name="theme-color" content="#0F172A" />
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+</head>
+<body class="overflow-x-hidden bg-white dark:bg-dark-950">
+  <div id="page-loader"><div class="loader-ring"></div></div>
+  <div data-include="/components/header.html"></div>
+  <main>
+    <section class="section !pt-40 sm:!pt-48">
+      <div class="container-page max-w-3xl">
+        <span class="eyebrow">Legal</span>
+        <h1 class="mt-4 font-display text-3xl font-extrabold text-dark-900 dark:text-white sm:text-4xl">Geo Camera &amp; GPS Stamp Privacy Policy</h1>
+        <p class="mt-2 text-sm text-dark-700/60 dark:text-slate-400">Geo Camera &amp; GPS Stamp &middot; Package <code>dev.mtpcode.geocamera</code> &middot; Effective 13 August 2026</p>
+        <div class="prose-article mt-10">
+    <p>This policy is for the Android app <strong>Geo Camera &amp; GPS Stamp</strong> (<code>dev.mtpcode.geocamera</code>), published by <strong>MTC Code / Manoranjan</strong>. Contact: <a href="mailto:mtpcode.in@gmail.com">mtpcode.in@gmail.com</a>. Website: <a href="https://mtpcode.com">mtpcode.com</a>.</p>
+    <p>Geo Camera processes photos and location <strong>on your device</strong>. There is <strong>no required account</strong>. We do <strong>not</strong> sell personal information. Core capture works offline. Optional network use is limited to reverse geocoding, OpenStreetMap tiles, and advertising.</p>
+
+    <h2>What data the app uses</h2>
+    <ul>
+      <li><strong>Camera frames and saved JPEGs</strong> — on device (app storage), for taking photos; original plus a separate stamped copy.</li>
+      <li><strong>GPS coordinates, accuracy, altitude, speed, heading</strong> — on device, written onto a stamped copy and stored with the photo record for geotag / field documentation.</li>
+      <li><strong>Optional address / place name</strong> — on device after optional reverse geocode, for stamp text.</li>
+      <li><strong>Project names and notes you type</strong> — on device, for organizing photos.</li>
+      <li><strong>Custom stamp text / watermark</strong> — on device, for the stamp overlay.</li>
+      <li><strong>Advertising ID (Android)</strong> — used by Google Mobile Ads if ads are shown (banners on Home/Gallery).</li>
+      <li><strong>Diagnostics</strong> — not collected by us in this version (no analytics SDK).</li>
+    </ul>
+    <p>We do not operate an app server that receives your photo library or GPS track.</p>
+
+    <h2>Location</h2>
+    <p>Location is used <strong>to stamp photographs</strong> and to show a live overlay while the camera is open. GPS is requested after an in-app explanation. You can skip location and still take an original photo; the stamp will say location is unavailable rather than inventing coordinates.</p>
+    <p>We do not use location for advertising targeting in our own code. Google’s ads SDK has its own policies.</p>
+
+    <h2>Optional network</h2>
+    <ul>
+      <li><strong>Reverse geocoding</strong> (device/OS geocoder): turns coordinates into a place name. If it fails or you are offline, coordinates or “unavailable” are shown instead. Capture is not blocked.</li>
+      <li><strong>OpenStreetMap tiles</strong>: a small map thumbnail on the stamp. If the tile cannot be fetched, the last successful tile may be kept, or the map area is omitted. We do not use paid Google Static Maps.</li>
+      <li><strong>Advertising:</strong> banner ads via Google Mobile Ads. Debug builds use Google test ad units. A production AdMob app ID is required for Play.</li>
+    </ul>
+    <p>Turning on airplane mode does not prevent taking a photo or saving the original.</p>
+
+    <h2>Ads</h2>
+    <p>Banners may appear on Home and/or Gallery. They must not cover the shutter. If an ad fails to load, the app continues (fail open). A future Pro option may remove ads; core camera remains free.</p>
+    <p>Google may process device identifiers according to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google’s privacy policy</a> and AdMob terms.</p>
+
+    <h2>Sharing</h2>
+    <p>If you share a photo, PDF, or CSV, the <strong>Android share sheet</strong> sends that file to the app you choose (email, Drive, WhatsApp, etc.). Geo Camera does not upload that file to a server of its own.</p>
+
+    <h2>Accounts and children</h2>
+    <p>No account is required. We do not knowingly collect personal information from children. The app is intended for field documentation, including professional use. If you believe a child has provided personal data through this app, contact us and we will help you remove local data by uninstalling or clearing app storage.</p>
+
+    <h2>Sale of data</h2>
+    <p>We do <strong>not</strong> sell personal data. We do not share photo files with third parties except: (1) you, via share sheet; (2) optional geocode/OSM/ads providers as described.</p>
+
+    <h2>Stamps and trust</h2>
+    <p>A visible GPS stamp is a <strong>visual overlay</strong>, not a cryptographic proof. Original files are kept separately. If you add a current location to an older photo, it is labelled as location added now (or similar), not as GPS-at-capture.</p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li>Deny camera or location in Android settings. Camera denial blocks capture; location denial still allows originals without GPS.</li>
+      <li>Turn off stamped copies in Storage settings.</li>
+      <li>Uninstall the app to delete app-private files (files you copied to another app remain there).</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Questions or privacy requests: <a href="mailto:mtpcode.in@gmail.com">mtpcode.in@gmail.com</a></p>
+    <p>Developer: <strong>MTC Code</strong> · <a href="https://manoranjan.dev">Manoranjan</a> · <a href="https://mtpcode.com">mtpcode.com</a></p>
+    <p>Related: <a href="terms.html">Terms of Use</a> &middot; <a href="data-deletion.html">Data Deletion</a> &middot; <a href="/apps/geo-camera.html">App page</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div data-include="/components/footer.html"></div>
+  <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>

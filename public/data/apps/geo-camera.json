@@ -1,0 +1,58 @@
+{
+  "slug": "geo-camera",
+  "name": "Geo Camera & GPS Stamp",
+  "tagline": "Field documentation camera — original plus a separate GPS stamp",
+  "logo": "/assets/images/apps/geo-camera/logo.png",
+  "banner": "/assets/images/apps/geo-camera/banner.png",
+  "cardImage": "/assets/images/apps/geo-camera/card.jpg",
+  "gallery": [
+    "/assets/images/apps/geo-camera/screen-1.jpg",
+    "/assets/images/apps/geo-camera/screen-2.jpg",
+    "/assets/images/apps/geo-camera/screen-3.jpg"
+  ],
+  "description": "Geo Camera & GPS Stamp is an Android field documentation camera by MTC Code / Manoranjan. Capture a photograph, lock GPS when the device has a real fix, and write a separate stamped copy. The original is never overwritten. Missing GPS, altitude, or heading is labelled unavailable — never invented as 0. Core capture works offline. Package ID: dev.mtpcode.geocamera. Support: mtpcode.in@gmail.com.",
+  "features": [
+    "Live camera with GPS stamp overlay (same painter as the saved copy)",
+    "Original JPEG is never overwritten — stamped output is always a new file",
+    "Honest GPS: unavailable values are labelled, never faked",
+    "Optional OpenStreetMap thumbnail and reverse-geocoded address",
+    "Projects, gallery, share, PDF report, and CSV export — kept free",
+    "Full-screen compass with Align-with-GPS mode",
+    "Offline core: take a photo and save the original without a network",
+    "Banner ads on Home/Gallery only — never covering the shutter",
+    "Taking a geotagged photo does not require Pro"
+  ],
+  "version": "1.0.0",
+  "platform": [
+    "Android"
+  ],
+  "downloads": {
+    "apk": "coming-soon"
+  },
+  "links": {
+    "github": "https://github.com/manoranjan2050/Geo-Camera-on-phone",
+    "playstore": "coming-soon",
+    "website": "https://mtpcode.com/apps/geo-camera.html",
+    "docs": ""
+  },
+  "legal": {
+    "privacy": "/legal/geo-camera/privacy.html",
+    "terms": "/legal/geo-camera/terms.html",
+    "disclaimer": "/legal/geo-camera/disclaimer.html",
+    "cookiePolicy": "/legal/geo-camera/cookie-policy.html",
+    "dataDeletion": "/legal/geo-camera/data-deletion.html",
+    "support": "/legal/geo-camera/support.html"
+  },
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-08-13",
+      "notes": [
+        "Public product page and Play-ready privacy/terms URLs",
+        "On-device camera, GPS stamp overlay, compass, gallery, projects, share/PDF/CSV"
+      ]
+    }
+  ],
+  "featured": true,
+  "category": "android"
+}

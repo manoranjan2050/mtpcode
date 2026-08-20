@@ -1,0 +1,65 @@
+{
+  "slug": "indian-financial-toolkit",
+  "name": "Indian Financial Toolkit",
+  "tagline": "Your money, made easier — 60+ Indian financial calculators in one app",
+  "logo": "/assets/images/apps/indian-financial-toolkit/logo.svg",
+  "banner": "/assets/images/apps/indian-financial-toolkit/banner.svg",
+  "cardImage": "/assets/images/apps/indian-financial-toolkit/card.svg",
+  "gallery": [
+    "/assets/images/apps/indian-financial-toolkit/screen-1.png",
+    "/assets/images/apps/indian-financial-toolkit/screen-2.png",
+    "/assets/images/apps/indian-financial-toolkit/screen-3.png",
+    "/assets/images/apps/indian-financial-toolkit/screen-4.png",
+    "/assets/images/apps/indian-financial-toolkit/screen-5.png",
+    "/assets/images/apps/indian-financial-toolkit/screen-6.png",
+    "/assets/images/apps/indian-financial-toolkit/screen-7.png",
+    "/assets/images/apps/indian-financial-toolkit/screen-8.png"
+  ],
+  "description": "Indian Financial Toolkit bundles every everyday Indian financial calculator into one fast, offline Android app — loans, investments, savings schemes, retirement planning, tax, and insurance. Every result is backed by an animated, colorful doughnut or polar-area chart, and every calculator has its own hand-designed icon. All calculations run entirely on your device; nothing is uploaded, and no account is required.",
+  "features": [
+    "60+ calculators across Loans, Investments, Savings, Retirement, Tax, Insurance and more",
+    "EMI, Advanced EMI, Loan Prepayment, Loan Eligibility and Loan Comparison",
+    "SIP, Lumpsum, SWP, SIP+SWP Planner, CAGR, XIRR and ELSS",
+    "FD, RD, PPF, NSC, KVP, SCSS, Sukanya Samriddhi and Post Office Time Deposit",
+    "NPS, EPF, VPF, APY, Pension Estimator and Retirement Corpus/Planner",
+    "Income Tax (old vs new regime), HRA, GST, Capital Gains and Salary in-hand",
+    "Goal Planner and a 3-way SIP vs Lumpsum vs FD comparison",
+    "Animated doughnut and polar-area charts on every calculator with a natural breakdown",
+    "Save results to History, star favourites, and search across every calculator",
+    "Light, dark, and system theme — a vivid light-purple design throughout",
+    "100% offline — every calculation runs on your device, nothing is uploaded"
+  ],
+  "version": "1.0.0",
+  "platform": [
+    "Android"
+  ],
+  "downloads": {
+    "apk": "coming-soon"
+  },
+  "links": {
+    "github": "https://github.com/manoranjan2050/Indian-Financial-Toolkit",
+    "playstore": "coming-soon",
+    "website": "",
+    "docs": ""
+  },
+  "legal": {
+    "privacy": "/legal/indian-financial-toolkit/privacy.html",
+    "terms": "/legal/indian-financial-toolkit/terms.html",
+    "disclaimer": "/legal/indian-financial-toolkit/disclaimer.html",
+    "cookiePolicy": "/legal/indian-financial-toolkit/cookie-policy.html",
+    "dataDeletion": "/legal/indian-financial-toolkit/data-deletion.html",
+    "support": "/legal/indian-financial-toolkit/support.html"
+  },
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-08-20",
+      "notes": [
+        "Initial release with 60+ calculators across 7 categories",
+        "Animated doughnut/polar-area charts, per-calculator icons, and a 5-screen onboarding flow"
+      ]
+    }
+  ],
+  "featured": true,
+  "category": "android"
+}

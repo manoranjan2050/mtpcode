@@ -1,0 +1,60 @@
+{
+  "slug": "mtpcode-testers",
+  "name": "MTPCode Testers",
+  "tagline": "Find Testers. Test Apps. Get Real Feedback.",
+  "logo": "/assets/images/apps/mtpcode-testers/logo.png",
+  "banner": "/assets/images/apps/mtpcode-testers/banner.png",
+  "cardImage": "/assets/images/apps/mtpcode-testers/card.png",
+  "gallery": [
+    "/assets/images/apps/mtpcode-testers/screen-1.png",
+    "/assets/images/apps/mtpcode-testers/screen-2.png",
+    "/assets/images/apps/mtpcode-testers/screen-3.png",
+    "/assets/images/apps/mtpcode-testers/screen-4.png",
+    "/assets/images/apps/mtpcode-testers/screen-5.png"
+  ],
+  "description": "MTPCode Testers is a community platform connecting Android developers with real testers for genuine testing tasks and structured feedback — not an install exchange. Developers submit apps and create testing campaigns; testers get matched automatically by device, Android version and hardware, complete structured tasks, and submit ratings and bug reports. Includes a credit/reputation/badge system, campaign reporting (PDF/CSV), and a full admin panel.",
+  "features": [
+    "Server-side tester matching by Android version, architecture, hardware and country",
+    "Structured testing tasks, sessions and completion tracking",
+    "5-category star ratings plus bug reports with screenshot/video attachments",
+    "Ledger-based credits, recoverable reputation score, and unlockable badges",
+    "Campaign testing reports — JSON, branded PDF, and CSV export",
+    "Test Squads — mutual-testing cohorts with progress tracking",
+    "In-app notifications, and a full web admin panel for platform moderation",
+    "Material 3 design, dark mode, adaptive tablet layout"
+  ],
+  "version": "1.0.0",
+  "platform": [
+    "Android"
+  ],
+  "downloads": {
+    "apk": "coming-soon"
+  },
+  "links": {
+    "github": "https://github.com/manoranjan2050/MTPCode-Testers",
+    "playstore": "coming-soon",
+    "website": "https://mtpcode.in",
+    "docs": ""
+  },
+  "legal": {
+    "privacy": "/legal/mtpcode-testers/privacy.html",
+    "terms": "/legal/mtpcode-testers/terms.html",
+    "disclaimer": "/legal/mtpcode-testers/disclaimer.html",
+    "cookiePolicy": "/legal/mtpcode-testers/cookie-policy.html",
+    "dataDeletion": "/legal/mtpcode-testers/data-deletion.html",
+    "support": "/legal/mtpcode-testers/support.html"
+  },
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-08-20",
+      "notes": [
+        "Initial release — full-stack platform: Laravel API, web landing + admin panel, Flutter Android app",
+        "All 14 planned phases built: auth, apps, campaigns, tester matching, tasks, feedback/bugs, credits/reputation, squads, reporting, admin, notifications, Play Billing foundation",
+        "Deployed to production at mtpcode.in, verified on a real Android device"
+      ]
+    }
+  ],
+  "featured": true,
+  "category": "android"
+}

@@ -162,15 +162,16 @@
     "platform": "Android 7.0+",
     "size": "Play Store",
     "date": "2026-08-05",
-    "url": "coming-soon",
+    "url": "https://play.google.com/store/apps/details?id=in.mtpcode.investmentcalculator",
     "appLink": "/apps/smart-sip-calculator.html",
     "notes": [
       "Initial release with 9 calculators (SIP, Step-Up, Lumpsum, SWP, EMI, FD, RD, PPF, Goal)",
       "Real app icon, AdMob banner ads, and signed release build",
-      "Fully offline — all calculations stay on your device"
+      "Fully offline — all calculations stay on your device",
+      "Install from Google Play only."
     ],
     "cta": "play",
-    "playstore": "coming-soon"
+    "playstore": "https://play.google.com/store/apps/details?id=in.mtpcode.investmentcalculator"
   },
   {
     "id": "mtp-pharma-erp-zip",

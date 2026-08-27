@@ -98,13 +98,13 @@
     "version": "1.0.0",
     "platform": "Android 7.0+",
     "size": "Play Store",
-    "date": "2026-08-10",
+    "date": "2026-08-27",
     "url": "https://play.google.com/store/apps/details?id=com.mtpcode.idphotocraft",
     "appLink": "/apps/idphotocraft.html",
     "cta": "play",
     "notes": [
-      "Initial release: capture/gallery, face detection, background tools",
-      "Country format presets, editor, print sheets, AdMob, and Pro IAP",
+      "Capture/gallery, on-device face detection, background tools, country format presets",
+      "Print sheet with real paper proportions, favorite sizes, resume drafts, WhatsApp share",
       "Install from Google Play only."
     ],
     "playstore": "https://play.google.com/store/apps/details?id=com.mtpcode.idphotocraft"

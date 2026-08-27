@@ -17,9 +17,9 @@
     "Passport, visa, Aadhaar, and ID format presets with DPI control",
     "Editor tools for crop, alignment, brightness, and polish",
     "Print sheet layout for home or shop printing",
+    "Save favorite sizes, resume drafts, and share exports straight to WhatsApp",
     "Photos never uploaded by the app — processing stays on device",
-    "Free tier with Google AdMob banners",
-    "Pro unlock: yearly subscription or lifetime purchase (Google Play Billing)"
+    "Free tier with Google AdMob banners (Pro ad-free unlock coming soon via Google Play Billing)"
   ],
   "version": "1.0.0",
   "platform": [
@@ -45,9 +45,14 @@
   "changelog": [
     {
       "version": "1.0.0",
-      "date": "2026-08-10",
+      "date": "2026-08-27",
       "notes": [
-        "Initial release: capture/gallery, face detection, background tools, format presets, editor, print sheets, AdMob, and Pro IAP"
+        "Submitted to Google Play Production for review",
+        "Android Photo Picker — no broad gallery permission required",
+        "Print sheet with real paper proportions (A4, A5, 4x6in, Letter)",
+        "Favorite sizes, resume drafts, and WhatsApp share after export",
+        "Tablet and foldable layout polish",
+        "Data deletion link added to Settings and Privacy Policy"
       ]
     }
   ],

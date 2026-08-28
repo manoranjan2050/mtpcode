@@ -33,7 +33,7 @@
   },
   "links": {
     "github": "",
-    "playstore": "coming-soon",
+    "playstore": "https://play.google.com/store/apps/details?id=in.mtpcode.calc2pay",
     "website": "",
     "docs": ""
   },
@@ -46,6 +46,16 @@
     "support": "/legal/calc2pay/support.html"
   },
   "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-08-28",
+      "notes": [
+        "Now live on Google Play for everyone in India",
+        "Calc2Pay Pro available: unlimited payment QR codes, no ads, custom receipt message",
+        "Banner ads on History, Reports, Products, and Settings; Calculator and Bill Builder stay ad-free",
+        "Fixed a Bluetooth permission compliance issue"
+      ]
+    },
     {
       "version": "1.0.0",
       "date": "2026-08-08",

@@ -137,20 +137,19 @@
     "kind": "app",
     "type": "apk",
     "logo": "/assets/images/apps/thermaldesk/logo.png",
-    "version": "1.1.0",
+    "version": "1.0.0",
     "platform": "Android 7.0+",
     "size": "Play Store",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "url": "coming-soon",
     "appLink": "/apps/thermaldesk.html",
     "notes": [
-      "Real-device verification pass, fixed Print Image crashes",
-      "Live AdMob integration",
-      "Play Store graphics and listing assets refreshed",
-      "Bluetooth ESC/POS 58mm/80mm text, receipts, QR, barcodes and images"
+      "Now live on Google Play",
+      "Bluetooth ESC/POS 58mm/80mm — text, receipts, QR, barcodes and images",
+      "Real AdMob integration, verified on real Bluetooth thermal printers"
     ],
     "cta": "play",
-    "playstore": "coming-soon"
+    "playstore": "https://play.google.com/store/apps/details?id=in.mtpcode.thermaldesk"
   },
   {
     "id": "smart-sip-calculator-apk",

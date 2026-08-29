@@ -27,7 +27,7 @@
     "Material You design with light and dark mode",
     "Fully offline — your data never leaves the device"
   ],
-  "version": "1.1.0",
+  "version": "1.0.0",
   "platform": [
     "Android"
   ],
@@ -50,19 +50,13 @@
   },
   "changelog": [
     {
-      "version": "1.1.0",
-      "date": "2026-08-07",
-      "notes": [
-        "Real-device verification pass, fixed Print Image crashes",
-        "Live AdMob integration",
-        "Play Store graphics and listing assets refreshed"
-      ]
-    },
-    {
       "version": "1.0.0",
-      "date": "2026-06-18",
+      "date": "2026-08-10",
       "notes": [
-        "Initial release with Bluetooth ESC/POS support"
+        "Now live on Google Play",
+        "Print text, receipts, QR codes, barcodes and images over Bluetooth ESC/POS (58mm/80mm)",
+        "Real-device verification pass, fixed Print Image crashes",
+        "Live AdMob integration"
       ]
     }
   ],

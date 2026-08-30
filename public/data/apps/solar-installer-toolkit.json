@@ -1,0 +1,65 @@
+{
+  "slug": "solar-installer-toolkit",
+  "name": "Solar Installer Toolkit",
+  "tagline": "Solar Installation • Testing • Commissioning",
+  "logo": "/assets/images/apps/solar-installer-toolkit/logo.svg",
+  "banner": "/assets/images/apps/solar-installer-toolkit/banner.png",
+  "cardImage": "/assets/images/apps/solar-installer-toolkit/card.jpg",
+  "gallery": [
+    "/assets/images/apps/solar-installer-toolkit/screen-1.jpg",
+    "/assets/images/apps/solar-installer-toolkit/screen-2.jpg",
+    "/assets/images/apps/solar-installer-toolkit/screen-3.jpg",
+    "/assets/images/apps/solar-installer-toolkit/screen-4.jpg",
+    "/assets/images/apps/solar-installer-toolkit/screen-5.jpg"
+  ],
+  "description": "Solar Installer Toolkit is a professional, offline-first Android field toolkit for solar installers, electricians, and small EPC companies by MTP Code / Manoranjan. Manage projects end-to-end: site survey with GPS, PV panel/string/inverter/battery design, electrical measurements, installation checklists, guided commissioning, GPS-tagged photo evidence, issue tracking, and PDF/CSV reporting — all stored locally on the device, no account or internet connection required for core work. Package ID: in.mtpcode.solartoolkit. Support: admin@mtpcode.com.",
+  "features": [
+    "Full project lifecycle: draft → survey → installation → testing → commissioning → completed",
+    "Site survey with one-tap GPS capture and guided \"what to fill in\" info prompts",
+    "PV system designer: panel groups, strings with MPPT/voltage-range warnings, inverter, and battery",
+    "On-grid / off-grid / hybrid project categories — battery tab hidden automatically for on-grid",
+    "Electrical measurements log (PV, AC, battery) with category filters",
+    "Installation checklist with progress tracking and custom items",
+    "Step-by-step guided commissioning workflow with safety/verification steps",
+    "GPS-tagged photo evidence with a live camera-stamp overlay (address, coordinates, date/time) before you even press the shutter",
+    "Issue tracking with color-coded priority and status, plus a one-tap \"mark all fixed\"",
+    "PDF commissioning report with in-app preview, plus CSV export for measurements/strings/checklist",
+    "One-tap local backup/restore of all project data, plus a reminder if it's been a while",
+    "Optional app PIN + fingerprint/face lock",
+    "Offline-first: all project data, photos, and reports stay on the device unless you explicitly share them",
+    "Advisory-only calculators (Ohm's law, power, voltage drop, battery sizing, unit conversion) with clear disclaimers"
+  ],
+  "version": "1.0.0",
+  "platform": [
+    "Android"
+  ],
+  "downloads": {
+    "apk": "coming-soon"
+  },
+  "links": {
+    "github": "https://github.com/manoranjan2050/SolarInstallerToolkit",
+    "playstore": "coming-soon",
+    "website": "https://mtpcode.com/apps/solar-installer-toolkit.html",
+    "docs": ""
+  },
+  "legal": {
+    "privacy": "/legal/solar-installer-toolkit/privacy.html",
+    "terms": "/legal/solar-installer-toolkit/terms.html",
+    "disclaimer": "/legal/solar-installer-toolkit/disclaimer.html",
+    "cookiePolicy": "/legal/solar-installer-toolkit/cookie-policy.html",
+    "dataDeletion": "/legal/solar-installer-toolkit/data-deletion.html",
+    "support": "/legal/solar-installer-toolkit/support.html"
+  },
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-08-30",
+      "notes": [
+        "Public product page and Play-ready privacy/terms URLs",
+        "Full project lifecycle, PV system design, commissioning, GPS-stamped photos, PDF/CSV reporting, local backup"
+      ]
+    }
+  ],
+  "featured": true,
+  "category": "android"
+}

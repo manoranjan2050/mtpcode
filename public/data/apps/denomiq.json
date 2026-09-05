@@ -26,7 +26,7 @@
     "Light / dark / system theme — works fully offline",
     "Optional Denomiq Pro (ads-free + Excel via Play Billing)"
   ],
-  "version": "1.0.0",
+  "version": "1.0.3",
   "platform": [
     "Android"
   ],
@@ -35,7 +35,7 @@
   },
   "links": {
     "github": "",
-    "playstore": "coming-soon",
+    "playstore": "https://play.google.com/store/apps/details?id=in.mtpcode.denomiq",
     "website": "",
     "docs": ""
   },
@@ -47,6 +47,14 @@
     "support": "/legal/denomiq/support.html"
   },
   "changelog": [
+    {
+      "version": "1.0.3",
+      "date": "2026-09-05",
+      "notes": [
+        "Now live on Google Play (production)",
+        "Denomiq Pro one-time unlock available — removes ads and adds Excel export"
+      ]
+    },
     {
       "version": "1.0.0",
       "date": "2026-08-10",

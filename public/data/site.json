@@ -5,6 +5,9 @@
   "domain": "https://mtpcode.com",
   "description": "MTPCode is the independent software house of Manoranjan Das, building Android apps, ERP systems, trading platforms, IoT firmware and open-source developer tools for real businesses across India.",
   "email": "mtpcode.in@gmail.com",
+  "adminEmail": "admin@mtpcode.com",
+  "developerWebsite": "https://manoranjan.dev",
+  "playstoreDeveloperUrl": "https://play.google.com/store/apps/developer?id=MTP+CODE",
   "social": {
     "github": "https://github.com/manoranjan2050",
     "youtube": "https://www.youtube.com/@MTPCODE",

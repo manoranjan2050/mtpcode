@@ -107,7 +107,27 @@ function legalLinks(legal = {}) {
     .join('');
 }
 
-function renderDetail(app) {
+function developerCard(site = {}) {
+  const row = (icon, href, text, { mailto = false } = {}) =>
+    `<a href="${mailto ? 'mailto:' : ''}${esc(href)}"${mailto ? '' : ' target="_blank" rel="noopener noreferrer"'} class="flex items-center gap-2 text-sm text-dark-700/70 transition-colors hover:text-primary-600 dark:text-slate-400 dark:hover:text-primary-400"><i data-lucide="${icon}" class="h-4 w-4 shrink-0"></i> ${esc(text)}</a>`;
+
+  const rows = [
+    site.developerWebsite ? row('globe', site.developerWebsite, site.developerWebsite.replace(/^https?:\/\//, '')) : '',
+    site.domain ? row('link', site.domain, site.domain.replace(/^https?:\/\//, '')) : '',
+    site.email ? row('mail', site.email, site.email, { mailto: true }) : '',
+    site.adminEmail ? row('mail', site.adminEmail, site.adminEmail, { mailto: true }) : '',
+    site.playstoreDeveloperUrl ? row('layout-grid', site.playstoreDeveloperUrl, 'View our other apps on Google Play') : '',
+  ].filter(Boolean);
+
+  return `
+    <div class="card-glass space-y-3 p-6">
+      <h3 class="font-display text-sm font-bold uppercase tracking-wide text-dark-900 dark:text-white">Developer</h3>
+      <p class="font-semibold text-dark-900 dark:text-white">MTP Code <span class="font-normal text-dark-700/60 dark:text-slate-400">(${esc(site.owner || 'Manoranjan')})</span></p>
+      <div class="space-y-2 pt-1">${rows.join('')}</div>
+    </div>`;
+}
+
+function renderDetail(app, site) {
   const root = document.getElementById('app-detail-root');
   const isAndroid = (app.platform || []).some((p) => /android/i.test(p));
   const linksHtml = linkButtons(app.links || {}, app.name, { isAndroid });
@@ -190,6 +210,7 @@ function renderDetail(app) {
             <h3 class="font-display text-sm font-bold uppercase tracking-wide text-dark-900 dark:text-white">Legal</h3>
             ${legalLinks(app.legal)}
           </div>
+          ${developerCard(site)}
         </aside>
       </div>
     </section>
@@ -203,8 +224,11 @@ async function bootstrap() {
   const slug = document.getElementById('app-detail-root')?.dataset.slug;
   if (!slug) return;
   try {
-    const app = await fetchJson(`/data/apps/${slug}.json`);
-    renderDetail(app);
+    const [app, site] = await Promise.all([
+      fetchJson(`/data/apps/${slug}.json`),
+      fetchJson('/data/site.json').catch(() => ({})),
+    ]);
+    renderDetail(app, site);
   } catch (err) {
     document.getElementById('app-detail-root').innerHTML = `<div class="container-page py-32 text-center"><p class="text-lg text-dark-700 dark:text-slate-300">App not found.</p></div>`;
     console.error(err);

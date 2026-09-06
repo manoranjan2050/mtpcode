@@ -29,7 +29,7 @@
     "Offline-first: all project data, photos, and reports stay on the device unless you explicitly share them",
     "Advisory-only calculators (Ohm's law, power, voltage drop, battery sizing, unit conversion) with clear disclaimers"
   ],
-  "version": "1.0.0",
+  "version": "1.0.4",
   "platform": [
     "Android"
   ],
@@ -51,6 +51,30 @@
     "support": "/legal/solar-installer-toolkit/support.html"
   },
   "changelog": [
+    {
+      "version": "1.0.4",
+      "date": "2026-09-06",
+      "notes": [
+        "Enabled full native debug symbol reporting for crash diagnostics",
+        "No user-facing changes"
+      ]
+    },
+    {
+      "version": "1.0.3",
+      "date": "2026-09-06",
+      "notes": [
+        "Upgraded Play Billing library for improved purchase reliability",
+        "No user-facing changes"
+      ]
+    },
+    {
+      "version": "1.0.2",
+      "date": "2026-09-05",
+      "notes": [
+        "Added support for banner ads with a one-time \"Go Pro\" purchase to remove them",
+        "Updated privacy policy to disclose ad and purchase data handling"
+      ]
+    },
     {
       "version": "1.0.0",
       "date": "2026-08-30",

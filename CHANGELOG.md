@@ -4,6 +4,15 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+## [2026-09-10] — Solvexa product page
+
+### Added
+- Solvexa app page (`/apps/solvexa.html`), data JSON, and legal suite (`/legal/solvexa/`) for Play Store privacy/terms URLs
+- Package `in.mtpcode.solvexa` · support `admin@mtpcode.com` · developer MTP Code / Manoranjan
+- Tool-first, no-account, no-login field toolkit for solar installers/electricians: GPS Camera with live overlay, Compass, Angle Meter, Level, ~20 electrical/solar calculators, Guides & Formulas, Hindi + English support — an independent native Kotlin/Compose sibling to Solar Installer Toolkit, not a reskin
+- Listing in `public/data/apps/index.json` and `public/sitemap.xml` (APK/Play Store links: coming soon)
+- Note: `public/assets/images/apps/solvexa/` (logo/banner/card/gallery) not yet created — same "coming soon" state other recently-added apps started in; add real screenshots before Play Store submission
+
 ## [2026-08-13] — Geo Camera & GPS Stamp product page
 
 ### Added

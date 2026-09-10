@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solvexa Privacy Policy — MTPCode</title>
+  <meta name="description" content="Privacy Policy for Solvexa (in.mtpcode.solvexa) — an offline-first, no-account field toolkit. On-device calculator data, GPS Camera photos and location, and a best-effort map/address lookup." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mtpcode.com/legal/solvexa/privacy.html" />
+  <meta name="theme-color" content="#0F172A" />
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+</head>
+<body class="overflow-x-hidden bg-white dark:bg-dark-950">
+  <div id="page-loader"><div class="loader-ring"></div></div>
+  <div data-include="/components/header.html"></div>
+  <main>
+    <section class="section !pt-40 sm:!pt-48">
+      <div class="container-page max-w-3xl">
+        <span class="eyebrow">Legal</span>
+        <h1 class="mt-4 font-display text-3xl font-extrabold text-dark-900 dark:text-white sm:text-4xl">Solvexa Privacy Policy</h1>
+        <p class="mt-2 text-sm text-dark-700/60 dark:text-slate-400">Solvexa &middot; Package <code>in.mtpcode.solvexa</code> &middot; Effective 10 September 2026</p>
+        <div class="prose-article mt-10">
+    <p>This policy is for the Android app <strong>Solvexa</strong> (<code>in.mtpcode.solvexa</code>), published by <strong>MTP Code / Manoranjan</strong>. Contact: <a href="mailto:admin@mtpcode.com">admin@mtpcode.com</a> or <a href="mailto:mtpcode.in@gmail.com">mtpcode.in@gmail.com</a>. Website: <a href="https://mtpcode.com">mtpcode.com</a>.</p>
+    <p>Solvexa is a <strong>tool-first, offline-first</strong> field toolkit. There is <strong>no account, no login, and no signup</strong> anywhere in the app — you open it, tap a tool, and use it. We do <strong>not</strong> operate a backend server for the app's tools, and we do <strong>not</strong> sell personal information.</p>
+
+    <h2>What data the app uses</h2>
+    <ul>
+      <li><strong>Calculator inputs, results, history and favorites</strong> — stored only in a local database on your device, tied to no identity or account.</li>
+      <li><strong>GPS Camera photos</strong> — camera frames and saved JPEGs are stored on device. The original photo is always kept pristine; an on-screen overlay (and, if you choose, a burned-in watermark copy) is added only to a copy you explicitly save.</li>
+      <li><strong>GPS coordinates, altitude, accuracy, heading</strong> — read on device via Android's location services, used to draw the live overlay in GPS Camera and to power tools like Sun Position and Tilt &amp; Orientation. Requested just-in-time, only when you open a tool that needs it.</li>
+      <li><strong>Compass and sensor readings</strong> (magnetometer, accelerometer, gyroscope) — read on device for the Compass, Angle Meter, and Level tools, and never leave the device.</li>
+      <li><strong>Optional local project/report data</strong> — a lightweight, optional project/report feature exists in the app (reachable from Settings, not the main navigation) for anyone who wants to keep field notes tied to a job. Anything you enter there is stored the same way as everything else: locally on your device only.</li>
+      <li><strong>Language and theme preference</strong> — stored locally (Hindi/English, light/dark).</li>
+      <li><strong>Diagnostics or analytics</strong> — not collected. Solvexa does not integrate any analytics or tracking SDK.</li>
+    </ul>
+    <p>We do not operate a server that receives your calculator data, photos, project notes, or location.</p>
+
+    <h2>The one network exception: GPS Camera's map and place lookup</h2>
+    <p>GPS Camera's live overlay may opportunistically show a small map tile snippet and a reverse-geocoded place name alongside your coordinates. This is the app's only network activity, and it is deliberately narrow:</p>
+    <ul>
+      <li>It is attempted only when your device already has an active network connection — the app checks connectivity first.</li>
+      <li>It never blocks, delays, or interrupts photo capture, and never shows a loading spinner over the viewfinder.</li>
+      <li>If the fetch fails, times out, or you're offline, the field is silently omitted — GPS Camera keeps working with coordinates only.</li>
+      <li>The map tile is a read-only, keyless request to a public OpenStreetMap tile server. The place name comes from Android's own on-device <code>Geocoder</code>, not a custom lookup service we run.</li>
+      <li>Nothing about you, your photo, or your project is uploaded through this path — it only ever fetches a map image and a place name based on your current coordinates.</li>
+    </ul>
+    <p>Every other feature in Solvexa works fully offline, with zero network access, unaffected by this.</p>
+
+    <h2>Location</h2>
+    <p>Location is used inside specific tools (GPS Camera, Sun Position, Tilt &amp; Orientation, and similar) that need it to function. It is requested just-in-time, only when you open a feature that needs it, after an in-app explanation. You can decline and continue using the rest of the app; the affected tool will simply show no coordinates rather than inventing them.</p>
+
+    <h2>Camera and photos</h2>
+    <p>Photos are captured only when you use GPS Camera and are stored in the app's own storage on your device. Photos are never uploaded automatically, and the pristine original is never overwritten by the overlay/watermark copy.</p>
+
+    <h2>Sharing</h2>
+    <p>If you export or share a photo, calculator result, or project report, the app hands it to Android's share sheet at your request. What happens after that point (which app you choose to share to) is outside Solvexa's control and governed by that app's own privacy policy.</p>
+
+    <h2>Third-party services</h2>
+    <p>Solvexa uses Android's on-device location services (Google Play Services Fused Location Provider) when a tool requests GPS, Android's on-device <code>Geocoder</code> for the best-effort place-name lookup described above, and a public OpenStreetMap tile endpoint for the best-effort map snippet. No other third-party service is integrated.</p>
+
+    <h2>Advertising and purchases</h2>
+    <p>Solvexa does not currently include any advertising SDK, and no in-app purchase is currently available to buy. A "Pro" section is visible in the app's UI as a preview of a future tier, but it is not functional and nothing can be purchased through it today. If ads, purchases, or a working Pro tier are introduced in a future version, this policy will be updated first and the update will be reflected in the app's Play Store listing.</p>
+    <p>The app's Tools &amp; Equipment reference section may, in a future update, include links to external retailers (for example Amazon) for recommended equipment; if so, those links would be clearly labeled, and MTP Code may earn a commission on purchases made through them. We would never receive or process your payment details through such a link — that happens entirely on the retailer's own site.</p>
+
+    <h2>Accounts and children</h2>
+    <p>No account is required or offered. We do not knowingly collect personal information from children. If you believe a child has provided personal data through this app, contact us and we will help you remove local data by uninstalling or clearing app storage.</p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li>Deny camera or location in Android settings — the app still works, minus the specific tools that need them.</li>
+      <li>Turn off the GPS Camera watermark, or simply never save a watermarked copy — the original photo is always kept plain either way.</li>
+      <li>Use Solvexa entirely offline; the map/place-name lookup is best-effort only and never required.</li>
+      <li>Uninstall the app, or clear its storage, to delete all local data, including any optional project/report entries.</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Questions or privacy requests: <a href="mailto:admin@mtpcode.com">admin@mtpcode.com</a></p>
+    <p>Developer: <strong>MTP Code (Manoranjan)</strong> &middot; <a href="https://manoranjan.dev">manoranjan.dev</a> &middot; <a href="https://mtpcode.com">mtpcode.com</a></p>
+    <p>Related: <a href="terms.html">Terms of Use</a> &middot; <a href="data-deletion.html">Data Deletion</a> &middot; <a href="/apps/solvexa.html">App page</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div data-include="/components/footer.html"></div>
+  <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>

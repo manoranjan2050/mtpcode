@@ -1,0 +1,64 @@
+{
+  "slug": "solvexa",
+  "name": "Solvexa",
+  "tagline": "Solar Installer Toolkit — Measure • Calculate • Install • Succeed",
+  "logo": "/assets/images/apps/solvexa/logo.svg",
+  "banner": "/assets/images/apps/solvexa/banner.png",
+  "cardImage": "/assets/images/apps/solvexa/card.jpg",
+  "gallery": [
+    "/assets/images/apps/solvexa/screen-1.jpg",
+    "/assets/images/apps/solvexa/screen-2.jpg",
+    "/assets/images/apps/solvexa/screen-3.jpg",
+    "/assets/images/apps/solvexa/screen-4.jpg",
+    "/assets/images/apps/solvexa/screen-5.jpg"
+  ],
+  "description": "Solvexa is a tool-first, offline-first Android field toolkit for solar installers and electricians by MTP Code / Manoranjan. No account, no login, no customer form — open the app, tap a tool, use it, done. A colorful tool-launcher dashboard puts a GPS Camera with a live coordinates/altitude/accuracy/heading overlay, a two-tone Compass with AR camera-background mode, an Angle Meter with solar-tilt guidance, a Level (Bubble/Flat-Surface/Corner), and around 20 electrical and solar calculators one tap away, alongside a Guides & Formulas reference. Hindi and English supported, light/dark theme, fully offline for all core functionality. Package ID: in.mtpcode.solvexa. Support: admin@mtpcode.com.",
+  "features": [
+    "Tool-first dashboard: no account, no login, no customer form — tap a tool and use it immediately",
+    "Colorful tool-launcher home organized into Field Tools, Electrical Tools, Solar Tools, and Reference sections",
+    "GPS Camera with a live on-screen overlay (coordinates, altitude, accuracy, heading), opportunistic map snippet + place name when online, and an always-kept pristine original with optional watermark",
+    "Compass with a two-tone needle, an AR camera-background mode, and calibration",
+    "Angle Meter with protractor plus digital/gauge styles and solar tilt-recommendation guidance",
+    "Level with Bubble, Flat-Surface, and Corner modes",
+    "Around 20 electrical and solar calculators — Ohm's law, wire/voltage-drop, battery backup, inverter sizing, three-phase power, PFC capacitor sizing, conduit fill, breaker/fuse sizing, motor FLC, solar system sizing, sun position, tilt & orientation, energy estimator, and more",
+    "Hand-rolled result charts on the calculators where a visual makes the numbers clearer",
+    "Guides & Formulas plus a Tools & Equipment reference section",
+    "Hindi and English language support, light/dark theme",
+    "An optional, lightweight project/report feature exists in the app but isn't part of the main navigation — Solvexa is deliberately not a project-management tool",
+    "Offline-first: every core tool works with zero network access, with one narrow, disclosed exception for GPS Camera's opportunistic map tile and place-name lookup",
+    "Advisory-only calculators with clear disclaimers — not a substitute for qualified engineering judgment"
+  ],
+  "version": "1.0.0",
+  "platform": [
+    "Android"
+  ],
+  "downloads": {
+    "apk": "coming-soon"
+  },
+  "links": {
+    "github": "https://github.com/manoranjan2050/Solvexa-Solar-Installer-Toolkit",
+    "playstore": "coming-soon",
+    "website": "https://mtpcode.com/apps/solvexa.html",
+    "docs": ""
+  },
+  "legal": {
+    "privacy": "/legal/solvexa/privacy.html",
+    "terms": "/legal/solvexa/terms.html",
+    "disclaimer": "/legal/solvexa/disclaimer.html",
+    "cookiePolicy": "/legal/solvexa/cookie-policy.html",
+    "dataDeletion": "/legal/solvexa/data-deletion.html",
+    "support": "/legal/solvexa/support.html"
+  },
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-09-10",
+      "notes": [
+        "Public product page and Play-ready privacy/terms URLs",
+        "Tool-launcher dashboard, GPS Camera, Compass, Angle Meter, Level, ~20 electrical/solar calculators, Guides & Formulas, Hindi + English support"
+      ]
+    }
+  ],
+  "featured": true,
+  "category": "android"
+}

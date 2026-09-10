@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resto Pro Privacy Policy — MTPCode</title>
+  <meta name="description" content="Privacy Policy for Resto Pro (in.mtpcode.restopro) — a cloud-synced restaurant ERP. Account data, business records (cash, expenses, staff, ledger), and how Supabase is used as our backend." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mtpcode.com/legal/restoproerp/privacy.html" />
+  <meta name="theme-color" content="#0F172A" />
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+</head>
+<body class="overflow-x-hidden bg-white dark:bg-dark-950">
+  <div id="page-loader"><div class="loader-ring"></div></div>
+  <div data-include="/components/header.html"></div>
+  <main>
+    <section class="section !pt-40 sm:!pt-48">
+      <div class="container-page max-w-3xl">
+        <span class="eyebrow">Legal</span>
+        <h1 class="mt-4 font-display text-3xl font-extrabold text-dark-900 dark:text-white sm:text-4xl">Resto Pro Privacy Policy</h1>
+        <p class="mt-2 text-sm text-dark-700/60 dark:text-slate-400">Resto Pro &middot; Package <code>in.mtpcode.restopro</code> &middot; Effective 10 September 2026</p>
+        <div class="prose-article mt-10">
+    <p>This policy is for the Android app <strong>Resto Pro</strong> (<code>in.mtpcode.restopro</code>), published by <strong>MTP Code / Manoranjan</strong>. Contact: <a href="mailto:admin@mtpcode.com">admin@mtpcode.com</a> or <a href="mailto:mtpcode.in@gmail.com">mtpcode.in@gmail.com</a>. Website: <a href="https://mtpcode.com">mtpcode.com</a>.</p>
+    <p>Resto Pro is a <strong>restaurant back-office ERP</strong> — cash collection, expenses, vendor credit, staff attendance/payroll, and reporting, each account representing one restaurant/business. Unlike a purely offline tool, Resto Pro requires an account and stores your business records in the cloud so they follow you across devices. We do <strong>not</strong> sell personal information, and we do <strong>not</strong> show ads.</p>
+
+    <h2>Account data</h2>
+    <p>Creating an account requires an email address, a password, your restaurant/business name, and your name as the owner. This is handled by our backend provider, Supabase, using standard email+password authentication — we never see or store your password in plain text; Supabase stores only a salted hash. Your restaurant name and owner name are stored as account metadata and shown back to you in the app (Dashboard header, Settings).</p>
+
+    <h2>Business data</h2>
+    <p>Everything you enter — daily cash/UPI collection, expenses, vendor names and dues, employee records, attendance, staff payouts, and the resulting ledger — is stored in our Supabase (PostgreSQL) database, scoped to your account by Row Level Security: every table's policies require the request to be authenticated as <em>your</em> account before any row is readable or writable, so one restaurant's data is never visible to another's. This is how the app keeps your data synced across every device you sign in on.</p>
+
+    <h2>What stays only on your device</h2>
+    <ul>
+      <li><strong>App PIN</strong> — if you set one, only a salted SHA-256 hash is stored locally (DataStore), never the PIN itself, and it is excluded from Android's automatic cloud backup.</li>
+      <li><strong>Theme preference</strong> (light/dark/system) — stored locally per device.</li>
+      <li><strong>Your current session token</strong> — stored locally so you don't have to log in every time the app opens.</li>
+    </ul>
+
+    <h2>Backup &amp; Restore</h2>
+    <p>The in-app Backup feature lets you export every record your account owns into one JSON file (for your own safekeeping — Drive, email to yourself, etc.) and restore it back later. This file is created and saved by you, through Android's own Sharesheet — we do not receive a copy of it.</p>
+
+    <h2>Third-party services</h2>
+    <p>Resto Pro's backend is <a href="https://supabase.com" rel="noopener">Supabase</a> (authentication + PostgreSQL database). No advertising SDK, no analytics/tracking SDK, and no other third-party service is integrated.</p>
+
+    <h2>Data retention and account deletion</h2>
+    <p>Your business data is retained for as long as your account exists. To delete your account and all associated data, see our <a href="data-deletion.html">Data Deletion</a> page.</p>
+
+    <h2>Children</h2>
+    <p>Resto Pro is a business back-office tool and is not directed at children. We do not knowingly collect data from children.</p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li>Sign out of your account (Settings → Account &amp; Sync → Sign Out) at any time — this clears the local session; your cloud data is untouched and waiting the next time you log in.</li>
+      <li>Export a backup of your data at any time via Backup &amp; Restore.</li>
+      <li>Request full account and data deletion — see <a href="data-deletion.html">Data Deletion</a>.</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Questions or privacy requests: <a href="mailto:admin@mtpcode.com">admin@mtpcode.com</a></p>
+    <p>Developer: <strong>MTP Code (Manoranjan)</strong> &middot; <a href="https://manoranjan.dev">manoranjan.dev</a> &middot; <a href="https://mtpcode.com">mtpcode.com</a></p>
+    <p>Related: <a href="terms.html">Terms of Use</a> &middot; <a href="data-deletion.html">Data Deletion</a> &middot; <a href="/apps/restoproerp.html">App page</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div data-include="/components/footer.html"></div>
+  <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+{
+  "slug": "restoproerp",
+  "name": "Resto Pro",
+  "tagline": "Coming Soon — Restaurant Cash, Expenses & Staff, All in One Place",
+  "logo": "/assets/images/apps/restoproerp/logo.png",
+  "banner": "/assets/images/apps/restoproerp/banner.png",
+  "cardImage": "/assets/images/apps/restoproerp/card.png",
+  "gallery": [
+    "/assets/images/apps/restoproerp/screen-1.png",
+    "/assets/images/apps/restoproerp/screen-2.png",
+    "/assets/images/apps/restoproerp/screen-3.png",
+    "/assets/images/apps/restoproerp/screen-4.png",
+    "/assets/images/apps/restoproerp/screen-5.png",
+    "/assets/images/apps/restoproerp/screen-6.png"
+  ],
+  "description": "Resto Pro is a native Android ERP for small restaurants, food stalls, and hotels by MTP Code / Manoranjan — a full back-office clone of a real, live production restaurant management system, rebuilt from the ground up with a cloud-synced, multi-tenant account model. Every restaurant gets its own secure account (email + password, restaurant name and owner name captured at signup) with its data stored in the cloud (Supabase/Postgres) and protected by row-level security, so it's never tied to a single phone — sign in from a new device any time and pick up exactly where you left off. Daily cash and UPI collection, expense tracking with vendor credit (udhaar) management including partial payments, a Staff Hub with attendance and payroll, a unified Master Ledger, and Analytics/Reports with printable PDFs and CSV export, all wrapped in a colorful, animated Material 3 interface with light/dark theme and an App PIN lock. Package ID: in.mtpcode.restopro. Support: admin@mtpcode.com.",
+  "features": [
+    "Real multi-tenant accounts — sign up with your restaurant name and owner name, data follows you to any device instead of being trapped on one phone",
+    "A 4-page onboarding carousel introduces the app's core modules before sign-up/log-in",
+    "Daily Cash Collection: log cash + UPI income in seconds, with a running total and recent-entries feed",
+    "Expense tracking with vendor/category management, PAID vs PENDING (udhaar) status, and category filters",
+    "Vendor Credit Manager: see every supplier's outstanding balance and settle it — full or partial payment, split cleanly between what's paid and what's still owed",
+    "Staff Hub: employee directory, a tap-to-cycle attendance calendar (Present/Half-day/Absent), advances and payouts, and automatic monthly-earned calculation from attendance",
+    "Master Ledger: every cash movement across the app — collections, expenses, vendor payments, staff payouts — in one unified, filterable feed, exportable to CSV",
+    "Analytics dashboard: annual revenue/expense/profit summary, a monthly performance bar chart, and an expense-distribution donut chart, all hand-rolled Canvas charts with no third-party charting library",
+    "Reports: quick This-Month/This-Year ranges or a fully custom date range, with a multi-page, letterhead-branded PDF export",
+    "Cloud Backup & Restore: export every table to one JSON file, or restore it back in — a safety net beyond the automatic cloud sync",
+    "App PIN lock with a salted-hash keypad gate and an escalating lockout after repeated wrong attempts",
+    "Light, dark, and system theme, with animated pulsing icon badges and count-up currency numbers throughout",
+    "Built on Supabase (Postgres + Auth) with row-level security on every table, so one account's data is never visible to another's — verified with real instrumented tests, not just manual clicks"
+  ],
+  "version": "1.0.0",
+  "platform": [
+    "Android"
+  ],
+  "downloads": {
+    "apk": "coming-soon"
+  },
+  "links": {
+    "github": "https://github.com/manoranjan2050/RestoProERP-Android",
+    "playstore": "coming-soon",
+    "website": "https://mtpcode.com/apps/restoproerp.html",
+    "docs": ""
+  },
+  "legal": {
+    "privacy": "/legal/restoproerp/privacy.html",
+    "terms": "/legal/restoproerp/terms.html",
+    "disclaimer": "/legal/restoproerp/disclaimer.html",
+    "cookiePolicy": "/legal/restoproerp/cookie-policy.html",
+    "dataDeletion": "/legal/restoproerp/data-deletion.html",
+    "support": "/legal/restoproerp/support.html"
+  },
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-09-10",
+      "notes": [
+        "Public product page — app itself is feature-complete in development (cash collection, expenses/vendor udhaar with partial payments, Staff Hub, Master Ledger, Analytics, Reports, Backup) and pending Play Store submission",
+        "Real signup/login with per-restaurant cloud accounts replacing the earlier anonymous-only model",
+        "4-page onboarding carousel, App PIN lock with brute-force lockout, light/dark theme"
+      ]
+    }
+  ],
+  "featured": true,
+  "category": "android"
+}

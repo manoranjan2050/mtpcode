@@ -29,7 +29,7 @@
   },
   "links": {
     "github": "",
-    "playstore": "coming-soon",
+    "playstore": "https://play.google.com/store/apps/details?id=in.mtpcode.doczest",
     "website": "",
     "docs": ""
   },
@@ -42,6 +42,14 @@
     "support": "/legal/doczest/support.html"
   },
   "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-09-12",
+      "notes": [
+        "Now live on Google Play (production) after a 14-day closed testing period",
+        "Fixed a release-build launch crash and removed unused permissions found during testing"
+      ]
+    },
     {
       "version": "1.0.0",
       "date": "2026-08-11",

@@ -22,7 +22,7 @@
     "Banner ads on Home/Gallery only — never covering the shutter",
     "Taking a geotagged photo does not require Pro"
   ],
-  "version": "1.0.0",
+  "version": "1.0.4",
   "platform": [
     "Android"
   ],
@@ -31,7 +31,7 @@
   },
   "links": {
     "github": "https://github.com/manoranjan2050/Geo-Camera-on-phone",
-    "playstore": "coming-soon",
+    "playstore": "https://play.google.com/store/apps/details?id=dev.mtpcode.geocamera",
     "website": "https://mtpcode.com/apps/geo-camera.html",
     "docs": ""
   },
@@ -44,6 +44,14 @@
     "support": "/legal/geo-camera/support.html"
   },
   "changelog": [
+    {
+      "version": "1.0.4",
+      "date": "2026-09-12",
+      "notes": [
+        "Now live on Google Play — first production release after 14-day Closed testing",
+        "Live banner ads on Home/Gallery, medium-tone launcher icon"
+      ]
+    },
     {
       "version": "1.0.0",
       "date": "2026-08-13",

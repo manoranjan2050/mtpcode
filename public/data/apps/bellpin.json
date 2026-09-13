@@ -1,0 +1,72 @@
+{
+  "slug": "bellpin",
+  "name": "BellPin",
+  "tagline": "Your Whole Student Life. 100% Offline.",
+  "logo": "/assets/images/apps/bellpin/logo.png",
+  "banner": "/assets/images/apps/bellpin/banner.png",
+  "cardImage": "/assets/images/apps/bellpin/card.png",
+  "gallery": [
+    "/assets/images/apps/bellpin/screen-1.png",
+    "/assets/images/apps/bellpin/screen-2.png",
+    "/assets/images/apps/bellpin/screen-3.png",
+    "/assets/images/apps/bellpin/screen-4.png",
+    "/assets/images/apps/bellpin/screen-5.png",
+    "/assets/images/apps/bellpin/screen-6.png"
+  ],
+  "description": "BellPin is a 100% offline all-in-one toolkit for students — a dynamic class timetable with period alerts, an attendance tracker with a \"Bunk Safe\" forecaster, a context-aware lecture recorder with a colorful live waveform, two note types (quick text and hand-drawn pad notes), a blackboard-to-PDF scanner, and a homework tracker with a built-in Pomodoro focus timer. No sign-up, no ads, and no data ever leaves the device unless you turn on the optional Pro Google Drive backup yourself.",
+  "features": [
+    "Dynamic class timetable with automatic period-change alerts",
+    "Attendance tracker with a live \"Bunk Safe\" forecaster",
+    "Lecture recorder with a colorful live waveform and background recording",
+    "Two note types: quick text notes and hand-drawn pad notes",
+    "Scan Blackboard: turn a photo of the board into a PDF",
+    "Homework tracker with priorities, due dates, and undo",
+    "Built-in Pomodoro focus timer",
+    "Recycle Bin with restore for subjects, homework, notes, recordings, and scans",
+    "Local Backup & Restore (zip export/import), no account required",
+    "First-run onboarding tour explaining every tool",
+    "Light / dark / system theme — 100% offline, zero sign-up",
+    "Optional BellPin Pro: app-open PIN lock and Google Drive backup/restore"
+  ],
+  "version": "1.0.1",
+  "platform": [
+    "Android"
+  ],
+  "downloads": {
+    "apk": "coming-soon"
+  },
+  "links": {
+    "github": "",
+    "playstore": "coming-soon",
+    "website": "",
+    "docs": ""
+  },
+  "legal": {
+    "privacy": "/legal/bellpin/privacy.html",
+    "terms": "/legal/bellpin/terms.html"
+  },
+  "changelog": [
+    {
+      "version": "1.0.1",
+      "date": "2026-09-13",
+      "notes": [
+        "Fixed a bug where the Audio recorder could silently record no sound",
+        "New colorful live waveform while recording",
+        "Two note types: text notes and hand-drawn pad notes",
+        "Scan Blackboard: photo-to-PDF blackboard scanner with a Documents category",
+        "First-run onboarding tour",
+        "New Profile section in Settings",
+        "BellPin Pro: optional PIN lock and Google Drive backup/restore"
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "date": "2026-09-05",
+      "notes": [
+        "Initial release: timetable, attendance with Bunk Safe forecaster, lecture recorder, scratchpad notes, and homework tracker with Pomodoro timer"
+      ]
+    }
+  ],
+  "featured": true,
+  "category": "android"
+}

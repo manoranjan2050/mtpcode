@@ -3,6 +3,7 @@ export default {
   darkMode: 'class',
   content: [
     './*.html',
+    './app/**/*.html',
     './apps/**/*.html',
     './projects/**/*.html',
     './blog/**/*.html',

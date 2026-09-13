@@ -28,6 +28,7 @@ for (const name of readdirSync(root)) {
 
 const input = {
   ...rootHtml,
+  ...collectHtmlInputs(resolve(root, 'app'), 'app/'),
   ...collectHtmlInputs(resolve(root, 'apps'), 'apps/'),
   ...collectHtmlInputs(resolve(root, 'projects'), 'projects/'),
   ...collectHtmlInputs(resolve(root, 'blog'), 'blog/'),

@@ -29,7 +29,7 @@
     "Offline-first: all project data, photos, and reports stay on the device unless you explicitly share them",
     "Advisory-only calculators (Ohm's law, power, voltage drop, battery sizing, unit conversion) with clear disclaimers"
   ],
-  "version": "1.0.4",
+  "version": "1.0.6",
   "platform": [
     "Android"
   ],
@@ -38,7 +38,7 @@
   },
   "links": {
     "github": "https://github.com/manoranjan2050/SolarInstallerToolkit",
-    "playstore": "coming-soon",
+    "playstore": "https://play.google.com/store/apps/details?id=in.mtpcode.solartoolkit",
     "website": "https://mtpcode.com/apps/solar-installer-toolkit.html",
     "docs": ""
   },
@@ -51,6 +51,14 @@
     "support": "/legal/solar-installer-toolkit/support.html"
   },
   "changelog": [
+    {
+      "version": "1.0.6",
+      "date": "2026-09-18",
+      "notes": [
+        "Fixed an issue where the Remove Ads purchase could become temporarily unavailable during a session",
+        "Now live on Google Play"
+      ]
+    },
     {
       "version": "1.0.4",
       "date": "2026-09-06",

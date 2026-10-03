@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DotGlow Privacy Policy — MTPCode</title>
+  <meta name="description" content="Privacy Policy for DotGlow: LED Matrix Clock (com.electroiot.dotglow) — no accounts, no ads, no analytics; Bluetooth and USB only talk to your own clock." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mtpcode.com/legal/dotglow/privacy.html" />
+  <meta name="theme-color" content="#0F172A" />
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+</head>
+<body class="overflow-x-hidden bg-white dark:bg-dark-950">
+  <div id="page-loader"><div class="loader-ring"></div></div>
+  <div data-include="/components/header.html"></div>
+  <main>
+    <section class="section !pt-40 sm:!pt-48">
+      <div class="container-page max-w-3xl">
+        <span class="eyebrow">Legal</span>
+        <h1 class="mt-4 font-display text-3xl font-extrabold text-dark-900 dark:text-white sm:text-4xl">DotGlow Privacy Policy</h1>
+        <p class="mt-2 text-sm text-dark-700/60 dark:text-slate-400">DotGlow: LED Matrix Clock &middot; Package <code>com.electroiot.dotglow</code> &middot; Effective 3 October 2026</p>
+        <div class="prose-article mt-10">
+    <p>This policy is for the Android app <strong>DotGlow: LED Matrix Clock</strong> (<code>com.electroiot.dotglow</code>), published by <strong>MTP Code / Manoranjan</strong> (ElectroIoT). Contact: <a href="mailto:admin@mtpcode.com">admin@mtpcode.com</a>. Website: <a href="https://mtpcode.com">mtpcode.com</a>.</p>
+    <p>DotGlow sets up and controls DIY LED matrix clocks (ESP32 / ESP32-S3 + MAX7219 display) that you build and own. It has <strong>no account</strong>, <strong>no ads</strong>, <strong>no analytics</strong> and <strong>no tracking</strong>. We do not run a server that receives your data, and we do <strong>not</strong> collect, sell or share personal information.</p>
+
+    <h2>What data the app uses</h2>
+    <ul>
+      <li><strong>Clock settings</strong> (brightness, time format and zone, animations, messages, special days, display layout and similar) — read from and written to <em>your own clock</em> over an encrypted Bluetooth connection. They are stored on the clock, not on our servers.</li>
+      <li><strong>WiFi network name and password</strong> — only when you set up the clock's WiFi. The app scans networks <em>through the clock</em> and sends the password over the encrypted Bluetooth link directly to your clock, which stores it. The app does not keep the password and never sends it anywhere else.</li>
+      <li><strong>Bluetooth pairing</strong> — Android stores the pairing with your clock. Pairing uses LE Secure Connections with a 6-digit PIN shown on the clock's display.</li>
+      <li><strong>App lock (optional)</strong> — a salted hash of your app PIN is stored locally. Fingerprint unlock uses Android's BiometricPrompt; the app never sees your fingerprint.</li>
+      <li><strong>Firmware files</strong> — when you install or update clock firmware, the app downloads firmware files and stores them temporarily in its cache on your device.</li>
+      <li><strong>Diagnostics, crash reports, contacts, photos, location history</strong> — not collected.</li>
+    </ul>
+
+    <h2>Permissions and why</h2>
+    <ul>
+      <li><strong>Bluetooth scan / connect</strong> — to find DotGlow clocks near you and talk to them. Scanning is filtered to DotGlow clocks and is declared <em>never used for location</em>.</li>
+      <li><strong>Location (Android 8 to 11 only)</strong> — Android requires it for any Bluetooth scan on those versions. DotGlow never reads or stores your location.</li>
+      <li><strong>Internet</strong> — to download firmware and the setup-guide / About content (see below), and to open links you tap.</li>
+      <li><strong>USB host (optional)</strong> — only when you use <em>Install firmware</em>, to write firmware to a board you plug into the phone.</li>
+      <li><strong>Biometric</strong> — only if you turn on fingerprint unlock for the app lock.</li>
+    </ul>
+
+    <h2>Network requests</h2>
+    <p>The app downloads, without sending any personal data: the firmware catalog and firmware files (<code>manoranjan.dev</code>, and <code>github.com</code> for the ESP8266 clock firmware), the setup-video link and the About page content (<code>manoranjan.dev</code>), and the developer's public profile photo (<code>github.com</code>). Like any web server, these servers may keep standard access logs (IP address, time, file requested) for security and operation. Links you tap (YouTube, websites, email) open in other apps and are governed by their own policies.</p>
+
+    <h2>Your clock</h2>
+    <p>The DotGlow clock itself connects to your WiFi to get the internet time (NTP time servers) and, if enabled, to check for firmware updates on GitHub. It has a web settings page on your local network, which you can protect with a password. Clock settings can be erased with the app's Factory reset.</p>
+
+    <h2>Children</h2>
+    <p>The app is not directed at children and does not knowingly collect personal information from anyone.</p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li>Deny Bluetooth or USB permission in Android settings — the app still opens; features that need them will not work.</li>
+      <li>Remove the app's pairing with a clock in Android Bluetooth settings, or use Security → Forget all paired phones.</li>
+      <li>Uninstall the app, or clear its storage, to delete everything it keeps on your phone.</li>
+    </ul>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version is published on this page with a new effective date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions or privacy requests: <a href="mailto:admin@mtpcode.com">admin@mtpcode.com</a></p>
+    <p>Developer: <strong>MTP Code (Manoranjan)</strong> · <a href="https://manoranjan.dev">manoranjan.dev</a> · <a href="https://mtpcode.com">mtpcode.com</a></p>
+    <p>Related: <a href="terms.html">Terms of Use</a> &middot; <a href="data-deletion.html">Data Deletion</a> &middot; <a href="/apps/dotglow.html">App page</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div data-include="/components/footer.html"></div>
+  <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>

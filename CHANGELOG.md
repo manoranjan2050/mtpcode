@@ -4,6 +4,13 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+## [2026-10-03] — DotGlow product page
+
+### Added
+- DotGlow: LED Matrix Clock app page (`/apps/dotglow.html`), data JSON, images, and legal suite (`/legal/dotglow/`) for the Play Store privacy/terms URLs
+- Package `com.electroiot.dotglow` · support `admin@mtpcode.com` · developer MTP Code / Manoranjan (ElectroIoT)
+- Android companion for DIY ESP32 / ESP32-S3 + MAX7219 LED matrix clocks: Bluetooth PIN pairing, WiFi setup, live LED previews, stopwatch, Bluetooth firmware updates, USB firmware installer; no account, no ads, no tracking
+
 ## [2026-09-10] — Solvexa product page
 
 ### Added

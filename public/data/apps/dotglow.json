@@ -1,0 +1,65 @@
+{
+  "slug": "dotglow",
+  "name": "DotGlow: LED Matrix Clock",
+  "tagline": "Bluetooth • LED Matrix • ESP32 Clock",
+  "logo": "/assets/images/apps/dotglow/logo.svg",
+  "banner": "/assets/images/apps/dotglow/banner.png",
+  "cardImage": "/assets/images/apps/dotglow/card.jpg",
+  "gallery": [
+    "/assets/images/apps/dotglow/screen-1.jpg",
+    "/assets/images/apps/dotglow/screen-2.jpg",
+    "/assets/images/apps/dotglow/screen-3.jpg",
+    "/assets/images/apps/dotglow/screen-4.jpg",
+    "/assets/images/apps/dotglow/screen-5.jpg"
+  ],
+  "description": "DotGlow is the Android companion app for DIY LED matrix clocks built with an ESP32 or ESP32-S3 and a MAX7219 display, by MTP Code / Manoranjan (ElectroIoT). Pair a clock over encrypted Bluetooth with the PIN shown on its LEDs, set up its WiFi, change every setting with a live LED preview, run the stopwatch, update the firmware over Bluetooth, and install firmware on new ESP32 / ESP32-S3 / ESP8266 boards straight from the phone over USB-OTG. No account, no ads, no tracking. Package ID: com.electroiot.dotglow. Support: admin@mtpcode.com.",
+  "features": [
+    "Finds DotGlow clocks nearby; secure pairing with a 6-digit PIN shown on the clock's LEDs (LE Secure Connections)",
+    "Live LED matrix preview that draws exactly what the clock shows: clock, digit styles, effects, messages, stopwatch",
+    "WiFi setup through the clock — scan and join networks from the app; the clock fetches internet time by itself",
+    "Every setting: 12/24 h, time zone, colon, seconds bar, date, night mode, auto brightness, 4–16 modules, mirror/flip, one-tap Rotate 180°",
+    "6 digit-change styles and 5 effects (hourly and at power-on), scrolling messages and special days",
+    "Built-in stopwatch, also controllable with an optional push button on the clock",
+    "Firmware updates over Bluetooth (no WiFi needed) or from GitHub over WiFi",
+    "Install firmware on new ESP32, ESP32-S3 and ESP8266 (NodeMCU) boards over USB-OTG — no computer needed",
+    "Step-by-step setup guide with wiring pictures, power tips and troubleshooting",
+    "Optional app lock with PIN and fingerprint",
+    "Demo clock to explore every screen without hardware",
+    "No account, no ads, no analytics, no tracking"
+  ],
+  "version": "1.0.0",
+  "platform": [
+    "Android"
+  ],
+  "downloads": {
+    "apk": "coming-soon"
+  },
+  "links": {
+    "github": "",
+    "playstore": "coming-soon",
+    "website": "https://mtpcode.com/apps/dotglow.html",
+    "docs": ""
+  },
+  "legal": {
+    "privacy": "/legal/dotglow/privacy.html",
+    "terms": "/legal/dotglow/terms.html",
+    "disclaimer": "/legal/dotglow/disclaimer.html",
+    "cookiePolicy": "/legal/dotglow/cookie-policy.html",
+    "dataDeletion": "/legal/dotglow/data-deletion.html",
+    "support": "/legal/dotglow/support.html"
+  },
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-10-03",
+      "notes": [
+        "First release: Bluetooth setup with PIN pairing, WiFi setup, every clock setting with live LED previews",
+        "Stopwatch, special days, messages, Rotate 180°",
+        "Firmware updates over Bluetooth and a USB firmware installer for new boards",
+        "Setup guide with wiring pictures and a demo clock"
+      ]
+    }
+  ],
+  "featured": true,
+  "category": "android"
+}

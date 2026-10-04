@@ -4,6 +4,12 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+## [2026-10-04] — Closed testing card
+
+### Added
+- Optional `testing` block in app JSON (`googleGroup`, `groupUrl`, `optInUrl`) renders a "Join the closed test" card on the app page
+- DotGlow: closed test open to the Google Group devmeettesters@googlegroups.com; 512 px icon at `/assets/images/apps/dotglow/icon.png`
+
 ## [2026-10-03] — DotGlow product page
 
 ### Added

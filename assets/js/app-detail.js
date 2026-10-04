@@ -93,6 +93,25 @@ function linkButtons(links = {}, appName = 'This app', { isAndroid = false } = {
   return parts.join('');
 }
 
+// Optional app.testing: { googleGroup, groupUrl, optInUrl } for a Play closed test open to a Google Group.
+function testingCard(testing, appName = 'This app') {
+  if (!testing?.optInUrl) return '';
+  const step = (n, html) =>
+    `<li class="flex items-start gap-3 text-sm text-dark-700/80 dark:text-slate-400"><span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary-500/10 text-xs font-bold text-primary-600 dark:text-primary-400">${n}</span><span>${html}</span></li>`;
+  return `
+    <div class="card-glass space-y-4 p-6">
+      <h3 class="font-display text-sm font-bold uppercase tracking-wide text-dark-900 dark:text-white">Join the closed test</h3>
+      <p class="text-sm text-dark-700/70 dark:text-slate-400">${esc(appName)} is in closed testing on Google Play. Anyone in our tester group gets it.</p>
+      <ol class="space-y-3">
+        ${testing.googleGroup ? step(1, `Join the Google Group <a href="${esc(testing.groupUrl || 'https://groups.google.com')}" target="_blank" rel="noopener noreferrer" class="font-medium text-primary-600 hover:underline dark:text-primary-400">${esc(testing.googleGroup)}</a> with the Google account you use on Play.`) : ''}
+        ${step(testing.googleGroup ? 2 : 1, 'Open the testing link below and tap <strong>Become a tester</strong>.')}
+        ${step(testing.googleGroup ? 3 : 2, 'Install the app from Google Play. Please keep it installed for at least 14 days.')}
+      </ol>
+      ${testing.groupUrl ? `<a href="${esc(testing.groupUrl)}" target="_blank" rel="noopener noreferrer" class="btn-outline w-full !justify-start"><i data-lucide="mail" class="h-4 w-4"></i> Join the tester group</a>` : ''}
+      <a href="${esc(testing.optInUrl)}" target="_blank" rel="noopener noreferrer" class="btn-outline w-full !justify-start"><i data-lucide="smartphone" class="h-4 w-4"></i> Become a tester on Google Play</a>
+    </div>`;
+}
+
 function legalLinks(legal = {}) {
   const labels = {
     privacy: 'Privacy Policy',
@@ -201,6 +220,7 @@ function renderDetail(app, site) {
             ${linksHtml || '<p class="text-sm text-dark-700/60 dark:text-slate-400">Links coming soon.</p>'}
             ${isAndroid ? `<p class="text-xs text-dark-700/60 dark:text-slate-400">Install from Google Play only. Direct APK / Download App buttons are disabled.</p>` : ''}
           </div>
+          ${testingCard(app.testing, app.name)}
           ${!isAndroid && downloadsHtml ? `
           <div class="card-glass space-y-3 p-6">
             <h3 class="font-display text-sm font-bold uppercase tracking-wide text-dark-900 dark:text-white">Other downloads</h3>

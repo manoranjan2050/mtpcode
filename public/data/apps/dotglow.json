@@ -40,6 +40,11 @@
     "website": "https://mtpcode.com/apps/dotglow.html",
     "docs": ""
   },
+  "testing": {
+    "googleGroup": "devmeettesters@googlegroups.com",
+    "groupUrl": "https://groups.google.com/g/devmeettesters",
+    "optInUrl": "https://play.google.com/apps/testing/com.electroiot.dotglow"
+  },
   "legal": {
     "privacy": "/legal/dotglow/privacy.html",
     "terms": "/legal/dotglow/terms.html",

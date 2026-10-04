@@ -73,6 +73,7 @@ TODO.md for how this was caught).
   "platform": ["Android"],
   "downloads": { "apk": "/downloads/calc2pay/calc2pay-1.0.0.apk" },
   "links": { "github": "", "playstore": "", "website": "", "docs": "" },
+  "testing": { "googleGroup": "group@googlegroups.com", "groupUrl": "https://groups.google.com/g/group", "optInUrl": "https://play.google.com/apps/testing/<package>" },
   "legal": { "privacy": "/legal/calc2pay/privacy.html", "terms": "/legal/calc2pay/terms.html", "support": "/legal/calc2pay/support.html" },
   "changelog": [{ "version": "1.0.0", "date": "2026-08-06", "notes": ["..."] }],
   "featured": true,

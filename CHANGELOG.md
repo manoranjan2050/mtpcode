@@ -4,6 +4,11 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+## [2026-10-05] — DotGlow 1.0.1
+
+### Changed
+- DotGlow app page: version 1.0.1 and its changelog (Allow Bluetooth crash fix on fresh installs, scrollable first screen in landscape, ~2 MB download); structured data `softwareVersion` 1.0.1
+
 ## [2026-10-04] — Closed testing card
 
 ### Added

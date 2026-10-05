@@ -27,7 +27,7 @@
     "Demo clock to explore every screen without hardware",
     "No account, no ads, no analytics, no tracking"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "platform": [
     "Android"
   ],
@@ -54,6 +54,16 @@
     "support": "/legal/dotglow/support.html"
   },
   "changelog": [
+    {
+      "version": "1.0.1",
+      "date": "2026-10-05",
+      "notes": [
+        "Fixed: the app closed when tapping \"Allow Bluetooth\" on a fresh install",
+        "The first screen now scrolls in landscape, so the permission button is always reachable",
+        "Smaller download (about 2 MB) with code shrinking",
+        "Now in closed testing on Google Play: join the tester group to get it"
+      ]
+    },
     {
       "version": "1.0.0",
       "date": "2026-10-03",

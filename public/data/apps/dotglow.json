@@ -38,7 +38,8 @@
     "github": "",
     "playstore": "coming-soon",
     "website": "https://mtpcode.com/apps/dotglow.html",
-    "docs": ""
+    "docs": "",
+    "flash": "/flash/"
   },
   "testing": {
     "googleGroup": "devmeettesters@googlegroups.com",

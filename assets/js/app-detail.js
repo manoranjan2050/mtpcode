@@ -65,6 +65,7 @@ function downloadButtons(downloads = {}) {
 function linkButtons(links = {}, appName = 'This app', { isAndroid = false } = {}) {
   const meta = {
     website: { label: 'Website', icon: 'globe' },
+    flash: { label: 'Flash firmware (web, no install)', icon: 'download' },
     docs: { label: 'Documentation', icon: 'book-open' },
     github: { label: 'GitHub', icon: 'github' },
   };

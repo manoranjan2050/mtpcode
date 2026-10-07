@@ -46,6 +46,11 @@
     "groupUrl": "https://groups.google.com/g/devmeettesters",
     "optInUrl": "https://play.google.com/apps/testing/com.electroiot.dotglow"
   },
+  "video": {
+    "url": "https://www.youtube.com/watch?v=RAMwpgyiXoM",
+    "title": "DotGlow demo: a 30-second YouTube Short",
+    "thumbnail": "/assets/images/apps/dotglow/demo-short.jpg"
+  },
   "legal": {
     "privacy": "/legal/dotglow/privacy.html",
     "terms": "/legal/dotglow/terms.html",

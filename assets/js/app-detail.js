@@ -94,7 +94,22 @@ function linkButtons(links = {}, appName = 'This app', { isAndroid = false } = {
   return parts.join('');
 }
 
-// Optional app.testing: { googleGroup, groupUrl, optInUrl } for a Play closed test open to a Google Group.
+// Optional app.video: { url, title, thumbnail }. A click-to-open card with a local thumbnail: nothing is loaded from YouTube until clicked.
+function videoCard(video, appName = 'This app') {
+  if (!video?.url || !video?.thumbnail) return '';
+  return `
+          <h2 class="mt-10 font-display text-2xl font-bold text-dark-900 dark:text-white">Watch the demo</h2>
+          <a href="${esc(video.url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(video.title || `${appName} demo on YouTube`)}"
+            class="group relative mt-4 block w-full max-w-[260px] overflow-hidden rounded-2xl shadow-glass ring-1 ring-dark-900/10 dark:ring-white/10">
+            <img src="${esc(video.thumbnail)}" alt="${esc(`${appName} demo video thumbnail`)}" loading="lazy" width="540" height="960" class="block h-auto w-full transition duration-300 group-hover:scale-[1.03]" />
+            <span class="absolute inset-0 flex items-center justify-center bg-black/10 transition group-hover:bg-black/20">
+              <span class="flex h-16 w-16 items-center justify-center rounded-full bg-red-600 text-white shadow-lg ring-4 ring-white/70"><i data-lucide="play" class="h-7 w-7"></i></span>
+            </span>
+          </a>
+          <p class="mt-3 text-sm text-dark-700/70 dark:text-slate-400">${esc(video.title || 'Demo on YouTube')} · opens YouTube</p>`;
+}
+
+// Optional app.testing:{ googleGroup, groupUrl, optInUrl } for a Play closed test open to a Google Group.
 function testingCard(testing, appName = 'This app') {
   if (!testing?.optInUrl) return '';
   const step = (n, html) =>
@@ -192,6 +207,8 @@ function renderDetail(app, site) {
 
           <h2 class="mt-12 font-display text-2xl font-bold text-dark-900 dark:text-white">About ${esc(app.name)}</h2>
           <p class="mt-4 leading-relaxed text-dark-700/80 dark:text-slate-400">${esc(app.description)}</p>
+
+          ${videoCard(app.video, app.name)}
 
           <h2 class="mt-10 font-display text-2xl font-bold text-dark-900 dark:text-white">Features</h2>
           <ul class="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">

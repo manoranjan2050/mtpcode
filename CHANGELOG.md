@@ -4,6 +4,12 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+## [2026-10-08] — DotGlow demo video
+
+### Added
+- Optional `video` block in app JSON (`url`, `title`, `thumbnail`) renders a click-to-open "Watch the demo" card on the app page (local thumbnail; nothing is loaded from YouTube until clicked)
+- DotGlow: the demo YouTube Short is linked on its page
+
 ## [2026-10-07] — Tickglint project and web flasher
 
 ### Added

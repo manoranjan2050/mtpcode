@@ -1,0 +1,46 @@
+{
+  "slug": "tickglint",
+  "name": "Tickglint: ESP32-S3 Smart Clock",
+  "tagline": "Alarms, timers, sun and moon and festivals on a 12864 LCD, with an Android app, a custom PCB and a browser flasher",
+  "description": "Tickglint turns an ESP32-S3 and a 12864 (ST7920) LCD into a smart desk clock. It has four clock faces, a calendar, eight alarms with a buzzer (they ring without Wi-Fi or the phone), timer, stopwatch and pomodoro, four world clocks, sunrise, sunset and moon phase calculated offline, and birthdays and Indian festivals with confetti, sparkle and balloon popups. The Android app pairs over Bluetooth with a PIN shown on the LCD, sets the time from the phone and controls every setting. The firmware installs from this website in one click (web flasher), from the phone over USB-OTG, or with PlatformIO. A custom carrier PCB (KiCad, Gerbers and BOM included) and a colour-coded wiring diagram are part of the project.",
+  "technology": [
+    "ESP32-S3",
+    "PlatformIO",
+    "U8g2 ST7920",
+    "NimBLE",
+    "Kotlin",
+    "Jetpack Compose",
+    "KiCad",
+    "ESP Web Tools"
+  ],
+  "features": [
+    "Four clock faces: big digits, analog, flip and compact; 12/24 hour",
+    "Eight alarms with repeat days, snooze and buzzer, working with no Wi-Fi",
+    "Timer, stopwatch, pomodoro and hourly chime",
+    "Sunrise, sunset and moon phase from your city, calculated on the clock",
+    "Birthdays and Indian festivals (2026-2028) with animated popups and a countdown",
+    "World clocks, temperature and humidity (BME280), DS3231 RTC support",
+    "Android app: Bluetooth setup with a PIN on the LCD, every setting, demo mode, tutorial and guide",
+    "Install firmware three ways: web flasher, phone over USB-OTG, PlatformIO",
+    "Custom ESP32-S3 carrier PCB with backlight and buzzer drivers (fab files included)",
+    "Colour-coded wiring diagram (SVG), REST and Bluetooth API, OTA updates"
+  ],
+  "images": [
+    "/assets/images/projects/tickglint/banner.jpg",
+    "/assets/images/projects/tickglint/wiring.png",
+    "/assets/images/projects/tickglint/pcb-top.png",
+    "/assets/images/projects/tickglint/app-dashboard.jpg",
+    "/assets/images/projects/tickglint/app-alarms.jpg",
+    "/assets/images/projects/tickglint/app-guide.jpg"
+  ],
+  "links": {
+    "flasher": "/tickglint/flasher/",
+    "wiring": "/assets/images/projects/tickglint/wiring.svg",
+    "github": "",
+    "app": "",
+    "pcb": "",
+    "docs": ""
+  },
+  "status": "live",
+  "featured": true
+}

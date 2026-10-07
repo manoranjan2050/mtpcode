@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tickglint Web Flasher: install the smart clock firmware from your browser</title>
+  <meta name="description" content="Install Tickglint smart clock firmware on an ESP32-S3 board straight from Chrome or Edge. Nothing to download, no drivers to configure." />
+  <link rel="canonical" href="https://mtpcode.com/tickglint/flasher/" />
+  <meta name="theme-color" content="#0b1118" />
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
+  <meta property="og:title" content="Tickglint Web Flasher" />
+  <meta property="og:description" content="Install Tickglint on an ESP32-S3 board from your browser. No download." />
+  <meta property="og:image" content="https://mtpcode.com/assets/images/projects/tickglint/banner.jpg" />
+  <script type="module" src="https://unpkg.com/esp-web-tools@10.4.0/dist/web/install-button.js?module"></script>
+  <style>
+    :root { --bg:#0b1118; --panel:#141c27; --panel2:#1c2634; --fg:#e8eef6; --muted:#8d9bb0; --acc:#59c8ff; --good:#4cd27a; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+    body::before { content:""; position:fixed; inset:0; z-index:-1;
+      background: radial-gradient(900px 500px at 85% -10%, rgba(89,200,255,.22), transparent 60%),
+                  radial-gradient(700px 500px at -10% 90%, rgba(99,102,241,.16), transparent 60%),
+                  radial-gradient(rgba(89,200,255,.08) 1.4px, transparent 1.6px) 0 0/18px 18px; }
+    main { max-width: 860px; margin: 0 auto; padding: 28px 16px 60px; }
+    a { color:var(--acc); }
+    h1 { font-size: clamp(26px, 5vw, 38px); margin:0; line-height:1.15; }
+    .top { display:flex; align-items:center; gap:14px; margin-bottom:6px; }
+    .logo { width:56px; height:56px; border-radius:14px; background:linear-gradient(135deg,#4338ca,#06b6d4); display:grid; place-items:center; box-shadow:0 0 28px rgba(89,200,255,.4); }
+    .lead { color:var(--muted); margin:6px 0 22px; }
+    .warn { display:none; background:#3a2a1e; border:1px solid #7a5a2a; border-radius:14px; padding:14px 16px; margin-bottom:18px; }
+    .warn.show { display:block; }
+    .card { background:var(--panel); border:1px solid #243044; border-radius:18px; padding:20px; margin:14px 0; }
+    .card h2 { margin:0 0 4px; font-size:20px; }
+    .tag { display:inline-block; font-size:12px; font-weight:700; letter-spacing:.06em; color:#04202e; background:var(--acc); border-radius:999px; padding:2px 10px; margin-right:8px; vertical-align:middle; }
+    .muted { color:var(--muted); }
+    .btn { background:var(--acc); color:#04202e; border:0; border-radius:12px; padding:14px 26px; font-size:17px; font-weight:700; cursor:pointer;
+           box-shadow:0 8px 24px rgba(89,200,255,.3); transition:transform .12s, filter .12s; }
+    .btn:hover { filter:brightness(1.08); transform:translateY(-1px); }
+    .row { display:flex; flex-wrap:wrap; gap:14px; align-items:center; margin-top:14px; }
+    ol.steps { counter-reset:s; list-style:none; padding:0; margin:0; }
+    ol.steps li { counter-increment:s; display:flex; gap:12px; padding:9px 0; border-top:1px solid #243044; }
+    ol.steps li:first-child { border-top:0; }
+    ol.steps li::before { content:counter(s); flex:none; width:28px; height:28px; border-radius:50%; background:var(--panel2); color:var(--acc); font-weight:800; display:grid; place-items:center; }
+    details { background:var(--panel); border:1px solid #243044; border-radius:14px; padding:12px 16px; margin:8px 0; }
+    summary { cursor:pointer; font-weight:600; }
+    details ul { margin:8px 0 2px; padding-left:20px; }
+    code { background:var(--panel2); padding:1px 6px; border-radius:6px; font-size:.92em; }
+    img.wire { width:100%; border-radius:12px; margin-top:10px; border:1px solid #243044; }
+    footer { margin-top:30px; color:var(--muted); font-size:14px; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="top">
+    <div class="logo" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+    <h1>Tickglint Web Flasher</h1>
+  </div>
+  <p class="lead">Install the Tickglint smart clock firmware on your ESP32-S3 board straight from the browser. Nothing to download or install.</p>
+
+  <div id="nosupport" class="warn">
+    <strong>This browser can't flash boards.</strong> Open this page in <strong>Google Chrome</strong> or <strong>Microsoft Edge</strong>
+    on a Windows, Mac, Linux or Chromebook computer. Firefox, Safari and phone browsers don't support it.
+    On an Android phone, use the Tickglint app instead (Install firmware over USB-OTG).
+  </div>
+
+  <div class="card">
+    <h2><span class="tag">ESP32-S3</span>Tickglint smart clock</h2>
+    <div class="muted">ESP32-S3-DevKitC-1 and compatible S3 boards. Alarms, timers, sun and moon, festivals, set up with the Android app. <span id="v-tickglint"></span></div>
+    <div class="row">
+      <esp-web-install-button manifest="manifest.json">
+        <button slot="activate" class="btn">Install Tickglint</button>
+        <span slot="unsupported" class="muted">Use Chrome or Edge on a computer.</span>
+        <span slot="not-allowed" class="muted">This page must be opened with https://.</span>
+      </esp-web-install-button>
+      <span class="muted">Installing erases the board's old firmware and settings.</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><div><strong>Plug the board into the computer</strong> with a USB <em>data</em> cable (some cables only charge).
+        Disconnect the LCD while flashing.</div></li>
+      <li><div>Press <strong>Install</strong>, pick the board's port in the list (named <code>USB JTAG/serial</code>, <code>CH340</code> or
+        <code>CP210x</code>) and press <strong>Connect</strong>.</div></li>
+      <li><div>Choose <strong>Install</strong> again. It takes about a minute: <strong>don't unplug</strong> the board until it says it's done.</div></li>
+      <li><div>Connect the 12864 LCD, power the board, open the <strong>Tickglint app</strong> and pair with the PIN shown on the LCD.</div></li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>Wiring</h2>
+    <div class="muted">Colour-coded diagram: ESP32-S3, 12864 LCD, backlight, buzzer, buttons, RTC and sensors. Open it full size to zoom.</div>
+    <a href="/assets/images/projects/tickglint/wiring.svg" target="_blank" rel="noopener"><img class="wire" src="/assets/images/projects/tickglint/wiring.png" alt="Tickglint wiring diagram" loading="lazy" /></a>
+  </div>
+
+  <h2 style="margin-top:26px">Problems?</h2>
+  <details><summary>No port in the list, or the board isn't found</summary>
+    <ul>
+      <li>Use a USB data cable and another USB port.</li>
+      <li>Boards with a CH340 or CP210x chip may need their USB driver (search for "CH340 driver" / "CP210x driver").</li>
+      <li>Hold the <strong>BOOT</strong> button while you plug the board in, then try again.</li>
+    </ul></details>
+  <details><summary>"Failed to initialize" or it stops half way</summary>
+    <ul>
+      <li>Take every wire off the board and use a short, thick cable.</li>
+      <li>Hold <strong>BOOT</strong>, press <strong>RESET</strong> once, release <strong>BOOT</strong>, then press Install.</li>
+      <li>Close other programs that use the port (Arduino IDE, PlatformIO monitor).</li>
+    </ul></details>
+  <details><summary>Is it safe? What does it install?</summary>
+    <ul>
+      <li>The firmware file is on this website (<a href="manifest.json">manifest</a>) and is built from the
+        <a href="https://github.com/ElectroIoT/Tickglint-ESP32">Tickglint firmware</a> project. Flashing happens in your browser; nothing is uploaded.</li>
+    </ul></details>
+
+  <footer>
+    <a href="/projects/tickglint.html">Tickglint project page</a> ·
+    <a href="/">mtpcode.com</a> · Built on <a href="https://esphome.github.io/esp-web-tools/">ESP Web Tools</a>
+  </footer>
+</main>
+<script>
+  if (!('serial' in navigator)) document.getElementById('nosupport').classList.add('show');
+  fetch('manifest.json').then(r => r.json()).then(m => { document.getElementById('v-tickglint').textContent = 'Latest version ' + m.version + '.'; }).catch(() => {});
+</script>
+</body>
+</html>

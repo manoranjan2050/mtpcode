@@ -4,6 +4,13 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+## [2026-10-07] — Tickglint project and web flasher
+
+### Added
+- `projects/tickglint.html` + `public/data/projects/tickglint.json`: Tickglint ESP32-S3 smart clock project page (wiring diagram, PCB, app screenshots)
+- `/tickglint/flasher/`: web flasher (ESP Web Tools) for the ESP32-S3 full image; manifest, firmware and `firmware.json` (read by the Android app) in `public/tickglint/`, `guide.json` holds the YouTube video link for the app
+- Project page link buttons for `flasher`, `wiring`, `app`, `pcb`, `docs`
+
 ## [2026-10-07] — DotGlow web flasher
 
 ### Added

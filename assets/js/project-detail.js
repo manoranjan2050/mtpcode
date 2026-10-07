@@ -11,10 +11,15 @@ function linkButtons(links = {}) {
   const meta = {
     github: { label: 'View Source on GitHub', icon: 'github' },
     demo: { label: 'Live Demo', icon: 'external-link' },
+    flasher: { label: 'Web Flasher (install firmware)', icon: 'download' },
+    app: { label: 'Android App', icon: 'smartphone' },
+    wiring: { label: 'Wiring Diagram (zoom)', icon: 'external-link' },
+    pcb: { label: 'PCB Files (Gerber, BOM)', icon: 'download' },
+    docs: { label: 'Setup Guide', icon: 'book-open' },
   };
   return Object.entries(links)
     .filter(([, url]) => url)
-    .map(([key, url]) => `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer" class="btn-outline w-full !justify-start"><i data-lucide="${meta[key]?.icon ?? 'link'}" class="h-4 w-4"></i> ${meta[key]?.label ?? key}</a>`)
+    .map(([key, url]) => `<a href="${esc(url)}" ${url.startsWith('/') && !url.includes('.', url.lastIndexOf('/')) ? '' : 'target="_blank" rel="noopener noreferrer"'} class="btn-outline w-full !justify-start"><i data-lucide="${meta[key]?.icon ?? 'link'}" class="h-4 w-4"></i> ${meta[key]?.label ?? key}</a>`)
     .join('');
 }
 

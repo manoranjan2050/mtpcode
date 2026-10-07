@@ -1,0 +1,14 @@
+{
+  "name": "Tickglint",
+  "version": "1.0.0",
+  "boards": {
+    "esp32s3": {
+      "full": "https://mtpcode.com/tickglint/fw/tickglint-esp32s3-full.bin",
+      "fullSize": 1234064,
+      "fullMd5": "7e4bd16c5230b03f3f643740eed5a685",
+      "app": "https://mtpcode.com/tickglint/fw/tickglint-esp32s3.bin",
+      "appSize": 1168528,
+      "appMd5": "ad6e8eddebbf826334cefebc0744c600"
+    }
+  }
+}

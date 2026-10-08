@@ -9,7 +9,7 @@
   <meta name="theme-color" content="#0b1118" />
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
   <meta property="og:title" content="Tickglint Web Flasher" />
-  <meta property="og:description" content="Install Tickglint on an ESP32-S3 board from your browser. No download." />
+  <meta property="og:description" content="Install Tickglint on an ESP32-S3, ESP32 or ESP32-C3 board from your browser. No download." />
   <meta property="og:image" content="https://mtpcode.com/assets/images/projects/tickglint/banner.jpg" />
   <script type="module" src="https://unpkg.com/esp-web-tools@10.4.0/dist/web/install-button.js?module"></script>
   <style>
@@ -54,7 +54,7 @@
     <div class="logo" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
     <h1>Tickglint Web Flasher</h1>
   </div>
-  <p class="lead">Install the Tickglint smart clock firmware on your ESP32-S3 board straight from the browser. Nothing to download or install.</p>
+  <p class="lead">Install the Tickglint smart clock firmware on your ESP32-S3, ESP32 or ESP32-C3 board straight from the browser. Nothing to download or install.</p>
 
   <div id="nosupport" class="warn">
     <strong>This browser can't flash boards.</strong> Open this page in <strong>Google Chrome</strong> or <strong>Microsoft Edge</strong>
@@ -63,8 +63,8 @@
   </div>
 
   <div class="card">
-    <h2><span class="tag">ESP32-S3</span>Tickglint smart clock</h2>
-    <div class="muted">ESP32-S3-DevKitC-1 and compatible S3 boards. Alarms, timers, sun and moon, festivals, set up with the Android app. <span id="v-tickglint"></span></div>
+    <h2><span class="tag">ESP32-S3 / ESP32 / C3</span>Tickglint smart clock</h2>
+    <div class="muted">ESP32-S3-DevKitC-1, ESP32 DevKit V1 and ESP32-C3 boards: the chip is detected for you and the right image is installed. Alarms, timers, sun and moon, festivals, set up with the Android app. <span id="v-tickglint"></span></div>
     <div class="row">
       <esp-web-install-button manifest="manifest.json">
         <button slot="activate" class="btn">Install Tickglint</button>
@@ -88,7 +88,12 @@
   </div>
 
   <div class="card">
-    <h2>Wiring</h2>
+    <h2>Pins differ per chip</h2>
+    <div class="muted">The wiring picture below is for the ESP32-S3. For the original ESP32 and the ESP32-C3 use the pin tables in the <a href="https://github.com/ElectroIoT/Tickglint-ESP32">firmware repository</a> (Tickglint-ESP32-DevKit-Connection.pdf): GPIO6-11 must never be used on the original ESP32.</div>
+  </div>
+
+  <div class="card">
+    <h2>Wiring (ESP32-S3)</h2>
     <div class="muted">Colour-coded diagram: ESP32-S3, 12864 LCD, backlight, buzzer, buttons, RTC and sensors. Open it full size to zoom.</div>
     <a href="/assets/images/projects/tickglint/wiring.svg" target="_blank" rel="noopener"><img class="wire" src="/assets/images/projects/tickglint/wiring.png" alt="Tickglint wiring diagram" loading="lazy" /></a>
   </div>
@@ -108,7 +113,7 @@
     </ul></details>
   <details><summary>Is it safe? What does it install?</summary>
     <ul>
-      <li>The firmware file is on this website (<a href="manifest.json">manifest</a>) and is built from the
+      <li>The firmware files are on this website (<a href="manifest.json">manifest</a>) and is built from the
         <a href="https://github.com/ElectroIoT/Tickglint-ESP32">Tickglint firmware</a> project. Flashing happens in your browser; nothing is uploaded.</li>
     </ul></details>
 

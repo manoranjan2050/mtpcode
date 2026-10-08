@@ -1,6 +1,6 @@
 {
   "name": "Tickglint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "new_install_prompt_erase": true,
   "builds": [
     {
@@ -8,6 +8,24 @@
       "parts": [
         {
           "path": "../fw/tickglint-esp32s3-full.bin",
+          "offset": 0
+        }
+      ]
+    },
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "../fw/tickglint-esp32-full.bin",
+          "offset": 0
+        }
+      ]
+    },
+    {
+      "chipFamily": "ESP32-C3",
+      "parts": [
+        {
+          "path": "../fw/tickglint-esp32c3-full.bin",
           "offset": 0
         }
       ]

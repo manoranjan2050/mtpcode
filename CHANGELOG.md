@@ -10,6 +10,11 @@ All notable changes to this project are documented here.
 - Optional `video` block in app JSON (`url`, `title`, `thumbnail`) renders a click-to-open "Watch the demo" card on the app page (local thumbnail; nothing is loaded from YouTube until clicked)
 - DotGlow: the demo YouTube Short is linked on its page
 
+## [2026-10-08] — Tickglint firmware 1.0.7
+
+### Added / fixed
+- Scrolling messages from the app (`message` API), 12-hour flip clock shows AM/PM beside the cards, the boot and test screens name the real chip, per-device release folders, OpenSCAD case files
+
 ## [2026-10-08] — Tickglint firmware 1.0.6
 
 ### Added

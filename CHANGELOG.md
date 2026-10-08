@@ -10,6 +10,11 @@ All notable changes to this project are documented here.
 - Optional `video` block in app JSON (`url`, `title`, `thumbnail`) renders a click-to-open "Watch the demo" card on the app page (local thumbnail; nothing is loaded from YouTube until clicked)
 - DotGlow: the demo YouTube Short is linked on its page
 
+## [2026-10-08] — Tickglint firmware 1.0.2
+
+### Changed
+- All Tickglint images rebuilt (LCD bus clock 500 kHz: fixes random characters over jumper wires; confirmed on a real ESP32 board)
+
 ## [2026-10-08] — Tickglint multi-chip firmware 1.0.1
 
 ### Changed

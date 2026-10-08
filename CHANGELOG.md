@@ -10,6 +10,12 @@ All notable changes to this project are documented here.
 - Optional `video` block in app JSON (`url`, `title`, `thumbnail`) renders a click-to-open "Watch the demo" card on the app page (local thumbnail; nothing is loaded from YouTube until clicked)
 - DotGlow: the demo YouTube Short is linked on its page
 
+## [2026-10-08] — Tickglint firmware 1.0.5
+
+### Fixed / added
+- The on-clock menu closed at once (time wrap-around); toggling auto rotate now restarts the rotation timer
+- 6 new animation effects (snow, fireworks, bouncing clock, ripples, code rain, radar) and a separate screensaver effect
+
 ## [2026-10-08] — Tickglint firmware 1.0.4
 
 ### Fixed

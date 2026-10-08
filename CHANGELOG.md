@@ -10,6 +10,11 @@ All notable changes to this project are documented here.
 - Optional `video` block in app JSON (`url`, `title`, `thumbnail`) renders a click-to-open "Watch the demo" card on the app page (local thumbnail; nothing is loaded from YouTube until clicked)
 - DotGlow: the demo YouTube Short is linked on its page
 
+## [2026-10-08] — Tickglint firmware 1.0.3
+
+### Fixed
+- Crash when a phone connected over Bluetooth (BLE host task stack too small); pairing and time sync confirmed on a real ESP32. Images for ESP32-S3, ESP32 and ESP32-C3 rebuilt
+
 ## [2026-10-08] — Tickglint firmware 1.0.2
 
 ### Changed

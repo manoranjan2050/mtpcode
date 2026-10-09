@@ -1,30 +1,30 @@
 {
   "name": "Tickglint",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "boards": {
     "esp32s3": {
       "full": "https://mtpcode.com/tickglint/fw/tickglint-esp32s3-full.bin",
-      "fullSize": 1241024,
-      "fullMd5": "933d82ff5de03a17745e513fad92c9c0",
+      "fullSize": 1244960,
+      "fullMd5": "3452c264bbce6a3930f389722a46443c",
       "app": "https://mtpcode.com/tickglint/fw/tickglint-esp32s3.bin",
-      "appSize": 1175488,
-      "appMd5": "8b6f561fd7290be4b0f9e7d50bb011a2"
+      "appSize": 1179424,
+      "appMd5": "27bef764f5a1e53915d3ebd6e87ce716"
     },
     "esp32": {
       "full": "https://mtpcode.com/tickglint/fw/tickglint-esp32-full.bin",
-      "fullSize": 1361696,
-      "fullMd5": "f40a64ab5d1b5275456b1b8e2cf94ddf",
+      "fullSize": 1365808,
+      "fullMd5": "20154a8d834455e571e3a245107641ab",
       "app": "https://mtpcode.com/tickglint/fw/tickglint-esp32.bin",
-      "appSize": 1296160,
-      "appMd5": "d601de0c55c5a4e1e8f1dd8aa0b7a17e"
+      "appSize": 1300272,
+      "appMd5": "3427fdf785cf7938d7ad7a9709dd4c40"
     },
     "esp32c3": {
       "full": "https://mtpcode.com/tickglint/fw/tickglint-esp32c3-full.bin",
-      "fullSize": 1362912,
-      "fullMd5": "0a19db4643ac4f2f4636d8d90ad70250",
+      "fullSize": 1367776,
+      "fullMd5": "c0c658014830f48b4a594259f22a574d",
       "app": "https://mtpcode.com/tickglint/fw/tickglint-esp32c3.bin",
-      "appSize": 1297376,
-      "appMd5": "ab795169347cb19405c163e59be9c420"
+      "appSize": 1302240,
+      "appMd5": "531fb4c28d4ab2e43ff09c5f691ebd3d"
     }
   }
 }

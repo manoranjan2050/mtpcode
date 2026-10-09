@@ -13,6 +13,7 @@ function linkButtons(links = {}) {
     demo: { label: 'Live Demo', icon: 'external-link' },
     flasher: { label: 'Web Flasher (install firmware)', icon: 'download' },
     app: { label: 'Android App', icon: 'smartphone' },
+    video: { label: 'Watch the Video (YouTube)', icon: 'youtube' },
     wiring: { label: 'Wiring Diagram (zoom)', icon: 'external-link' },
     pcb: { label: 'PCB Files (Gerber, BOM)', icon: 'download' },
     docs: { label: 'Setup Guide', icon: 'book-open' },

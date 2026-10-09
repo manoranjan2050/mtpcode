@@ -1,8 +1,8 @@
 {
   "slug": "tickglint",
-  "name": "Tickglint: ESP32-S3 Smart Clock",
+  "name": "Tickglint: ESP32 Smart Clock",
   "tagline": "Alarms, timers, sun and moon and festivals on a 12864 LCD, with an Android app, a custom PCB and a browser flasher",
-  "description": "Tickglint turns an ESP32-S3 and a 12864 (ST7920) LCD into a smart desk clock. It has four clock faces, a calendar, eight alarms with a buzzer (they ring without Wi-Fi or the phone), timer, stopwatch and pomodoro, four world clocks, sunrise, sunset and moon phase calculated offline, and birthdays and Indian festivals with confetti, sparkle and balloon popups. The Android app pairs over Bluetooth with a PIN shown on the LCD, sets the time from the phone and controls every setting. The firmware installs from this website in one click (web flasher), from the phone over USB-OTG, or with PlatformIO. A custom carrier PCB (KiCad, Gerbers and BOM included) and a colour-coded wiring diagram are part of the project.",
+  "description": "Tickglint turns an ESP32-S3, ESP32 or ESP32-C3 and a 12864 (ST7920) LCD into a smart desk clock. It has 13 clock faces (including retro LCD watch, nixie tubes, terminal and Pac-Man) with animated backgrounds and screensavers, a calendar, scrolling messages sent from the phone, eight alarms with a buzzer (they ring without Wi-Fi or the phone), timer, stopwatch and pomodoro, four world clocks, sunrise, sunset and moon phase calculated offline, and birthdays and Indian festivals with confetti, sparkle and balloon popups. The Android app pairs over Bluetooth with a PIN shown on the LCD, sets the time from the phone and controls every setting. The firmware installs from this website in one click (web flasher), from the phone over USB-OTG, or with PlatformIO. A custom carrier PCB (KiCad, Gerbers and BOM included) and a colour-coded wiring diagram are part of the project.",
   "technology": [
     "ESP32-S3",
     "ESP32",
@@ -16,8 +16,9 @@
     "ESP Web Tools"
   ],
   "features": [
-    "Four clock faces: big digits, analog, flip and compact; 12/24 hour",
+    "13 clock faces picked from a picture gallery: big digits, analog, flip, dot matrix, binary, words, nixie, retro LCD, terminal, Pac-Man and more; 12/24 hour",
     "Eight alarms with repeat days, snooze and buzzer, working with no Wi-Fi",
+    "12 animations, animated clock backgrounds and a screensaver; scrolling messages from the app",
     "Timer, stopwatch, pomodoro and hourly chime",
     "Sunrise, sunset and moon phase from your city, calculated on the clock",
     "Birthdays and Indian festivals (2026-2028) with animated popups and a countdown",

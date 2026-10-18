@@ -4,6 +4,11 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+## [2026-10-18] — DotGlow 1.0.3
+
+### Changed
+- DotGlow app page: version 1.0.3 and its changelog (new Troubleshooting section in the Setup guide: 15 common problems with step-by-step fixes); structured data `softwareVersion` 1.0.3
+
 ## [2026-10-08] — DotGlow demo video
 
 ### Added

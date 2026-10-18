@@ -27,7 +27,7 @@
     "Demo clock to explore every screen without hardware",
     "No account, no ads, no analytics, no tracking"
   ],
-  "version": "1.0.1",
+  "version": "1.0.3",
   "platform": [
     "Android"
   ],
@@ -60,6 +60,16 @@
     "support": "/legal/dotglow/support.html"
   },
   "changelog": [
+    {
+      "version": "1.0.3",
+      "date": "2026-10-18",
+      "notes": [
+        "New Troubleshooting section in the Setup guide: 15 common problems in 5 groups, each with numbered fix steps",
+        "Covers power and ground, display and wiring, Bluetooth and the app, WiFi and time, and installing firmware",
+        "Includes the case where the board light is on but the app does not see the clock (join the grounds)",
+        "Stability improvements"
+      ]
+    },
     {
       "version": "1.0.1",
       "date": "2026-10-05",

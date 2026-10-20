@@ -1,0 +1,72 @@
+{
+  "slug": "tickglint",
+  "name": "Tickglint: Smart Clock",
+  "tagline": "ESP32 Smart Clock • 13 Clock Faces • Open Source",
+  "logo": "/assets/images/apps/tickglint/logo.png",
+  "banner": "/assets/images/apps/tickglint/banner.png",
+  "cardImage": "/assets/images/apps/tickglint/card.jpg",
+  "gallery": [
+    "/assets/images/apps/tickglint/screen-1.jpg",
+    "/assets/images/apps/tickglint/screen-2.jpg",
+    "/assets/images/apps/tickglint/screen-3.jpg",
+    "/assets/images/apps/tickglint/screen-4.jpg",
+    "/assets/images/apps/tickglint/screen-5.jpg",
+    "/assets/images/apps/tickglint/screen-6.jpg",
+    "/assets/images/apps/tickglint/screen-7.jpg",
+    "/assets/images/apps/tickglint/screen-8.jpg"
+  ],
+  "description": "Tickglint is the companion app for the open-source Tickglint DIY smart clock: an ESP32 clock with a 12864 (ST7920) graphic LCD that you build yourself. The app sets the clock up over Bluetooth with a PIN shown on the clock's own screen, then controls everything from your phone: a live copy of the LCD with remote buttons, 8 alarms that ring on the clock even without Wi-Fi, timer, stopwatch and pomodoro, world clocks, sunrise, sunset and moon phase, birthdays and festivals with animated pop-ups, and scrolling messages sent from the phone. Pick from 13 clock faces in a picture gallery, with 12 animation effects, a screensaver and an animated clock background. Firmware updates over Bluetooth, or install it on a new ESP32-S3, ESP32 or ESP32-C3 board from the phone over USB-OTG. There is also a built-in setup guide with wiring diagrams, a troubleshooting guide and a demo mode that works without any hardware. No account, no ads, no tracking.",
+  "features": [
+    "Bluetooth setup in a minute: pair with the PIN shown on the clock's LCD, set the time zone, time (no Wi-Fi needed), Wi-Fi and city",
+    "Live copy of the clock's LCD with remote buttons",
+    "13 clock faces chosen from pictures: digital, analog, flip, dot matrix, nixie, retro LCD, terminal, Pac-Man and more",
+    "8 alarms with repeat days and snooze, stored on the clock so they ring without Wi-Fi or the phone",
+    "Timer, stopwatch, pomodoro, hourly chime and 4 world clocks",
+    "Sunrise, sunset and moon phase calculated on the clock",
+    "Birthdays and Indian festivals with animated pop-ups and a countdown",
+    "Send a scrolling message to the clock's screen",
+    "12 animation effects, screensaver and an animated clock background",
+    "Firmware update over Bluetooth, or install from the phone over USB-OTG (ESP32-S3, ESP32, ESP32-C3)",
+    "Wiring diagrams with zoom, parts list and a troubleshooting guide inside the app",
+    "Demo mode: try every screen without any hardware",
+    "No account, no ads, no tracking"
+  ],
+  "version": "1.7.0",
+  "platform": [
+    "Android"
+  ],
+  "downloads": {
+    "apk": "coming-soon"
+  },
+  "links": {
+    "github": "",
+    "playstore": "coming-soon",
+    "website": "https://mtpcode.com/projects/tickglint.html",
+    "docs": "",
+    "flash": "/tickglint/flasher/"
+  },
+  "video": {
+    "url": "https://www.youtube.com/watch?v=UAt0KZ2S_5w",
+    "title": "Tickglint: DIY ESP32 Smart Clock with 13 Clock Faces + Android App",
+    "thumbnail": "/assets/images/apps/tickglint/video-thumb.jpg"
+  },
+  "legal": {
+    "privacy": "/legal/tickglint/privacy.html"
+  },
+  "changelog": [
+    {
+      "version": "1.7.0",
+      "date": "2026-10-09",
+      "notes": [
+        "13 clock faces with a picture gallery in the app settings",
+        "Scrolling messages sent from the phone",
+        "Animated clock background and screensaver choice",
+        "Firmware updates over Bluetooth, and USB-OTG install for ESP32-S3, ESP32 and ESP32-C3",
+        "Wiring diagrams for all three boards, with zoom, and a troubleshooting guide",
+        "Now in closed testing on Google Play"
+      ]
+    }
+  ],
+  "featured": false,
+  "category": "android"
+}

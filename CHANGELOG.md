@@ -4,6 +4,11 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+## [2026-10-26] — DotGlow live on Google Play
+
+### Changed
+- DotGlow app page: Play Store button now links to the live listing (`com.electroiot.dotglow`); the closed-testing sign-up card is removed.
+
 ## [2026-10-18] — DotGlow 1.0.3
 
 ### Changed

@@ -36,15 +36,10 @@
   },
   "links": {
     "github": "",
-    "playstore": "coming-soon",
+    "playstore": "https://play.google.com/store/apps/details?id=com.electroiot.dotglow",
     "website": "https://mtpcode.com/apps/dotglow.html",
     "docs": "",
     "flash": "/flash/"
-  },
-  "testing": {
-    "googleGroup": "devmeettesters@googlegroups.com",
-    "groupUrl": "https://groups.google.com/g/devmeettesters",
-    "optInUrl": "https://play.google.com/apps/testing/com.electroiot.dotglow"
   },
   "video": {
     "url": "https://www.youtube.com/watch?v=RAMwpgyiXoM",
@@ -67,7 +62,8 @@
         "New Troubleshooting section in the Setup guide: 15 common problems in 5 groups, each with numbered fix steps",
         "Covers power and ground, display and wiring, Bluetooth and the app, WiFi and time, and installing firmware",
         "Includes the case where the board light is on but the app does not see the clock (join the grounds)",
-        "Stability improvements"
+        "Stability improvements",
+        "Now available to everyone on Google Play"
       ]
     },
     {

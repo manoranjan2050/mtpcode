@@ -1,0 +1,72 @@
+{
+  "slug": "openrestopro-erp",
+  "name": "OpenRestoPro ERP – Billing POS",
+  "tagline": "Billing, Orders & Accounts for Restaurants, Cake Shops & Cafés • Open Source",
+  "logo": "/assets/images/apps/openrestopro-erp/logo.png",
+  "banner": "/assets/images/apps/openrestopro-erp/banner.png",
+  "cardImage": "/assets/images/apps/openrestopro-erp/card.jpg",
+  "gallery": [
+    "/assets/images/apps/openrestopro-erp/screen-1.jpg",
+    "/assets/images/apps/openrestopro-erp/screen-2.jpg",
+    "/assets/images/apps/openrestopro-erp/screen-3.jpg",
+    "/assets/images/apps/openrestopro-erp/screen-4.jpg",
+    "/assets/images/apps/openrestopro-erp/screen-5.jpg",
+    "/assets/images/apps/openrestopro-erp/screen-6.jpg",
+    "/assets/images/apps/openrestopro-erp/screen-7.jpg",
+    "/assets/images/apps/openrestopro-erp/screen-8.jpg"
+  ],
+  "description": "OpenRestoPro ERP is the Android app for the open-source OpenRestoPro ERP website: a complete billing and back-office system for restaurants, cake shops, sweet shops, cafés, hotels and fast-food counters. The app connects to your own OpenRestoPro ERP server, so your business data stays on your server. Take counter, takeaway, dine-in (with KOT), delivery and advance/custom orders, pick cake sizes in kg or pound, add GST or simple bills, print on a Bluetooth thermal printer and share the bill on WhatsApp. Track expenses and vendor khata, mark staff attendance and get salary worked out automatically, and see your profit in dashboards, a master ledger and PDF/Excel reports. Owner, manager and cashier logins. No ads, no third-party analytics.",
+  "features": [
+    "Fast counter billing (POS): counter, takeaway, dine-in with KOT, delivery and advance / custom orders",
+    "Cake sizes in kg or pound, custom items for special orders with advance paid and balance due",
+    "GST billing (inclusive or exclusive, CGST/SGST) or simple bills without GST",
+    "Print receipts and kitchen tickets on a Bluetooth thermal printer (58 / 80 mm), share bills as PDF or link on WhatsApp",
+    "Dashboard with today's collection, month sales, expenses, profit and dues",
+    "Day-end, item-wise sales, sales by hour, GST summary, monthly / yearly reports — PDF and Excel",
+    "Expenses with bill photos and vendor khata with running balance",
+    "Staff attendance in one tap with automatic salary, advances, bonus and deductions",
+    "Master ledger with cash, bank / UPI and online balances",
+    "Owner, manager and cashier roles — cashiers only see the counter",
+    "Works with your own self-hosted OpenRestoPro ERP website (open source, MIT licence)",
+    "No ads, no third-party analytics"
+  ],
+  "version": "2.0.2",
+  "platform": [
+    "Android"
+  ],
+  "downloads": {
+    "apk": "coming-soon"
+  },
+  "links": {
+    "github": "https://github.com/manoranjan2050/RestoPro-ERP-Web",
+    "playstore": "coming-soon",
+    "website": "https://mtpcode.com/apps/openrestopro-erp.html",
+    "docs": ""
+  },
+  "legal": {
+    "privacy": "/legal/openrestopro-erp/privacy.html",
+    "dataDeletion": "/legal/openrestopro-erp/data-deletion.html"
+  },
+  "changelog": [
+    {
+      "version": "2.0.2",
+      "date": "2026-11-05",
+      "notes": [
+        "New name: OpenRestoPro ERP",
+        "Getting ready for Google Play"
+      ]
+    },
+    {
+      "version": "2.0.0",
+      "date": "2026-11-04",
+      "notes": [
+        "Point of sale: counter, takeaway, dine-in with KOT, delivery and advance orders",
+        "Bluetooth thermal printing and WhatsApp bill sharing",
+        "Cake sizes in kg / pound, custom items, GST or simple billing",
+        "Stock, day-end and GST reports"
+      ]
+    }
+  ],
+  "featured": false,
+  "category": "erp"
+}

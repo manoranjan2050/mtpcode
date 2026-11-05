@@ -15,7 +15,7 @@
     "/assets/images/apps/openrestopro-erp/screen-7.jpg",
     "/assets/images/apps/openrestopro-erp/screen-8.jpg"
   ],
-  "description": "OpenRestoPro ERP is the Android app for the open-source OpenRestoPro ERP website: a complete billing and back-office system for restaurants, cake shops, sweet shops, cafés, hotels and fast-food counters. The app connects to your own OpenRestoPro ERP server, so your business data stays on your server. Take counter, takeaway, dine-in (with KOT), delivery and advance/custom orders, pick cake sizes in kg or pound, add GST or simple bills, print on a Bluetooth thermal printer and share the bill on WhatsApp. Track expenses and vendor khata, mark staff attendance and get salary worked out automatically, and see your profit in dashboards, a master ledger and PDF/Excel reports. Owner, manager and cashier logins. No ads, no third-party analytics.",
+  "description": "OpenRestoPro ERP is the Android app for the open-source OpenRestoPro ERP website: a complete billing and back-office system for restaurants, cake shops, sweet shops, cafés, hotels and fast-food counters. The app connects to your own OpenRestoPro ERP server, so your business data stays on your server. Take counter, takeaway, dine-in (with KOT), delivery and advance/custom orders, pick cake sizes in kg or pound, add GST or simple bills, print on a Bluetooth thermal printer and share the bill on WhatsApp. Track expenses and vendor khata, mark staff attendance and get salary worked out automatically, and see your profit in dashboards, a master ledger and PDF/Excel reports. Owner, manager and cashier logins. Free with a small banner ad; a one-time Pro purchase removes ads.",
   "features": [
     "Fast counter billing (POS): counter, takeaway, dine-in with KOT, delivery and advance / custom orders",
     "Cake sizes in kg or pound, custom items for special orders with advance paid and balance due",
@@ -28,9 +28,9 @@
     "Master ledger with cash, bank / UPI and online balances",
     "Owner, manager and cashier roles — cashiers only see the counter",
     "Works with your own self-hosted OpenRestoPro ERP website (open source, MIT licence)",
-    "No ads, no third-party analytics"
+    "Free with a small banner ad — one-time Pro purchase removes ads (no subscription)"
   ],
-  "version": "2.0.2",
+  "version": "2.1.0",
   "platform": [
     "Android"
   ],
@@ -48,6 +48,14 @@
     "dataDeletion": "/legal/openrestopro-erp/data-deletion.html"
   },
   "changelog": [
+    {
+      "version": "2.1.0",
+      "date": "2026-11-05",
+      "notes": [
+        "Free version with a small banner ad (never on the billing screen)",
+        "Pro: one-time purchase that removes ads"
+      ]
+    },
     {
       "version": "2.0.2",
       "date": "2026-11-05",

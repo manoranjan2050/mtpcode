@@ -16,15 +16,17 @@
     "Bill Builder: itemized line items with quantity, unit and price",
     "Instant UPI payment QR generation from your own Payment ID",
     "Shop Profile, Products catalogue with barcode scan/generate",
+    "Import products from Excel or CSV with a downloadable sample sheet",
     "Bill history: search, duplicate, favourite, share, print",
+    "Share any bill as a PDF straight from Create Bill",
     "Reports: daily/weekly/monthly/yearly sales trends with charts",
     "Branded PDF receipts and Bluetooth thermal printer support (58/80mm)",
     "Voice Calculator and voice product entry",
     "Optional Cloud Backup to your own Google Drive (Pro)",
     "Works fully offline — all data stays on your device",
-    "Light and dark themes, Material 3 design"
+    "Light and dark themes, with six colour palettes to choose from"
   ],
-  "version": "1.0.0",
+  "version": "1.2.0",
   "platform": [
     "Android"
   ],
@@ -46,6 +48,24 @@
     "support": "/legal/calc2pay/support.html"
   },
   "changelog": [
+    {
+      "version": "1.2.0",
+      "date": "2026-11-05",
+      "notes": [
+        "Import products from Excel or CSV, with a downloadable sample sheet and a preview of new, updated and skipped rows",
+        "Share any bill as a PDF straight from Create Bill",
+        "Choose your app colour: Emerald, Ocean, Violet, Sunset, Rose or Slate",
+        "Refreshed colour design across the app",
+        "Fixed thermal printer errors not being reported"
+      ]
+    },
+    {
+      "version": "1.1.0",
+      "date": "2026-09-27",
+      "notes": [
+        "Redesigned About screen with developer and support contacts"
+      ]
+    },
     {
       "version": "1.0.0",
       "date": "2026-08-28",

@@ -30,7 +30,7 @@
     "Works with your own self-hosted OpenRestoPro ERP website (open source, MIT licence)",
     "Free with a small banner ad — one-time Pro purchase removes ads (no subscription)"
   ],
-  "version": "2.1.0",
+  "version": "2.1.2",
   "platform": [
     "Android"
   ],
@@ -49,6 +49,15 @@
     "dataDeletion": "/legal/openrestopro-erp/data-deletion.html"
   },
   "changelog": [
+    {
+      "version": "2.1.2",
+      "date": "2026-11-14",
+      "notes": [
+        "New About & legal screen: developer, support email, privacy policy, terms of use, data deletion",
+        "Privacy policy and terms links on the sign-in screen",
+        "Targets Android 16 (API 36)"
+      ]
+    },
     {
       "version": "2.1.0",
       "date": "2026-11-05",

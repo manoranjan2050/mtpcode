@@ -1,0 +1,62 @@
+{
+  "slug": "kalinga-raktabir",
+  "name": "Kalinga Raktabir",
+  "tagline": "Blood donation camps, alerts & donor certificates",
+  "logo": "/assets/images/apps/kalinga-raktabir/logo.png",
+  "banner": "/assets/images/apps/kalinga-raktabir/banner.png",
+  "cardImage": "/assets/images/apps/kalinga-raktabir/card.png",
+  "gallery": [
+    "/assets/images/apps/kalinga-raktabir/screen-1.png",
+    "/assets/images/apps/kalinga-raktabir/screen-2.png",
+    "/assets/images/apps/kalinga-raktabir/screen-3.png",
+    "/assets/images/apps/kalinga-raktabir/screen-4.png",
+    "/assets/images/apps/kalinga-raktabir/screen-5.png",
+    "/assets/images/apps/kalinga-raktabir/screen-6.png",
+    "/assets/images/apps/kalinga-raktabir/screen-7.png"
+  ],
+  "description": "Kalinga Raktabir is the donor app of Kalinga Humanitarian Aid Youth Federation, Balikuda, Odisha. See the next blood donation camp with a live countdown, get an alert when a camp or notice is posted, and fetch your own donation certificates with just your mobile number. Share them as an image or PDF in six colour themes, including Tiranga. No ads, no account, no tracking.",
+  "features": [
+    "Live countdown to the next camp with venue, time and map directions",
+    "Alerts for new camps and notices, plus a reminder before each camp",
+    "Latest notices and links to the WhatsApp, Telegram and social groups",
+    "Get your donation certificates by mobile number (captcha protected)",
+    "Share certificates as image or PDF in six colour themes including Tiranga",
+    "QR code on every certificate so it can be verified",
+    "See when you can donate again",
+    "English and Odia (ଓଡ଼ିଆ)",
+    "No ads, no account, no tracking"
+  ],
+  "version": "1.2.3",
+  "platform": [
+    "Android"
+  ],
+  "downloads": {
+    "apk": "coming-soon"
+  },
+  "links": {
+    "github": "",
+    "playstore": "coming-soon",
+    "website": "",
+    "docs": ""
+  },
+  "legal": {
+    "privacy": "/legal/kalinga-raktabir/privacy.html",
+    "terms": "/legal/kalinga-raktabir/terms.html",
+    "disclaimer": "/legal/kalinga-raktabir/disclaimer.html",
+    "dataDeletion": "/legal/kalinga-raktabir/data-deletion.html",
+    "support": "/legal/kalinga-raktabir/support.html"
+  },
+  "changelog": [
+    {
+      "version": "1.2.3",
+      "date": "2026-11-25",
+      "notes": [
+        "Live countdown, hourly alerts and camp reminders",
+        "About page with privacy policy, terms, medical disclaimer and data deletion",
+        "Developer card with profile links"
+      ]
+    }
+  ],
+  "featured": false,
+  "category": "android"
+}

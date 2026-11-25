@@ -1,5 +1,44 @@
 [
   {
+    "id": "kalinga-raktabir-apk",
+    "name": "Kalinga Raktabir",
+    "kind": "app",
+    "type": "apk",
+    "logo": "/assets/images/apps/kalinga-raktabir/logo.png",
+    "version": "1.2.3",
+    "platform": "Android 7.0+",
+    "size": "Play Store",
+    "date": "2026-11-25",
+    "url": "coming-soon",
+    "appLink": "/apps/kalinga-raktabir.html",
+    "notes": [
+      "Donor app of Kalinga Humanitarian Aid Youth Federation",
+      "Live camp countdown, alerts, notices and certificate download by mobile number",
+      "Install from Google Play when the listing is live — direct APK downloads are not offered."
+    ],
+    "cta": "play",
+    "playstore": "coming-soon"
+  },
+  {
+    "id": "raktabir-admin-apk",
+    "name": "Raktabir Admin",
+    "kind": "app",
+    "type": "apk",
+    "logo": "/assets/images/apps/raktabir-admin/logo.png",
+    "version": "1.3.4",
+    "platform": "Android 7.0+",
+    "size": "Volunteers only",
+    "date": "2026-11-25",
+    "url": "coming-soon",
+    "appLink": "/apps/raktabir-admin.html",
+    "notes": [
+      "Volunteer tool for blood donation camps: donors, certificates, emergency finder",
+      "Distributed to Federation volunteers; not a public download."
+    ],
+    "cta": "play",
+    "playstore": "coming-soon"
+  },
+  {
     "id": "geo-camera-apk",
     "name": "Geo Camera & GPS Stamp",
     "kind": "app",

@@ -1,0 +1,59 @@
+{
+  "slug": "raktabir-admin",
+  "name": "Raktabir Admin",
+  "tagline": "Donor records, certificates & emergency finder for blood camps",
+  "logo": "/assets/images/apps/raktabir-admin/logo.png",
+  "banner": "/assets/images/apps/raktabir-admin/banner.png",
+  "cardImage": "/assets/images/apps/raktabir-admin/card.png",
+  "gallery": [
+    "/assets/images/apps/raktabir-admin/screen-1.png",
+    "/assets/images/apps/raktabir-admin/screen-2.png",
+    "/assets/images/apps/raktabir-admin/screen-3.png",
+    "/assets/images/apps/raktabir-admin/screen-4.png"
+  ],
+  "description": "Raktabir Admin is the volunteer tool used at the blood donation camps of Kalinga Humanitarian Aid Youth Federation. Record each donor with a photo, issue an instant certificate and share image with a verify QR, search the donor database by blood group, find eligible donors in an emergency, and post camps and notices that appear in the Kalinga Raktabir donor app. Works offline at camps and syncs when the network returns. For Federation volunteers.",
+  "features": [
+    "New donor in seconds: camera photo, blood group, details, duplicate check by phone number",
+    "Instant certificate (A4 image or PDF) and social share image with a signed verify QR",
+    "Six colour themes including Tiranga, drawn digital signature for the President",
+    "Emergency finder: pick the blood group, include compatible groups, call or WhatsApp",
+    "Searchable donor database filtered by blood group",
+    "Eligibility reminders (90 days men, 120 days women) and milestone badges",
+    "Post camps, notices and community links for the donor app",
+    "Offline first with Supabase cloud sync, zip backup and restore, PIN lock",
+    "English and Odia"
+  ],
+  "version": "1.3.4",
+  "platform": [
+    "Android"
+  ],
+  "downloads": {
+    "apk": "coming-soon"
+  },
+  "links": {
+    "github": "",
+    "playstore": "",
+    "website": "",
+    "docs": ""
+  },
+  "legal": {
+    "privacy": "/legal/raktabir-admin/privacy.html",
+    "terms": "/legal/raktabir-admin/terms.html",
+    "disclaimer": "/legal/raktabir-admin/disclaimer.html",
+    "dataDeletion": "/legal/raktabir-admin/data-deletion.html",
+    "support": "/legal/raktabir-admin/support.html"
+  },
+  "changelog": [
+    {
+      "version": "1.3.4",
+      "date": "2026-11-25",
+      "notes": [
+        "Cloud sync across volunteer phones, camps and notices for the donor app",
+        "Updated privacy policy and terms covering cloud sync",
+        "Developer card with profile links"
+      ]
+    }
+  ],
+  "featured": false,
+  "category": "android"
+}

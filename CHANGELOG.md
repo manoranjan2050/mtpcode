@@ -4,6 +4,11 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+## [2026-11-26] — DotGlow firmware 0.4.0
+
+### Changed
+- Web flasher (`/flash/`): DotGlow firmware 0.4.0 (speaker sounds, alarms, countdown timer).
+
 ## [2026-10-26] — DotGlow live on Google Play
 
 ### Changed
